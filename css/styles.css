@@ -1,82 +1,33 @@
-/* Reset styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Global styles */
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #444;
-}
-
-/* Header styles */
+/* navbar styles */
 header {
   background-color: #333;
-  color: #fff;
-  padding: 1rem;
-}
-
-nav {
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
-  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 nav li {
-  margin-right: 1rem;
+  margin: 0 10px;
 }
 
 nav a {
-  color: #fff;
   text-decoration: none;
-  font-size: 1.2rem;
-  padding: 0.5rem;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
   transition: all 0.3s ease;
 }
 
 nav a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-}
-
-nav .logo {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-/* Main styles */
-main {
-  padding: 2rem;
-}
-
-section {
-  margin-bottom: 2rem;
-}
-
-h1, h2 {
-  margin-bottom: 1rem;
-  font-weight: 500;
-}
-
-ul {
-  list-style: disc;
-  margin-left: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* Footer styles */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
+  color: #f1c40f;
 }
