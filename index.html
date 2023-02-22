@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>QueueCube</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="assets/queuecube.ico" type="image/x-icon">
-  </head>
-
-
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Website</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<!-- NAV BAR -->
-<div class = "navbar">
-  <ul>
-    <li class="left"><a class="active" href="#home">Queuecube</a></li>
-    <li class="right"><a href="#contact">Contact</a></li>
-    <li class="right"><a href="#about">About</a></li>
-    <li class="right"><a href="#queue">Queue</a></li>
-  </ul>
-</div>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 
+	<main>
+		<section>
+			<h1>Welcome to my website</h1>
+			<p>This is a paragraph of text about my website.</p>
+		</section>
 
-<h1>We stand in line so you don't have to ⏰</h1>
+		<section>
+			<h2>About me</h2>
+			<p>I am a web developer based in XYZ.</p>
+		</section>
 
+		<section>
+			<h2>Services</h2>
+			<ul>
+				<li>Web development</li>
+				<li>UI/UX design</li>
+				<li>SEO optimization</li>
+			</ul>
+		</section>
 
+		<section>
+			<h2>Contact me</h2>
+			<form action="#">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
 
-<script src="js/main.js"></script>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
 
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
 
+				<button type="submit">Send message</button>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 My Website. All rights reserved.</p>
+	</footer>
 </body>
-
 </html>
-
-
-
