@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  height: 70px;
+  padding: 10px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  color: #a9a9a9;
+  font-size: 24px;
+  margin-right: 25px;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
