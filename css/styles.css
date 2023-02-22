@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body {
+  background-color: #f8f8f8;
+  font-family: 'Nunito', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color:rgba(255, 255, 255, 0.1);
+}
+
+.navbar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  top:0;
+  width: 100%;
+} 
+
+.navbar .right{
+  float: right;
+  padding-right: 40px;
+}
+
+.navbar .left{
+  float: left;
+}
+
+.navbar a{
+  display: block;
+  color:darkmagenta;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+
+.navbar li a:hover:not(.active) {
+  background-color: rgba(228, 237, 237);
+}
+
+.navbar .active {
+  background-color: darkgray;
+}
+
+.left{
+  background-size: cover;
+  background-size:contain;
+  background-repeat:no-repeat;
+  height:1em;
+  background-image: url("../assets/queuecube.png");
+}
