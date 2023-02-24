@@ -25,7 +25,10 @@ button {
 }
 
 /* Style the CTA buttons */
-.cta-1, .cta-2, .cta-3, .cta-4 {
+.cta-1,
+.cta-2,
+.cta-3,
+.cta-4 {
   font-family: 'Outfit', sans-serif;
   color: #fff;
   font-weight: bold;
