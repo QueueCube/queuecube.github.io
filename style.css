@@ -3,9 +3,7 @@ button {
   text-align: center;
 }
 
-<<<<<<< HEAD
-/* Style the container for the "Vision", "About", and "Join" buttons */
-=======
+
 /* Set font family for entire page */
 body {
   font-family: 'Outfit', sans-serif;
@@ -15,6 +13,7 @@ body {
 header {
   color: #000;
   padding-top: 30px;
+  font-size: 100px;
 	padding-bottom: 30px;
   display: flex;
   justify-content: center;
@@ -22,7 +21,7 @@ header {
 
 
 .logo {
-  font-size: 6rem;
+  font-size: 7rem;
 }
 
 /* Style the main section */
@@ -82,14 +81,12 @@ main {
 
 
 /* Display child elements of .homebuttons in a column */
->>>>>>> parent of 6bc0c55 (adaptive)
 .homebuttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-<<<<<<< HEAD
 /* Style the container for the "Queue" button */
 .left-buttons {
   display: flex;
@@ -147,5 +144,3 @@ main {
     width: 50%; /* Set the width to 50% on screens with a maximum width of 768 pixels */
   }
 }
-=======
->>>>>>> parent of 6bc0c55 (adaptive)
