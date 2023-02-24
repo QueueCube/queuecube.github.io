@@ -94,8 +94,8 @@ main {
 
 /*Vision*/
 .cta-2  {
-  background-color: #FF5963;
-  color: #fff;
+  background-color: #eee;
+  color: #000;
   font-weight: bold;
   padding: 12px 20px;
   border: none;
@@ -118,7 +118,7 @@ main {
 }
 /*Join*/
 .cta-3 {
-  background-color: #FFD700;
+  background-color: #FF5963;
   color: #333;
   font-weight: bold;
   padding: 12px 20px;
