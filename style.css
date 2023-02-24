@@ -14,11 +14,10 @@ body {
 header {
   color: #000;
   padding-top: 30px;
-	padding-bottom: 30px;
+  padding-bottom: 30px;
   display: flex;
   justify-content: center;
 }
-
 
 .logo {
   font-size: 6rem;
@@ -31,7 +30,6 @@ main {
   grid-template-rows: auto 1fr;
   height: 100vh;
 }
-
 
 /* Style the CTA buttons */
 .cta-1 {
@@ -62,7 +60,7 @@ main {
   border: none;
   margin: 5px;
   height: 260px;
-  width:  735px;
+  width: 735px;
   border-radius: 30px;
   font-family: 'Outfit', sans-serif;
   color: #000;
@@ -79,10 +77,54 @@ main {
   color: #fff;
 }
 
-
 /* Display child elements of .homebuttons in a column */
 .homebuttons {
   display: flex;
   flex-direction: row;
 }
 
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  /* Set font-size for the logo */
+  .logo {
+    font-size: 4rem;
+  }
+  
+  /* Modify CTA-1 */
+  .cta-1 {
+    height: 400px;
+    width: 90%;
+    font-size: 40px;
+  }
+
+  /* Modify CTA-2 */
+  .cta-2 {
+    height: 200px;
+    width: 90%;
+    font-size: 16px;
+  }
+
+  /* Modify CTA-3 */
+  .cta-3 {
+    height: 200px;
+    width: 90%;
+    font-size: 16px;
+  }
+
+  /* Modify CTA-4 */
+  .cta-4 {
+    height: 200px;
+    width: 90%;
+    font-size: 16px;
+  }
+
+  /* Display child elements of .homebuttons in a column */
+  .homebuttons {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Set font-size for the logo */
+  .logo
+}
