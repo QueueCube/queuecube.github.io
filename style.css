@@ -2,11 +2,9 @@ html {
   scroll-behavior: smooth;
   font-family: 'Outfit', sans-serif;
 }
-
 body {
   margin: 0;
 }
-
 .logo {
   font-size: 60px;
   font-weight: bold;
@@ -14,51 +12,50 @@ body {
   margin: 20px;
   text-align: center;
   justify-content: center;
-  padding: 80px;
-  }
+  padding: 5rem;
+}
 
-/*TOP MAIN BUTTONS*//*TOP MAIN BUTTONS*//*TOP MAIN BUTTONS*//*TOP MAIN BUTTONS*/
 .cta-1 {
   background-color: #39d2c0;
-  color: #fff;
+  color: #eee;
   font-family: 'Outfit', sans-serif;
   border: none;
   font-size: 30px;
   height: 480px;
   width: 670px;
-  border-radius: 30px;
-  margin: 20px;
+  border-radius: 35px;
+  margin: 15px;
 }
 .cta-2 {
-  background-color: #F8E473;
-  color: #fff;
+  background-color: #eee;
+  color: #000;
   font-family: 'Outfit', sans-serif;
   border: none;
   font-size: 25px;
   height: 225px;
-  width: 315px;
+  width: 325px;
   border-radius: 30px;
   margin: 20px;
 }
 .cta-3 {
   background-color: #ff5963;
-  color: #fff;
+  color: #eee;
   font-family: 'Outfit', sans-serif;
   border: none;
   font-size: 25px;
   height: 210px;
-  width: 670px;
+  width: 690px;
   border-radius: 30px;
   margin: 20px;
 }
 .cta-4 {
-  background-color: #000;
-  color: #fff;
+  background-color: #eee;
+  color: #000;
   font-family: 'Outfit', sans-serif;
   border: none;
   font-size: 25px;
   height: 225px;
-  width: 315px;
+  width: 325px;
   border-radius: 30px;
   margin: 20px;
 }
@@ -69,30 +66,21 @@ body {
   align-items: center;
   padding-bottom: 50px;
 }
-
 .left-buttons {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-/*TOP MAIN BUTTONS*//*TOP MAIN BUTTONS*//*TOP MAIN BUTTONS*//*TOP MAIN BUTTONS*/
 
-
-
-
-
-
-/*VISION*//*VISION*//*VISION*//*VISION*//*VISION*//*VISION*//*VISION*//*VISION*/
+/*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*/
 #vision {
-  background-color: #F8E473;
+  background-color: #fff;
   padding: 50px;
 }
-
 .vision.container {
   max-width: 10000px;
   height: 1000px;
 }
-
 .vision-top {
   display: flex;
   justify-content: center;
@@ -100,20 +88,18 @@ body {
   flex-direction: column;
   text-align: center;
 }
-/*for all section titles*/
 .section-title {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #fff;
+  color: #000;
 }
-
 .vision-top p {
   font-size: 24px;
   line-height: 1.5;
-  color: #fff;
+  color: #000;
 }
-/*VISION*//*VISION*//*VISION*//*VISION*//*VISION*//*VISION*//*VISION*//*VISION*/
+/*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*/
 
 
 
@@ -121,17 +107,16 @@ body {
 
 
 
-/*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*/
+
+/*About*//*About*//*About*//*About*//*About*//*About*//*About*//*About*//*About*/
 #about {
-  background-color: #000;
+  background-color: #eee;
   padding: 50px;
 }
-
 .about.container {
   max-width: 10000px;
   height: 1000px;
 }
-
 .about-top {
   display: flex;
   justify-content: center;
@@ -139,13 +124,12 @@ body {
   flex-direction: column;
   text-align: center;
 }
-
 .about-top p {
   font-size: 24px;
   line-height: 1.5;
-  color: #eee;
+  color: #000;
 }
-/*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*/
+/*About*//*About*//*About*//*About*//*About*//*About*//*About*//*About*//*About*/
 
 
 
@@ -159,12 +143,10 @@ body {
   background-color: #ff5963;
   padding: 50px;
 }
-
 .join.container {
   max-width: 10000px;
   height: 1000px;
 }
-
 .join-top {
   display: flex;
   justify-content: center;
@@ -172,14 +154,12 @@ body {
   flex-direction: column;
   text-align: center;
 }
-
-.section-title {
+.join-title {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 20px;
-
+  color: #eee;
 }
-
 .join-top p {
   font-size: 24px;
   line-height: 1.5;
