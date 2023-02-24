@@ -92,18 +92,31 @@ main {
   align-items: center;
 }
 
-/* Style the "Vision" and "About" buttons */
-.cta-2, .cta-4 {
-  background-color: #333;
+/*Vision*/
+.cta-2  {
+  background-color: #FF5963;
   color: #fff;
   font-weight: bold;
   padding: 12px 20px;
   border: none;
   border-radius: 25px;
   cursor: pointer;
+  width: 300px;
+  height: 200px;
 }
-
-/* Style the "Join" button */
+/*About*/
+.cta-4{
+  background-color: #eee;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 300px;
+  height: 200px;
+}
+/*Join*/
 .cta-3 {
   background-color: #FFD700;
   color: #333;
@@ -112,6 +125,7 @@ main {
   border: none;
   border-radius: 25px;
   cursor: pointer;
+  width: 610px;
 }
 
 /* Style the logo */
@@ -124,21 +138,22 @@ main {
   text-align: center;
 }
 
-/* Style the "Queue" button */
+/*Queue*/
 .cta-1 {
-  background-color: #FFD700;
-  color: #333;
+  background-color: #39D2C0;
+  color: #fff;
   font-weight: bold;
   padding: 12px 20px;
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  width: 100%; /* Set the default width to 100% */
+  width: 700px; 
+  height: 475px;
 }
 
 /* Media query to adjust the width of the "Queue" button on smaller screens */
 @media only screen and (max-width: 768px) {
   .cta-1 {
-    width: 50%; /* Set the width to 50% on screens with a maximum width of 768 pixels */
+    width: 100%; /* Set the width to 50% on screens with a maximum width of 768 pixels */
   }
 }
