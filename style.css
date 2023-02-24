@@ -1,14 +1,8 @@
-/* Set global styles */
-* {
-  margin: 0;
-  padding: 5px;
-  box-sizing: border-box;
+/* Center align the text in all buttons */
+button {
+  text-align: center;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of c25dc38 (no)
 /* Set font family for entire page */
 body {
   font-family: 'Outfit', sans-serif;
@@ -18,24 +12,14 @@ body {
 header {
   color: #000;
   padding-top: 30px;
-<<<<<<< HEAD
-  font-size: 100px;
 	padding-bottom: 30px;
-=======
-  padding-bottom: 30px;
->>>>>>> parent of c25dc38 (no)
   display: flex;
   justify-content: center;
 }
 
-<<<<<<< HEAD
 
 .logo {
-  font-size: 7rem;
-=======
-.logo {
   font-size: 6rem;
->>>>>>> parent of c25dc38 (no)
 }
 
 /* Style the main section */
@@ -46,10 +30,7 @@ main {
   height: 100vh;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> parent of c25dc38 (no)
 /* Style the CTA buttons */
 .cta-1 {
   font-size: 50px;
@@ -79,11 +60,7 @@ main {
   border: none;
   margin: 5px;
   height: 260px;
-<<<<<<< HEAD
   width:  735px;
-=======
-  width: 735px;
->>>>>>> parent of c25dc38 (no)
   border-radius: 30px;
   font-family: 'Outfit', sans-serif;
   color: #000;
@@ -100,58 +77,68 @@ main {
   color: #fff;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> parent of c25dc38 (no)
 /* Display child elements of .homebuttons in a column */
 .homebuttons {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Media Queries */
+/* Style the container for the "Queue" button */
+.left-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Style the "Vision" and "About" buttons */
+.cta-2, .cta-4 {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Style the "Join" button */
+.cta-3 {
+  background-color: #FFD700;
+  color: #333;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Style the logo */
+.logo {
+  font-family: 'Outfit', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Style the "Queue" button */
+.cta-1 {
+  background-color: #FFD700;
+  color: #333;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%; /* Set the default width to 100% */
+}
+
+/* Media query to adjust the width of the "Queue" button on smaller screens */
 @media only screen and (max-width: 768px) {
-  /* Set font-size for the logo */
-  .logo {
-    font-size: 4rem;
-  }
-  
-  /* Modify CTA-1 */
   .cta-1 {
-    height: 400px;
-    width: 90%;
-    font-size: 40px;
+    width: 50%; /* Set the width to 50% on screens with a maximum width of 768 pixels */
   }
-
-  /* Modify CTA-2 */
-  .cta-2 {
-    height: 200px;
-    width: 90%;
-    font-size: 16px;
-  }
-
-  /* Modify CTA-3 */
-  .cta-3 {
-    height: 200px;
-    width: 90%;
-    font-size: 16px;
-  }
-
-  /* Modify CTA-4 */
-  .cta-4 {
-    height: 200px;
-    width: 90%;
-    font-size: 16px;
-  }
-
-  /* Display child elements of .homebuttons in a column */
-  .homebuttons {
-    flex-direction: column;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* Set font-size for the logo */
-  .logo
 }
