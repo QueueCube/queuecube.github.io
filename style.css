@@ -38,7 +38,7 @@ button {
 
 .cta-1 {
   background-color: #39D2C0;
-  height: 600px;
+  height: 550px;
   width: 700px;
   font-size: 50px;
 }
@@ -46,23 +46,23 @@ button {
 .cta-2 {
   background-color: #eee;
   color: #000;
-  height: 250px;
-  width: 400px;
+  height: 275px;
+  width: 345px;
   font-size: 20px;
 }
 
 .cta-3 {
   background-color: #FF5963;
   height: 260px;
-  width: 735px;
+  width: 700px;
   font-size: 20px;
 }
 
 .cta-4 {
   background-color: #eee;
   color: #000;
-  height: 250px;
-  width: 300px;
+  height: 275px;
+  width: 345px;
   font-size: 20px;
 }
 
@@ -83,7 +83,7 @@ button {
 /* Style the logo */
 .logo {
   font-family: 'Outfit', sans-serif;
-  font-size: 36px;
+  font-size: 90px;
   font-weight: bold;
   color: #333;
   margin: 20px 0;
