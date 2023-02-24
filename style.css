@@ -1,4 +1,7 @@
-/* Set font family for entire page */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Outfit', sans-serif;
+}
 body {
     font-family: 'Outfit', sans-serif;
 }
@@ -10,16 +13,6 @@ header {
     color: #000;
     padding: 50px 0;
 }
-
-/* Center align the text in all buttons */
-button {
-    text-align: center;
-}
-
-
-
-
-
 
 /* Style the CTA buttons */
 .wrapper-homebuttons {
@@ -46,11 +39,7 @@ button {
 .cta-2,
 .cta-3,
 .cta-4 {
-    font-family: 'Outfit', sans-serif;
-    color: #fff;
-    font-weight: bold;
     padding: 12px 20px;
-    border: none;
     border-radius: 25px;
     cursor: pointer;
     margin: 20px;
@@ -61,26 +50,38 @@ button {
 }
 
 
-
-.cta-1,
-.cta-2,
-.cta-3,
-.cta-4 {
-    text-decoration: none;
-}
 .cta-1 {
     background-color: #39d2c0;
+    color: #eee;
+    font-family: 'Outfit', sans-serif;
+
+    border-radius: 35px;
+    font-size: 30px;
+
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    
 
 }
 
+.logo {
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0;
+  text-align: center;
+  justify-content: center;
+  padding: 5rem;
+}
+    
 .cta-2 {
     background-color: #eee;
     color: #000;
+    font-family: 'Outfit', sans-serif;
+    border: none;
+    border-radius: 30px;
+    font-size: 25px;
 
     grid-column-start: 3;
     grid-column-end: 4;
@@ -89,18 +90,27 @@ button {
 }
 
 .cta-3 {
-    background-color: #eee;
-    color: #000;
-
+background-color: #ff5963;
+color: #eee;
+font-family: 'Outfit', sans-serif;
+border: none;
+font-size: 25px;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
 
+    border-radius: 30px;
+
 }
 
 .cta-4 {
-    background-color: #ff5963;
+background-color: #eee;
+color: #000;
+font-family: 'Outfit', sans-serif;
+border: none;
+border-radius: 30px;
+font-size: 25px;
 
     grid-column-start: 3;
     grid-column-end: 5;
@@ -111,18 +121,98 @@ button {
 
 
 
-.logo {
-    font-family: 'Outfit', sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-    color: #333;
-    margin: 20px 0;
-    text-align: center;
-}
 
-/* Media query to adjust the width of the "Queue" button on smaller screens */
-@media only screen and (max-width: 768px) {
-    .cta-1 {
-        width: 100%;
-    }
+/*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*/
+#vision {
+  background-color: #fff;
+  padding: 50px;
 }
+.vision.container {
+  max-width: 10000px;
+  height: 1000px;
+}
+.vision-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.section-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+}
+.vision-top p {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #000;
+}
+/*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*/
+
+
+/*About*//*About*//*About*//*About*//*About*//*About*//*About*//*About*//*About*/
+#about {
+  background-color: #eee;
+  padding: 50px;
+}
+.about.container {
+  max-width: 10000px;
+  height: 1000px;
+}
+.about-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.about-top p {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #000;
+}
+/*About*//*About*//*About*//*About*//*About*//*About*//*About*//*About*//*About*/
+
+
+
+
+
+
+
+
+/*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*/
+#join {
+  background-color: #ff5963;
+  padding: 50px;
+}
+.join.container {
+  max-width: 10000px;
+  height: 1000px;
+}
+.join-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.join-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #eee;
+}
+.join-top p {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #eee;
+}
+/*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*/
+
+
+
+
+
+
