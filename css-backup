@@ -42,6 +42,7 @@ header {
   margin: 1rem;
   font-size: 30px;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 .cta-1 {
   background-color: #39d2c0;
@@ -73,57 +74,27 @@ header {
   grid-row-end: 3;
 }
 .text1, .text4 {
-  color: #ffff;
+  color: #fff;
 }
 .text2, .text3 {
   color: #000;
 }
-
-
-/* Style the Vision section */
-#vision {
-  background-color: #fff;
-  padding: 50px;
-}
-.vision-top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-.section-title {
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #000;
-}
-.vision-top p {
-  font-size: 24px;
-  line-height: 1.5;
-  color: #000;
-}
-/* Style the About section */
-#about {
-  background-color: #eee;
-  padding: 50px;
-}
-.about-top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-.about-top p {
-  font-size: 24px;
-  line-height: 1.5;
-  color: #000;
+.cta-1:hover{
+  transform: scale(1.03);
+} 
+.cta-2:hover{
+  transform: scale(1.05);
+} 
+.cta-3:hover{
+  transform: scale(1.05);
+} 
+.cta-4:hover {
+  transform: scale(1.05);
 }
 
 
 
-/*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*/
+/*VISION*//*VISION*//*VISION*//*VISION*//*VISION*//*VISION*//*VISION*//*VISION*/
 #vision {
   background-color: #fff;
   padding: 50px;
@@ -149,11 +120,11 @@ header {
   line-height: 1.5;
   color: #000;
 }
-/*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*/
+/*VISION*//*VISION*//*VISION*//*VISION*//*VISION*//*VISION*//*VISION*//*VISION*/
 
 
 
-/*About*//*About*//*About*//*About*//*About*//*About*//*About*//*About*//*About*/
+/*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*/
 #about {
   background-color: #fff;
   padding: 50px;
@@ -174,7 +145,7 @@ header {
   line-height: 1.5;
   color: #000;
 }
-/*About*//*About*//*About*//*About*//*About*//*About*//*About*//*About*//*About*/
+/*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*/
 
 
 
@@ -208,7 +179,7 @@ header {
   transition: all 0.3s ease-in-out;
 }
 .socials a:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .join-top {
   display: flex;
@@ -272,7 +243,7 @@ header {
   width: 58rem;
   margin-bottom: .5rem;
   }
-  .password {
+.password {
   background-color: #eee;
   color: #ff5963;
   font-size: 1.2rem;
@@ -284,7 +255,7 @@ header {
   height: 7rem;
   width: 58rem;
   margin-top: 1rem;
-  }
+}
 .signup {
 	background-color: #ff5963;
 	font-size: 2rem;
@@ -294,6 +265,10 @@ header {
 	border-radius: 80px;
 	height: 17rem;
 	width: 17rem;
+  transition: all 0.3s ease-in-out;
+}
+#join .signup:hover {
+  transform: scale(1.05);
 }
 
 .inputbox:focus {
