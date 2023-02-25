@@ -126,7 +126,7 @@ header {
 
 /*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*/
 #about {
-  background-color: #eee;
+  background-color: #fff;
   padding: 30px;
 }
 .about.container {
@@ -170,7 +170,7 @@ header {
   justify-content: center;
   align-items: center;
   font-size: 35px;
-  background-color: #eee;
+  background-color: #fff7f6;
   color: #ff5963;
   border-radius: 50px;
   width: 300px;
@@ -217,7 +217,7 @@ header {
   flex-direction: column;
 }
 .name {
-	background-color: #eee;
+	background-color: #fff7f6;
 	color: #ff5963;
 	font-size: 1.2rem;
 	font-family: 'Outfit', sans-serif;
@@ -231,7 +231,7 @@ header {
 	width: 75rem;
 }
 .email {
-  background-color: #eee;
+  background-color: #fff7f6;
   color: #ff5963;
   font-size: 1.2rem;
   font-family: 'Outfit', sans-serif;
@@ -243,7 +243,7 @@ header {
   width: 58rem;
   }
 .password {
-  background-color: #eee;
+  background-color: #fff7f6;
   color: #ff5963;
   font-size: 1.2rem;
   font-family: 'Outfit', sans-serif;
