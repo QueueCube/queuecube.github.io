@@ -188,6 +188,28 @@ header {
   height: 50rem;
   align-content: center;
 }
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  background-color: #eee;
+  color: #ff5963;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 7rem 2rem; 
+  transition: all 0.3s ease-in-out;
+}
+.socials a:hover {
+  transform: scale(1.1);
+}
 .join-top {
   display: flex;
   justify-content: center;
@@ -229,12 +251,12 @@ header {
 	font-family: 'Outfit', sans-serif;
 	border-radius: 100px;
 	border: none;
-	padding-left: 5rem;
-	padding-right: 5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 	height: 7rem;
-	width: 70rem;
+	width: 65rem;
 }
 .email {
   background-color: #eee;
@@ -243,11 +265,11 @@ header {
   font-family: 'Outfit', sans-serif;
   border-radius: 75px;
   border: none;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   height: 7rem;
-  width: 45rem;
-  margin-bottom: 2rem;
+  width: 47rem;
+  margin-bottom: .5rem;
   }
   .password {
   background-color: #eee;
@@ -256,22 +278,21 @@ header {
   font-family: 'Outfit', sans-serif;
   border-radius: 75px;
   border: none;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   height: 7rem;
-  width: 45rem;
+  width: 47rem;
   margin-top: 1rem;
   }
 .signup {
 	background-color: #ff5963;
-	font-size: 3rem;
+	font-size: 2rem;
 	color: #eee;
 	border: none;
 	font-family: 'Outfit', sans-serif;
 	border-radius: 80px;
-	height: 20rem;
-	width: 22rem;
-	margin: 0.5rem;
+	height: 17rem;
+	width: 17rem;
 }
 
 .inputbox:focus {
