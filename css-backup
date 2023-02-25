@@ -155,7 +155,7 @@ header {
 
 /*About*//*About*//*About*//*About*//*About*//*About*//*About*//*About*//*About*/
 #about {
-  background-color: #eee;
+  background-color: #fff;
   padding: 50px;
 }
 .about.container {
@@ -180,7 +180,7 @@ header {
 
 /*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*/
 #join {
-  background-color: #453d3d;
+  background-color: #fff;
   padding: 30px;
 }
 .join.container {
@@ -233,7 +233,7 @@ header {
 	padding-right: 5rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-	height: 9rem;
+	height: 7rem;
 	width: 70rem;
 }
 .email {
@@ -245,7 +245,7 @@ header {
   border: none;
   padding-left: 5rem;
   padding-right: 5rem;
-  height: 9rem;
+  height: 7rem;
   width: 45rem;
   margin-bottom: 2rem;
   }
@@ -258,9 +258,9 @@ header {
   border: none;
   padding-left: 5rem;
   padding-right: 5rem;
-  height: 9rem;
+  height: 7rem;
   width: 45rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   }
 .signup {
 	background-color: #ff5963;
@@ -269,7 +269,7 @@ header {
 	border: none;
 	font-family: 'Outfit', sans-serif;
 	border-radius: 80px;
-	height: 25rem;
+	height: 20rem;
 	width: 22rem;
 	margin: 0.5rem;
 }
