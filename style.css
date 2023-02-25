@@ -156,7 +156,7 @@ header {
 }
 .join.container {
   max-width: 10000px;
-  height: 45rem;
+  height: 46rem;
   align-content: center;
 }
 .socials {
@@ -170,7 +170,7 @@ header {
   justify-content: center;
   align-items: center;
   font-size: 35px;
-  background-color: #fff7f6;
+  background-color: #ffebe8;
   color: #ff5963;
   border-radius: 50px;
   width: 300px;
