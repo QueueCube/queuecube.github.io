@@ -1,23 +1,16 @@
-/* Set font and smooth scroll */
 html {
   scroll-behavior: smooth;
   font-family: 'Outfit', sans-serif;
 }
-
-/* Remove default margin from body */
 body {
   margin: 0;
 }
-
-/* Style the header */
 header {
   display: flex;
   justify-content: center;
-  color: #000;
+  color: #1c1c1c;
   padding: 50px 0;
 }
-
-/* Style the logo */
 .logo {
   font-size: 50px;
   font-weight: bold;
@@ -28,7 +21,6 @@ header {
   padding: 5rem;
 }
 
-/* Style the CTA buttons */
 .wrapper-homebuttons {
   height: 65vh;
   display: grid;
@@ -52,7 +44,7 @@ header {
 }
 .cta-2, .cta-3 {
   background-color: #eee;
-  color: #000;
+  color: #1c1c1c;
   grid-row-start: 1;
   grid-row-end: 2;
 }
@@ -76,56 +68,8 @@ header {
   color: #ffff;
 }
 .text2, .text3 {
-  color: #000;
+  color: #1c1c1c;
 }
-
-
-/* Style the Vision section */
-#vision {
-  background-color: #fff;
-  padding: 50px;
-}
-.vision-top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-.section-title {
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #000;
-}
-.vision-top p {
-  font-size: 24px;
-  line-height: 1.5;
-  color: #000;
-}
-/* Style the About section */
-#about {
-  background-color: #eee;
-  padding: 50px;
-}
-.about-top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-.about-top p {
-  font-size: 24px;
-  line-height: 1.5;
-  color: #000;
-}
-
-
-
-
-
-
 
 /*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*/
 #vision {
@@ -146,30 +90,20 @@ header {
 .section-title {
   font-size: 45px;
   font-weight: bold;
-  color: #000;
+  color: #1c1c1c;
 }
 .vision-top p {
   font-size: 24px;
   line-height: 1.5;
-  color: #000;
+  color: #1c1c1c;
 }
 /*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*/
 
 
 
-
-
-
-
-
-
-
-
-
-
-/*About*//*About*//*About*//*About*//*About*//*About*//*About*//*About*//*About*/
+/*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*/
 #about {
-  background-color: #eee;
+  background-color: #fff;
   padding: 50px;
 }
 .about.container {
@@ -186,23 +120,15 @@ header {
 .about-top p {
   font-size: 24px;
   line-height: 1.5;
-  color: #000;
+  color: #fff;
 }
-/*About*//*About*//*About*//*About*//*About*//*About*//*About*//*About*//*About*/
-
-
-
-
-
-
-
-
+/*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*/
 
 
 
 /*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*/
 #join {
-  background-color: #453d3d;
+  background-color: #fff;
   padding: 30px;
 }
 .join.container {
