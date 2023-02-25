@@ -229,11 +229,11 @@ header {
 	font-family: 'Outfit', sans-serif;
 	border-radius: 100px;
 	border: none;
-	padding-left: 5rem;
-	padding-right: 5rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-	height: 7rem;
+	height: 6rem;
 	width: 70rem;
 }
 .email {
@@ -243,10 +243,10 @@ header {
   font-family: 'Outfit', sans-serif;
   border-radius: 75px;
   border: none;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  height: 7rem;
-  width: 45rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  height: 6rem;
+  width: 50rem;
   margin-bottom: 2rem;
   }
   .password {
@@ -256,21 +256,22 @@ header {
   font-family: 'Outfit', sans-serif;
   border-radius: 75px;
   border: none;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  height: 7rem;
-  width: 45rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  height: 6rem;
+  width: 50rem;
   margin-top: 1rem;
   }
 .signup {
 	background-color: #ff5963;
-	font-size: 3rem;
+	font-size: 2rem;
 	color: #eee;
 	border: none;
 	font-family: 'Outfit', sans-serif;
 	border-radius: 80px;
-	height: 20rem;
-	width: 22rem;
+  padding-left: 2rem;
+	height: 17rem;
+	width: 17rem;
 	margin: 0.5rem;
 }
 
