@@ -4,7 +4,7 @@ html, body {
   padding: 0;
 }
 .container {
-  height: 76%;
+  height: 80%;
   display: start;
 }
 
@@ -19,6 +19,8 @@ html, body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-bottom: 0.5vh;
+  padding-top: 2.5vh;
 }
 .favorites {
   font-family: Outfit, sans-serif;
@@ -43,22 +45,22 @@ html, body {
   width: 18vh;
   margin: 2vh;
 }
-.login{
-  padding-bottom: 6vh;
-  padding-left: 98vh;
+.join{
+  padding-bottom: 9.5vh;
+  padding-left: 99vh;
 }
-.login button {
+.join button {
   font-family: Outfit, sans-serif;
   background-color: #39D2C0;
   color: #fff;
   border-radius: 2vh;
   border: none;
   padding: 2vh 5vh;
-  font-size: 2vh;
+  font-size: 2.2vh;
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
-.login button:hover {
+.join button:hover {
   background-color: #fff;
   color: #39D2C0;
 }
@@ -74,12 +76,9 @@ iframe {
   height: 100%;
   border: 0;
 }
-.searchcontainer{
-  background-color: #eee;
-}
 .startingpoint {
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 17%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -99,7 +98,7 @@ iframe {
 
 .destination {
   position: absolute;
-  top: 39%;
+  top: 44%;
   left: 17%;
   transform: translate(-50%, -50%);
   z-index: 1;
