@@ -26,11 +26,11 @@ html, body {
   font-family: Outfit, sans-serif;
   background-color: #fff;
   color: #000;
-  padding-left: 9vh;
+  padding-left: 8vh;
   padding-top: 3.5vh;
   border-radius: 2vh;
   height: 10vh;
-  width: 18vh;
+  width: 16vh;
   margin: 2vh;
   margin-left: 5vh;
 }
@@ -38,16 +38,32 @@ html, body {
   font-family: Outfit, sans-serif;
   background-color: #fff;
   color: #000;
-  padding-left: 9vh;
+  padding-left: 8vh;
   padding-top: 3.5vh;
   border-radius: 2vh;
-  height: 5rem;
-  width: 18vh;
+  height: 10vh;
+  width: 16vh;
   margin: 2vh;
 }
+.circle-icon {
+  color: #333;
+  padding-top: 2vh;
+  padding-bottom: 1.8vh;
+  padding-left: 2.8vh;
+  padding-right: 2.8vh;
+  margin-right: 2vh;
+  border-radius: 10vh;
+  background-color: #fff;
+  transition: background-color 0.2s ease-in-out;
+  align-items: center;
+  justify-content: center;
+}  
+.circle-icon:hover {
+  background-color: #e7e7e7; 
+}
 .join{
-  padding-bottom: 9.5vh;
-  padding-left: 99vh;
+  padding-bottom: 10vh;
+  padding-left: 96vh;
 }
 .join button {
   font-family: Outfit, sans-serif;

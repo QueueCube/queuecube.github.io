@@ -1,77 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css?family=Outfit" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/bb9c40474f.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="./style.css" />
-	<title>QueueCube</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QueueCube</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
 </head>
 
+
+
 <body>
-<header>
-	<h1 class="logo">QueueCube</h1>
-</header>
-	
-<main>
-	<div class="wrapper-homebuttons">
-		<a class="cta-1" href="#queue"><span class="text1">Queue</span></a>
-		<a class="cta-2" href="#vision"><span class="text2">Vision</span></a>
-		<a class="cta-3" href="#about"><span class="text3">About</span></a>
-		<a class="cta-4" href="#join"><span class="text4">Join</span></a>
-	</div>
-</main>
+  <div class="topstuff">
+    <div class="favorites">
+      <p>Favorites</p>
+    </div>
+  
+    <div class="goagain">
+      <p>Go Again</p>
+    </div>
+  
+    <div class="join">
+      <button>Join</button>
+    </div>
+  </div>
+  
 
+  <div class="container">
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.967410377096!2d-111.89998968453055!3d33.31966746342457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDE5JzEwLjgiTiAxMTHCsDUzJzUyLjEiVw!5e0!3m2!1sen!2sus!4v1516690469899&"
+    width="600"
+    height="450"
+    frameborder="0"
+    style="border:0"
+    allowfullscreen>
+  </iframe>
 
-
-<section id="vision">
-	<div class="vision container">  
-		<div class="vision-top">
-			<h1 class="section-title">Vision</h1>
-		</div>
-	</div>
-</section>
-
-
-
-<section id="about">
-	<div class="about container">  
-		<div class="about-top">
-			<h1 class="section-title">About</h1>
-		</div>
-	</div>
-</section>
-
-
-
-<section id="join">
-	<div class="join container">  
-		<div class="join-top">
-			<h1 class="join-title">Join</h1>
-			<div class="socials">
-				<a><i class="fa fa-google"></i> </a>
-				<a><i class="fa fa-instagram"></i> </a>
-				<a><i class="fa fa-twitter"></i> </a>
-				<a><i class="fa fa-apple"></i> </a>
-		</div>		
-			<div class="sign-up-form">
-				<form>
-					<input type="text" class="name" placeholder="Name">
-					<div class="joinrow">
-					<div class="joincolumn">
-						<input type="email" class="email" placeholder="Email">
-						<input type="password" class="password" placeholder="Password">
-					</div>
-						<button class="signup">Sign Up</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-</section>
+<div class="searchcontainer">
+  <div class="startingpoint">
+    <input type="text" placeholder="Starting Point">
+  </div>
+    <div class="destination">
+      <input type="text" placeholder="Destination">
+    </div>
+  </div>
+  </div>
 </body>
 </html>
