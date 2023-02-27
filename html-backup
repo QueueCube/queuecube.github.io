@@ -94,8 +94,8 @@ function initialize() {
     </div>     
   
     <div class="join">
-      <span class="circle-icon"><i class="fas fa-ellipsis-v"></i></span>
-      <button>Join</button>
+      <signin>Sign In</signin>
+      <signup>Sign Up</signup>
     </div>
   </div>
 <div class="location">
