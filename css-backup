@@ -39,6 +39,7 @@ html, body {
   padding: 0;
   font-size: 1.7vh;
 }
+
 .goagain {
   font-family: Outfit, sans-serif;
   display: flex;
@@ -55,6 +56,7 @@ html, body {
   padding: 0;
   font-size: 1.7vh;
 }
+
 .add-icon {
   display: flex;
   justify-content: center;
@@ -66,13 +68,10 @@ html, body {
   width: 22vh;
   margin: 2vh;
 }
-.add-icon i {
-  padding: 0;
-}
 .circle-icon {
   color: #333;
-  padding-top: 1.7vh;
-  padding-bottom: 1.3vh;
+  padding-top: 1.4vh;
+  padding-bottom: 1.1vh;
   padding-left: 2.3vh;
   padding-right: 2.3vh;
   margin-right: 1vh;
@@ -110,14 +109,9 @@ html, body {
 
 
 /*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*/
-iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
 .location {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 20%;
   transform: translate(-50%, -50%);
   z-index: 1;
