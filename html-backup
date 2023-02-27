@@ -7,44 +7,51 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0RfELl-8CZ73qQoCOoRRS3rGzGEPEelU&libraries=places"></script>
+  <script>
+    function initAutocomplete() {
+      var input = document.getElementById('location-input');
+      var autocomplete = new google.maps.places.Autocomplete(input);
+    }
+    google.maps.event.addDomListener(window, 'load', initAutocomplete);
+  </script>
 </head>
-
-
 
 <body>
   <div class="topstuff">
     <div class="favorites">
-      <p>Favorites</p>
+      <p class="favorites-text">Favorites</p>
     </div>
-  
     <div class="goagain">
-      <p>Go Again</p>
+      <p class="goagain-text">Go Again</p>
     </div>
+    <div class="add">
+      <span class="add-icon"><i class="fas fa-plus"></i></span>
+    </div>     
   
     <div class="join">
+      <span class="circle-icon"><i class="fas fa-ellipsis-v"></i></span>
       <button>Join</button>
     </div>
   </div>
   
-
   <div class="container">
     <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.967410377096!2d-111.89998968453055!3d33.31966746342457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDE5JzEwLjgiTiAxMTHCsDUzJzUyLjEiVw!5e0!3m2!1sen!2sus!4v1516690469899&"
-    width="600"
-    height="450"
-    frameborder="0"
-    style="border:0"
-    allowfullscreen>
-  </iframe>
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.967410377096!2d-111.89998968453055!3d33.31966746342457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDE5JzEwLjgiTiAxMTHCsDUzJzUyLjEiVw!5e0!3m2!1sen!2sus!4v1516690469899&"
+      width="600"
+      height="450"
+      frameborder="0"
+      style="border:0"
+      allowfullscreen>
+    </iframe>
 
-<div class="searchcontainer">
-  <div class="startingpoint">
-    <input type="text" placeholder="Starting Point">
-  </div>
-    <div class="destination">
-      <input type="text" placeholder="Destination">
+    <div class="searchcontainer">
+      <div class="location">
+        <input type="text" id="location-input" placeholder="Location?">
+      </div>
     </div>
   </div>
-  </div>
+
 </body>
 </html>
