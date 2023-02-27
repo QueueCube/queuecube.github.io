@@ -4,7 +4,7 @@ html, body {
   padding: 0;
 }
 .container {
-  height: 80%;
+  height: 79%;
   display: start;
 }
 
@@ -20,50 +20,73 @@ html, body {
   justify-content: flex-start;
   align-items: center;
   padding-bottom: 0.5vh;
-  padding-top: 2.5vh;
+  padding-top: 2vh;
 }
 .favorites {
   font-family: Outfit, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   color: #000;
-  padding-left: 8vh;
-  padding-top: 3.5vh;
   border-radius: 2vh;
-  height: 10vh;
-  width: 16vh;
+  height: 13vh;
+  width: 22vh;
   margin: 2vh;
-  margin-left: 5vh;
+  margin-left: 6vh;
+}
+.favorites-text {
+  padding: 0;
+  font-size: 1.7vh;
 }
 .goagain {
   font-family: Outfit, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   color: #000;
-  padding-left: 8vh;
-  padding-top: 3.5vh;
   border-radius: 2vh;
-  height: 10vh;
-  width: 16vh;
+  height: 13vh;
+  width: 22vh;
   margin: 2vh;
+}
+.goagain-text {
+  padding: 0;
+  font-size: 1.7vh;
+}
+.add-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 2vh;
+  height: 13vh;
+  width: 22vh;
+  margin: 2vh;
+}
+.add-icon i {
+  padding: 0;
 }
 .circle-icon {
   color: #333;
-  padding-top: 2vh;
-  padding-bottom: 1.8vh;
-  padding-left: 2.8vh;
-  padding-right: 2.8vh;
+  padding-top: 1.7vh;
+  padding-bottom: 1.3vh;
+  padding-left: 2.3vh;
+  padding-right: 2.3vh;
   margin-right: 1vh;
   border-radius: 10vh;
   background-color: #fff;
   transition: background-color 0.2s ease-in-out;
-  align-items: center;
-  justify-content: center;
+
 }  
 .circle-icon:hover {
-  background-color: #e7e7e7; 
+  background-color: #f2f2f2; 
 }
 .join{
   padding-bottom: 10vh;
-  padding-left: 96vh;
+  padding-left: 79vh;
 }
 .join button {
   font-family: Outfit, sans-serif;
@@ -71,14 +94,14 @@ html, body {
   color: #fff;
   border-radius: 2vh;
   border: none;
-  padding: 2vh 5vh;
-  font-size: 2.2vh;
+  padding: 2vh 3.5vh;
+  font-size: 1.7vh;
   cursor: pointer;
   transition: background-color 0.5s ease;
+  box-shadow: 0 0 1vh rgba(0.2,0.2,0.2,0.2);
 }
 .join button:hover {
-  background-color: #fff;
-  color: #39D2C0;
+  background-color: #2dbaa9;
 }
 /*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
 
@@ -92,39 +115,20 @@ iframe {
   height: 100%;
   border: 0;
 }
-.startingpoint {
+.location {
   position: absolute;
   top: 35%;
-  left: 17%;
+  left: 20%;
   transform: translate(-50%, -50%);
   z-index: 1;
   background-color: #fff;
   padding: 1.5vh;
   border-radius: 2vh;
-  box-shadow: 0 0 1vh rgba(0,0,0,0.1);
+  box-shadow: 0 0 1vh rgba(0,0,0,0.3);
 }
-.startingpoint input[type="text"] {
+.location input[type="text"] {
   font-family: Outfit, sans-serif;
-  width: 40vh;
-  padding: 1vh;
-  padding-left: 2vh;
-  border: none;
-  outline: none;
-}
-
-.destination {
-  position: absolute;
-  top: 44%;
-  left: 17%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  background-color: #fff;
-  padding: 1.5vh;
-  border-radius: 2vh;
-  box-shadow: 0 0 1vh rgba(0,0,0,0.1);
-}
-.destination input[type="text"] {
-  font-family: Outfit, sans-serif;
+  font-size: 2vh;
   width: 40vh;
   padding: 1vh;
   padding-left: 2vh;
