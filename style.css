@@ -145,12 +145,12 @@ button {
   width: 22vh;
   margin: 2vh;
   margin-left: 6vh;
+  text-decoration: none;
 }
 .about-text {
   padding: 0;
   font-size: 1.9vh;
 }
-
 .vision {
   font-family: Outfit, sans-serif;
   display: flex;
@@ -162,12 +162,12 @@ button {
   height: 13vh;
   width: 22vh;
   margin: 2vh;
+  text-decoration: none;
 }
 .vision-text {
   padding: 0;
   font-size: 1.9vh;
 }
-
 .partner {
   font-family: Outfit, sans-serif;
   display: flex;
@@ -179,15 +179,15 @@ button {
   height: 13vh;
   width: 22vh;
   margin: 2vh;
+  text-decoration: none;
 }
 .partner-text {
   padding: 0;
   font-size: 1.9vh;
 }
-
 .join{
-  padding-bottom: 5vh;
-  padding-left: 80vh;
+  padding-bottom: 10vh;
+  padding-left: 84vh;
 }
 .join signin {
   font-family: Outfit, sans-serif;
