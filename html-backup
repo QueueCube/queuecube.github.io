@@ -83,15 +83,15 @@ function initialize() {
 
 <body>
   <div class="topstuff">
-    <div class="favorites">
-      <p class="favorites-text">Favorites</p>
+    <div class="about">
+      <p class="about-text">About</p>
     </div>
-    <div class="goagain">
-      <p class="goagain-text">Go Again</p>
+    <div class="vision">
+      <p class="vision-text">Vision</p>
     </div>
-    <div class="add">
-      <span class="add-icon"><i class="fas fa-plus"></i></span>
-    </div>     
+    <div class="partner">
+      <p class="partner-text">Partner</p>
+    </div>
   
     <div class="join">
       <signin>Sign In</signin>

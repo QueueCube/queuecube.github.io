@@ -22,7 +22,7 @@ html, body {
   padding-bottom: 0.5vh;
   padding-top: 2vh;
 }
-.favorites {
+.about {
   font-family: Outfit, sans-serif;
   display: flex;
   justify-content: center;
@@ -35,12 +35,12 @@ html, body {
   margin: 2vh;
   margin-left: 6vh;
 }
-.favorites-text {
+.about-text {
   padding: 0;
   font-size: 1.9vh;
 }
 
-.goagain {
+.vision {
   font-family: Outfit, sans-serif;
   display: flex;
   justify-content: center;
@@ -52,11 +52,13 @@ html, body {
   width: 22vh;
   margin: 2vh;
 }
-.goagain-text {
+.vision-text {
   padding: 0;
   font-size: 1.9vh;
 }
-.add-icon {
+
+.partner {
+  font-family: Outfit, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,16 +69,24 @@ html, body {
   width: 22vh;
   margin: 2vh;
 }
+.partner-text {
+  padding: 0;
+  font-size: 1.9vh;
+}
+.icon {
+  margin-left: 2vh;
+}
+
 .join{
   padding-bottom: 7vh;
-  padding-left: 68vh;
+  padding-left: 69vh;
 }
 .join signin {
   font-family: Outfit, sans-serif;
   color: #000;
   border-radius: 6vh;
   border: none;
-  padding: 2vh 3.5vh;
+  padding: 1.5vh 3vh;
   font-size: 2vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -90,7 +100,7 @@ html, body {
   color: #fff;
   border-radius: 6vh;
   border: none;
-  padding: 2vh 3.5vh;
+  padding: 1.5vh 3vh;
   font-size: 2vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
