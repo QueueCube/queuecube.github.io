@@ -151,7 +151,7 @@ button {
   padding: 0;
   font-size: 1.9vh;
 }
-.vision {
+.app {
   font-family: Outfit, sans-serif;
   display: flex;
   justify-content: center;
@@ -164,7 +164,7 @@ button {
   margin: 2vh;
   text-decoration: none;
 }
-.vision-text {
+.app-text {
   padding: 0;
   font-size: 1.9vh;
 }

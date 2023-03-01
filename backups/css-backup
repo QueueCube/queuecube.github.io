@@ -145,6 +145,7 @@ button {
   width: 22vh;
   margin: 2vh;
   margin-left: 6vh;
+  text-decoration: none;
 }
 .about-text {
   padding: 0;
@@ -161,6 +162,7 @@ button {
   height: 13vh;
   width: 22vh;
   margin: 2vh;
+  text-decoration: none;
 }
 .vision-text {
   padding: 0;
@@ -177,6 +179,7 @@ button {
   height: 13vh;
   width: 22vh;
   margin: 2vh;
+  text-decoration: none;
 }
 .partner-text {
   padding: 0;
