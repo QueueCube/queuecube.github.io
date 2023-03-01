@@ -232,8 +232,8 @@ button {
 /*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*/
 .location {
   position: absolute;
-  top: 27%;
-  left: 3.5%;
+  top: 30%;
+  left: 6%;
   z-index: 1;
   background-color: #fff;
   padding: 1.5vh;
