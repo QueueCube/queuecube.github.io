@@ -49,9 +49,12 @@ body
 .liORsi {
   align-items: center;
   align-self: center;
+  background-color: #f4f4f4;
+  border-radius: 5vh;
+  height: 5vh;
   width: 30vh;
-  padding-top: 1vh;
-  padding-bottom: 8vh;
+  margin-top: 1vh;
+  margin-bottom: 8vh;
 }
 .li-btn {
   display: inline-block;
@@ -187,7 +190,7 @@ button {
 }
 .join{
   padding-bottom: 10vh;
-  padding-left: 84vh;
+  padding-left: 78vh;
 }
 .join signin {
   font-family: Outfit, sans-serif;
