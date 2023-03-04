@@ -15,9 +15,6 @@ body
 }
 
 
-
-
-
 /*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*/
 .overlay {
   position: fixed;
@@ -146,12 +143,6 @@ button {
 
 
 
-
-
-
-
-
-
 /*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
 .topstuff {
   background-color: #eee;
@@ -247,8 +238,6 @@ button {
   background-color: #2dc8b6;
 }
 /*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
-
-
 
 
 
