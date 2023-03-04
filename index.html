@@ -150,20 +150,25 @@ function initialize() {
         </div>
       </form>
   </div>
-  
-  <script>
-    let popup = document.getElementById("sign-up-form");
-    function openPopup(){
-      popup.classList.add("open-popup");
-    }
-    function closePopup(){
-      popup.classList.remove("open-popup");
-    }
-    function outsideClickHandler(event) {
+<script>
+  let popup = document.getElementById("sign-up-form");
+  let overlay = document.getElementById("overlay");
+
+  function openPopup() {
+    popup.classList.add("open-popup");
+    overlay.classList.add("overlay-show");
+  }
+
+  function closePopup() {
+    popup.classList.remove("open-popup");
+    overlay.classList.remove("overlay-show");
+  }
+  function outsideClickHandler(event) {
     if (!popup.contains(event.target)) {
       closePopup();
-    }}
-  </script>
+    }
+  }
+</script>
 </div>
 </div>
 <!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN-->

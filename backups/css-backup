@@ -19,12 +19,29 @@ body
 
 
 /*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+}
+
+.open-popup {
+  display: block;
+}
+
+.overlay-show {
+  display: block;
+}
 .sign-up-form {
   font-family: Outfit, sans-serif;
   font-size: 2vh;
   width: 60vh;
   height: 70vh;
-  box-shadow: 0 0 1vh 0 rgba(0,0,0,0.5);
   background: #fff;
   padding: 3vh;
   border-radius: 3vh;
@@ -34,21 +51,26 @@ body
   text-align: center;
   visibility: hidden;
   transition: transform 0.5s;
-  z-index: 1;
+  z-index: 2;
   display: flex; 
   flex-direction: column;
 }
+
 .sign-up-form > div {
   display: flex;
   justify-content: space-around;
 }
+
 .open-popup {
   visibility: visible;
   top: 55%;
   transform: translate(-50%, -50%) scale(1);
 }
+
 .liORsi {
   align-items: center;
+
+
   align-self: center;
   background-color: #f4f4f4;
   border-radius: 5vh;
@@ -88,14 +110,13 @@ body
 .fab {
   color: #eee;
   background-color: #333;
-  border-radius: 100vh;
+  border-radius: 50%;
   font-size: 2.5vh;
   width: 8vh;
   height: 5vh;
   margin: 3vh;
   padding-top: 2.5vh;
-  margin-top: 3vh;
-  margin-bottom: 2vh;
+  margin-top: 5vh;
   cursor: pointer;
 }
 .input-box {
@@ -104,8 +125,9 @@ body
   font-size: 2vh;
   border-radius: 2vh;
   padding: 2vh;
-  margin: 1vh 0;
+  margin-top: 2vh;
   width: 90%;
+  height: auto;
   border: none;
   outline: none;
 }
