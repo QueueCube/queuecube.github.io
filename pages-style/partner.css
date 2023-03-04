@@ -1,10 +1,19 @@
-
-header {
-  display: flex;
-  justify-content: center;
-  color: #000;
-  padding: 50px 0;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
+.container {
+  height: 77.5%;
+  display: start;
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: Outfit, sans-serif;
+}
+
 
 
 .wrapper-homebuttons {
@@ -98,12 +107,6 @@ header {
   line-height: 1.5;
   color: #000;
 }
-
-
-
-
-
-
 
 /*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*//*Vision*/
 #vision {
