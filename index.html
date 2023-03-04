@@ -33,57 +33,45 @@ function initialize() {
     streetViewControl: false,
     fullscreenControl: false,
     zoomControl: false,
-})
-  var input = document.getElementById('searchTextField');
-
-  let autocomplete = new google.maps.places.Autocomplete(input)
-
-  autocomplete.bindTo('bounds', map)
-
-  let marker = new google.maps.Marker({
-      map: map
   })
-
+  var input = document.getElementById('searchTextField');
+  let autocomplete = new google.maps.places.Autocomplete(input)
+  autocomplete.bindTo('bounds', map)
+  let marker = new google.maps.Marker({
+    map: map
+  })
   google.maps.event.addListener(autocomplete, 'place_changed', () => {
-      let place = autocomplete.getPlace()
-      console.log(place)
-      console.log(place.photos[0].getUrl())
-
-      if (place.geometry.viewport) {
-          map.fitBounds(place.geometry.viewport)
-      } else {
-          map.setCenter(place.geometry.location)
-          map.setZoom(30)
-      }
+    let place = autocomplete.getPlace()
+    console.log(place)
+    console.log(place.photos[0].getUrl())
+    if (place.geometry.viewport) {
+      map.fitBounds(place.geometry.viewport)
+    } else {
+      map.setCenter(place.geometry.location)
+      map.setZoom(30)
+    }
       marker.setPosition(place.geometry.location)
       marker.setVisible(true)
-
       let request = {
-          location: place.geometry.location,
-          radius: '500',
-          type: ['atm']
+        location: place.geometry.location,
+        radius: '500',
+        type: ['atm']
       }
-
     service = new google.maps.places.PlacesService(map)
     service.nearbySearch(request, callback)
-
 });
 }
-
-
-  function createMarker(place) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: place.geometry.location
-      });
-
-      google.maps.event.addListener(marker, 'click', function () {
-          alert(place.name);
-          window.open(place.photos[0].getUrl(), "_blank");
-      });
+function createMarker(place) {
+  var marker = new google.maps.Marker({
+    map: map,
+    position: place.geometry.location
+  });
+  google.maps.event.addListener(marker, 'click', function () {
+    alert(place.name);
+    window.open(place.photos[0].getUrl(), "_blank");
+  });
   }
-
-    google.maps.event.addDomListener(window, 'load', initialize)
+  google.maps.event.addDomListener(window, 'load', initialize)
 </script>
 <!--MAP--><!--MAP--><!--MAP--><!--MAP--><!--MAP--><!--MAP--><!--MAP--><!--MAP--><!--MAP--><!--MAP-->
 
