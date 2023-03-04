@@ -131,25 +131,25 @@ function initialize() {
 
 
 <!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN-->
-  <div class="join">
-    <signin type="signin" onclick="openPopup()">Sign In</signin>
-    <signup type="signup" onclick="openPopup()">Sign Up</signup>
-    <div class="sign-up-form" id="sign-up-form"> 
-      <div class="liORsi">
-        <button type="button" class="li-btn">Login</button>
-        <button type="button" class="su-btn">Sign Up</button>
+<div class="join">
+  <signin type="log" onclick="openPopup()">Log In</signin>
+  <signup type="signup" onclick="openPopup()">Sign Up</signup>
+  <div class="sign-up-form" id="sign-up-form"> 
+    <div class="liORsi">
+      <button type="button" class="li-btn">Login</button>
+      <button type="button" class="su-btn">Sign Up</button>
+    </div>
+    <form>
+      <input type="email" class="input-box" placeholder="Email">
+      <input type="password" class="input-box" placeholder="Password">
+      <p><button type="button" class="login-btn">Login</button></p>
+      <hr>
+      <div>
+        <i class="fab fa-google"></i> 
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook-f"></i>
       </div>
-      <form>
-        <input type="email" class="input-box" placeholder="Email">
-        <input type="password" class="input-box" placeholder="Password">
-        <p><button type="button" class="login-btn">Login</button></p>
-        <hr>
-        <div>
-          <i class="fab fa-google"></i> 
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-facebook-f"></i>
-        </div>
-      </form>
+    </form>
   </div>
 <script>
   let popup = document.getElementById("sign-up-form");
