@@ -259,69 +259,6 @@ button {
 
 
 /*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*/
-
-@media (prefers-color-scheme: dark) {
-  .topstuff {
-    background-color: #333;
-  }
-  
-  .how {
-    background-color: #5c5c5c;
-  }
-  .how-text {
-    color: #fff;
-  }
-  .about {
-    background-color: #5c5c5c;
-  }
-  .about-text {
-    color: #fff;
-  }
-  .partner {
-    background-color: #5c5c5c;
-  }
-  .partner-text {
-    color: #fff;
-  }
-
-  .topjoin signin {
-    color: #fff;
-    transition: background-color 0.3s ease;
-  }
-  .topjoin signin:hover {
-    background-color: #505050;
-  }
-
-
-  .location {
-    background-color: #505050;
-  }
-  .location input {
-    background-color: #505050;
-    color: #fff;
-  }
-
-  .sign-up-form {
-    background-color: #333;
-  }
-  .liORsi {
-    background-color: #505050;
-  }
-  .li-btn {
-    background-color: #000;
-  }
-  .su-btn {
-    color: #fff;
-  }
-  .fab {
-    background-color: #000;
-  }
-  .input-box {
-    background-color: #505050;
-    color: #fff;
-  }
-}
-
 @media (max-width: 767px) {
   .topstuff{
     height: 10%;
