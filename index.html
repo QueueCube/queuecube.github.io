@@ -35,7 +35,7 @@ function initialize() {
     zoomControl: false,
   })
   var input = document.getElementById('searchTextField');
-  let autocomplete = new google.maps.places.Autocomplete(input)
+  let autocomplete = new google.maps.places.Autocomplete(input, { types: ['address'] });
   autocomplete.bindTo('bounds', map)
   let marker = new google.maps.Marker({
     map: map

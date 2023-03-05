@@ -2,18 +2,12 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: Outfit, sans-serif;
 }
 .container {
   height: 77.5%;
   display: start;
 }
-body
-{
-  margin: 0;
-  padding: 0;
-  font-family: Outfit, sans-serif;
-}
-
 
 /*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*/
 .overlay {
@@ -203,8 +197,8 @@ button {
 }
   
 .topjoin{
-  padding-bottom: 10vh;
-  padding-left: 62vh;
+  padding-bottom: 12vh;
+  padding-left: 65vh;
 }
 .topjoin signin {
   font-family: Outfit, sans-serif;
@@ -259,11 +253,18 @@ button {
 /*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*/
 
 
+
+
+
+
+
+/*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*/
+
 @media (prefers-color-scheme: dark) {
   .topstuff {
     background-color: #333;
-
   }
+  
   .how {
     background-color: #5c5c5c;
   }
@@ -282,7 +283,7 @@ button {
   .partner-text {
     color: #fff;
   }
-  
+
   .topjoin signin {
     color: #fff;
     transition: background-color 0.3s ease;
@@ -320,3 +321,76 @@ button {
     color: #fff;
   }
 }
+
+@media (max-width: 767px) {
+  .topstuff{
+    height: 12%;
+  }
+  .topjoin{
+    padding-bottom: 10vh;
+    padding-left: 1vh;
+  }
+  .how {
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vh;
+    height: 8vh;
+    width: 44vh;
+    margin: 1vh;
+  }
+  .how-text {
+    padding: 0;
+    font-size: 1.9vh;
+  }
+  .partner {
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vh;
+    height: 8vh;
+    width: 30vh;
+    margin: 1vh;
+  }
+  .partner-text {
+    padding: 0;
+    font-size: 1.9vh;
+  }
+  .about {
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vh;
+    height: 8vh;
+    width: 30vh;
+    margin: 1vh;
+    }
+  .about-text {
+    padding: 0;
+    font-size: 1.9vh;
+  }
+  .container {
+    height: 85.5%;
+  }
+
+  .location {
+    padding: 1vh;
+    border-radius: 2vh;
+    align-self: center;
+    width: 85%;
+  }
+  .location input[type="text"] {
+    width: 80%;
+    padding: 1vh;
+    padding-left: 2vh;
+    border: none;
+    outline: none;
+  }
+  .sign-up-form {
+    width: 40vh;
+    height: 65vh;
+  }
+  .fab {
+    margin: 1vh;
+    margin-top: 5vh;
+  }
+}
+
+/*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*/ 
