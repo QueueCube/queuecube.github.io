@@ -324,52 +324,48 @@ button {
 
 @media (max-width: 767px) {
   .topstuff{
-    height: 12%;
+    height: 10%;
   }
   .topjoin{
-    padding-bottom: 10vh;
+    padding-bottom: 10px;
     padding-left: 1vh;
   }
+  .topjoin signin {
+    padding: 1vh 1vh;
+    font-size: 12px;
+  }
+  .topjoin signup {
+    padding: 1vh 1vh;
+    font-size: 12px;
+  }
   .how {
-    justify-content: center;
-    align-items: center;
-    border-radius: 2vh;
-    height: 8vh;
-    width: 44vh;
-    margin: 1vh;
+    height: 6vh;
+    width: 11vh;
+    margin: 0.5vh;
+    margin-left: 10px;
   }
   .how-text {
-    padding: 0;
-    font-size: 1.9vh;
+    font-size: 12px;
   }
   .partner {
-    justify-content: center;
-    align-items: center;
-    border-radius: 2vh;
-    height: 8vh;
-    width: 30vh;
-    margin: 1vh;
+    height: 6vh;
+    width: 8vh;
+    margin: 0.5vh;
   }
-  .partner-text {
-    padding: 0;
-    font-size: 1.9vh;
+  .partner-text{
+     font-size: 12px;
   }
   .about {
-    justify-content: center;
-    align-items: center;
-    border-radius: 2vh;
-    height: 8vh;
-    width: 30vh;
-    margin: 1vh;
+    height: 6vh;
+    width: 8vh;
+    margin: 0.5vh;
     }
-  .about-text {
-    padding: 0;
-    font-size: 1.9vh;
+  .about-text{
+     font-size: 12px;
   }
   .container {
-    height: 85.5%;
+    height: 87.5%;
   }
-
   .location {
     padding: 1vh;
     border-radius: 2vh;
@@ -377,7 +373,7 @@ button {
     width: 85%;
   }
   .location input[type="text"] {
-    width: 80%;
+    width: 90%;
     padding: 1vh;
     padding-left: 2vh;
     border: none;
