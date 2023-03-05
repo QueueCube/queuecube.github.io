@@ -12,9 +12,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0RfELl-8CZ73qQoCOoRRS3rGzGEPEelU&libraries=places">
-  </script>
+  <script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0RfELl-8CZ73qQoCOoRRS3rGzGEPEelU&callback=initMap">
+</script>
 </head>
 
 
@@ -151,5 +151,14 @@ function createMarker(place) {
   <div id="map" class="container">
 </div>
 <!--SEARCHLOCATION--><!--SEARCHLOCATION--><!--SEARCHLOCATION--><!--SEARCHLOCATION--><!--SEARCHLOCATION-->
+
+
+
+<script>
+  const matchResult = window.matchMedia("(prefers-color-scheme: dark)");
+
+  console.log(matchResult.matches);
+</script>
+
 </body>
 </html>
