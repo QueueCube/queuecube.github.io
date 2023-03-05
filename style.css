@@ -26,11 +26,9 @@ body
   z-index: 1;
   display: none;
 }
-
 .open-popup {
   display: block;
 }
-
 .overlay-show {
   display: block;
 }
@@ -295,10 +293,30 @@ button {
 
 
   .location {
-    background-color: #333;
+    background-color: #505050;
   }
   .location input {
+    background-color: #505050;
+    color: #fff;
+  }
+
+  .sign-up-form {
     background-color: #333;
+  }
+  .liORsi {
+    background-color: #505050;
+  }
+  .li-btn {
+    background-color: #000;
+  }
+  .su-btn {
+    color: #fff;
+  }
+  .fab {
+    background-color: #000;
+  }
+  .input-box {
+    background-color: #505050;
     color: #fff;
   }
 }
