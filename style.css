@@ -324,11 +324,11 @@ button {
 
 @media (max-width: 767px) {
   .topstuff{
-    height: 9%;
+    height: 10%;
   }
   .topjoin{
     padding-bottom: 10px;
-    padding-left: 1vh;
+    padding-left: 0vh;
   }
   .topjoin signin {
     padding: 1vh 1vh;
@@ -339,8 +339,8 @@ button {
     font-size: 12px;
   }
   .how {
-    height: 6vh;
-    width: 11vh;
+    height: 7vh;
+    width: 11.5vh;
     margin: 0.5vh;
     margin-left: 10px;
   }
@@ -348,30 +348,30 @@ button {
     font-size: 13px;
   }
   .partner {
-    height: 6vh;
-    width: 8vh;
+    height: 7vh;
+    width: 9vh;
     margin: 0.5vh;
   }
   .partner-text{
      font-size: 13px;
   }
   .about {
-    height: 6vh;
-    width: 8vh;
+    height: 7vh;
+    width: 9vh;
     margin: 0.5vh;
     }
   .about-text{
      font-size: 13px;
   }
   .container {
-    height: 88.5%;
+    height: 87.5%;
   }
   .location {
     padding: 1vh;
     border-radius: 2vh;
     align-self: center;
     width: 89%;
-    top: 20%;
+    top: 17%;
     left: 3%;
   }
   .location input[type="text"] {
