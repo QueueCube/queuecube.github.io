@@ -206,7 +206,7 @@ button {
   border-radius: 6vh;
   border: none;
   padding: 1.5vh 3vh;
-  font-size: 2vh;
+  font-size: 1.9vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -220,7 +220,7 @@ button {
   border-radius: 6vh;
   border: none;
   padding: 1.5vh 3vh;
-  font-size: 2vh;
+  font-size: 1.9vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
