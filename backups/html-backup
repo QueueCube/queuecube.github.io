@@ -35,7 +35,7 @@ function initialize() {
     zoomControl: false,
   })
   var input = document.getElementById('searchTextField');
-  let autocomplete = new google.maps.places.Autocomplete(input)
+  let autocomplete = new google.maps.places.Autocomplete(input);
   autocomplete.bindTo('bounds', map)
   let marker = new google.maps.Marker({
     map: map
@@ -77,6 +77,7 @@ function createMarker(place) {
 
 
 
+
 <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
 <body>
   <div class="topstuff">
@@ -99,7 +100,7 @@ function createMarker(place) {
 
 
 <!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN-->
-<div class="join">
+<div class="topjoin">
   <signin type="log" onclick="openPopup()">Log In</signin>
   <signup type="signup" onclick="openPopup()">Sign Up</signup>
   <div class="sign-up-form" id="sign-up-form"> 
@@ -151,5 +152,14 @@ function createMarker(place) {
   <div id="map" class="container">
 </div>
 <!--SEARCHLOCATION--><!--SEARCHLOCATION--><!--SEARCHLOCATION--><!--SEARCHLOCATION--><!--SEARCHLOCATION-->
+
+
+
+<script>
+  const matchResult = window.matchMedia("(prefers-color-scheme: dark)");
+
+  console.log(matchResult.matches);
+</script>
+
 </body>
 </html>
