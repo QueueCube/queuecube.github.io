@@ -324,7 +324,7 @@ button {
 
 @media (max-width: 767px) {
   .topstuff{
-    height: 10%;
+    height: 9%;
   }
   .topjoin{
     padding-bottom: 10px;
@@ -345,7 +345,7 @@ button {
     margin-left: 10px;
   }
   .how-text {
-    font-size: 12px;
+    font-size: 13px;
   }
   .partner {
     height: 6vh;
@@ -353,7 +353,7 @@ button {
     margin: 0.5vh;
   }
   .partner-text{
-     font-size: 12px;
+     font-size: 13px;
   }
   .about {
     height: 6vh;
@@ -361,16 +361,18 @@ button {
     margin: 0.5vh;
     }
   .about-text{
-     font-size: 12px;
+     font-size: 13px;
   }
   .container {
-    height: 87.5%;
+    height: 88.5%;
   }
   .location {
     padding: 1vh;
     border-radius: 2vh;
     align-self: center;
-    width: 85%;
+    width: 89%;
+    top: 20%;
+    left: 3%;
   }
   .location input[type="text"] {
     width: 90%;
