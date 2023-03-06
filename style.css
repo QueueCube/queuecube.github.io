@@ -198,13 +198,13 @@ button {
   
 .topjoin{
   padding-bottom: 8vh;
-  padding-left: 33%;
+  padding-left: 34.5%;
 }
 .topjoin tryapp {
   color: #000;
   border-radius: 6vh;
   border: none;
-  padding: 1.5vh 3vh;
+  padding: 1.5vh 2vh;
   font-size: 1.9vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -244,8 +244,8 @@ button {
 /*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*/
 .location {
   position: absolute;
-  top: 25%;
-  left: 5.5%;
+  top: 27%;
+  left: 6%;
   z-index: 1;
   background-color: #fff;
   padding: 1.5vh;
@@ -259,6 +259,20 @@ button {
   padding-left: 2vh;
   border: none;
   outline: none;
+}
+#arrow {
+  position: absolute;
+  font-size: 2rem;
+  bottom: 2rem;
+  left: 50%;
+  color: #4e4e4e;
+  transform: translateX(-50%);
+  background-color: #fff;
+  width: 3.9vh;
+  height: 5vh;
+  border-radius: 50%;
+  padding-left: 1.4vh;
+  padding-top: 0.3vh;
 }
 /*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*/
 
