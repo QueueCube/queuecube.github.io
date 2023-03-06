@@ -154,7 +154,7 @@ button {
   height: 11vh;
   width: 20vh;
   margin: 2vh;
-  margin-left: 6vh;
+  margin-left: 4vh;
   text-decoration: none;
 }
 .how-text {
@@ -200,21 +200,19 @@ button {
   padding-bottom: 8vh;
   padding-left: 33%;
 }
-.topjoin app {
-  font-family: Outfit, sans-serif;
+.topjoin tryapp {
   color: #000;
   border-radius: 6vh;
   border: none;
-  padding: 1.5vh 2vh;
+  padding: 1.5vh 3vh;
   font-size: 1.9vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.topjoin app:hover {
+.topjoin tryapp:hover {
   background-color: #e8e8e8;
 }
 .topjoin signin {
-  font-family: Outfit, sans-serif;
   color: #000;
   border-radius: 6vh;
   border: none;
@@ -227,7 +225,6 @@ button {
   background-color: #e8e8e8;
 }
 .topjoin signup {
-  font-family: Outfit, sans-serif;
   background-color: #2dc8b6;
   color: #fff;
   border-radius: 6vh;
