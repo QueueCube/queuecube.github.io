@@ -3,8 +3,8 @@
 	style="
 		font-family: Outfit, sans-serif;height: 100%;
 		margin: 0;
-		padding: 0;"
-	>
+		padding: 0;
+		scroll-behavior: smooth;">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QueueCube | Partner</title>
@@ -14,160 +14,229 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
-<body style="margin: 0;
-padding: 0;">
-	<header>
-
+<body 
+	style="
+		margin: 0;
+		padding: 0;">
+	<header 
+		style="  
+			display: flex;
+			justify-content: center;
+			color: #333;
+			padding: 50px 0;">
+		<h1 class="logo" 
+			style="
+				font-size: 4rem;
+				font-weight: bold;
+				color: #333;
+				margin: 20px 0;
+				text-align: center;
+				justify-content: center;
+				padding: 6rem;">
+			Become a Partner</h1>
 	</header>
-		
-	<main>
-		<div class="wrapper-homebuttons" 
-			style="
-				height: 65vh;
-				display: grid;
-				grid-template-columns: repeat(4, 1fr);
-				grid-auto-rows: 200px;"
-			>
-			<div class="cta-1" 
-				style="
-					padding: 30px 35px;
-					border-radius: 30px;
-					cursor: pointer;
-					margin: 1rem;
-					font-size: 30px;
-					text-decoration: none;
-					background-color: #39d2c0;
-					grid-column-start: 1;
-					grid-column-end: 3;
-					grid-row-start: 1;
-					grid-row-end: 3;"
-				><a href="#vision"  style="color: #ffff">Vision</a> </div>
 
-			<div class="cta-2" 
-				style="
-					padding: 30px 35px;
-					border-radius: 30px;
-					cursor: pointer;
-					margin: 1rem;
-					font-size: 30px;
-					text-decoration: none;
-					background-color: #eee;
-					color: #000;
-					grid-row-start: 1;
-					grid-row-end: 2;
-					grid-column-start: 3;
-  				grid-column-end: 4;"
-				><a href="#queue" style="color: #000;">Queue</a> </div>
-
-			<div class="cta-3" 
-				style="
-					padding: 30px 35px;
-					border-radius: 30px;
-					cursor: pointer;
-					margin: 1rem;
-					font-size: 30px;
-					text-decoration: none;
-					grid-column-start: 4;
-					grid-column-end: 5;
-					background-color: #eee;
-					color: #000;
-					grid-row-start: 1;
-					grid-row-end: 2;"
-				><a href="#marketing" style="color: #000;">Marketing</a> </div>
-
-			<div class="cta-4" 
-				style="
-					padding: 30px 35px;
-					border-radius: 30px;
-					cursor: pointer;
-					margin: 1rem;
-					font-size: 30px;
-					text-decoration: none;
-					background-color: #ff5963;
-					color: #eee;
-					grid-column-start: 3;
-					grid-column-end: 5;
-					grid-row-start: 2;
-					grid-row-end: 3;"
-			><a href="#join" style="color: #ffff";>Join</a> </div>
-		</div>
-	</main>
 	
-	<section id="vision" 
-		style="
-			background-color: #fff;
-			padding: 50px;"
-		>
-		<div class="vision container" 
-			style="
-				max-width: 10000px;
-				height: 1000px;"
-			>  
-			<div class="vision-top"
-				style="
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					flex-direction: column;
-					text-align: center;"
-				>
-				<h1 class="section-title" 
-					style="
-						font-size: 48px;
-						font-weight: bold;
-						margin-bottom: 20px;
-						color: #000;"
-				>Vision</h1>
-					<p 
-						style="
-							font-size: 24px;
-							line-height: 1.5;
-							color: #000;"
-						>We stand in line so you don't have to ⏰</p>
-			</div>
-		</div>
-	</section>
 
-	<section id="queue" 
+
+<!--MAINBUTTONS-->	<!--MAINBUTTONS-->	<!--MAINBUTTONS-->	<!--MAINBUTTONS-->	<!--MAINBUTTONS-->	<!--MAINBUTTONS-->	<!--MAINBUTTONS-->
+<main>
+	<div class="wrapper-homebuttons" 
 		style="
-			background-color: #eee;
-			padding: 50px;"
-		>
-		<div class="queue container"
+			height: 65vh;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-auto-rows: 200px;">
+
+		<div class="cta-1" 
+			style="
+				padding: 30px 35px;
+				border-radius: 30px;
+				cursor: pointer;
+				margin: 1rem;
+				font-size: 30px;
+				text-decoration: none;
+				background-color: #39d2c0;
+				grid-column-start: 1;
+				grid-column-end: 3;
+				grid-row-start: 1;
+				grid-row-end: 3;
+				display: flex;
+				justify-content: center;">
+			<a href="#vision" 
+				style="
+					color: #ffff; 
+					text-decoration: none; 
+					display: flex; 
+					padding: 1.5rem;
+					height: 100%; 
+					width: 100%;">
+				Vision</a>
+		</div>
+
+		<div class="cta-2" 
+			style="
+				padding: 30px 35px;
+				border-radius: 30px;
+				cursor: pointer;
+				margin: 1rem;
+				font-size: 30px;
+				text-decoration: none;
+				background-color: #eee;
+				color: #000;
+				grid-row-start: 1;
+				grid-row-end: 2;
+				grid-column-start: 3;
+				grid-column-end: 4;
+				display: flex;
+				justify-content: center;">
+			<a href="#queue" 
+				style="
+					color: #000; 
+					text-decoration: none; 
+					display: flex; 
+					padding: 1rem; 
+					padding-top: 0.5rem;
+					height: 100%; 
+					width: 100%;">
+				Queue</a>
+		</div>
+	
+		<div class="cta-3" 
+			style="
+				padding: 30px 35px;
+				border-radius: 30px;
+				cursor: pointer;
+				margin: 1rem;
+				font-size: 30px;
+				text-decoration: none;
+				grid-column-start: 4;
+				grid-column-end: 5;
+				background-color: #eee;
+				color: #000;
+				grid-row-start: 1;
+				grid-row-end: 2;
+				display: flex;">
+			<a href="#marketing" 
+				style="
+					color: #000; 
+					text-decoration: none; 
+					display: flex; 
+					padding: 1rem; 
+					padding-top: 0.5rem;
+					height: 100%; 
+					width: 100%;">
+				Marketing</a>
+		</div>
+	
+		<div class="cta-4" 
+			style="
+				padding: 30px 35px;
+				border-radius: 30px;
+				cursor: pointer;
+				margin: 1rem;
+				font-size: 30px;
+				text-decoration: none;
+				background-color: #ff5963;
+				color: #eee;
+				grid-column-start: 3;
+				grid-column-end: 5;
+				grid-row-start: 2;
+				grid-row-end: 3;
+				display: flex;">
+			<a href="#join" 
+				style="
+					color: #ffff;
+					text-decoration: none;
+					display: flex;
+					padding: 1rem;
+					padding-top: 0.5rem;"
+				>Join</a> 
+		</div>
+	</div>
+</main>
+<!--MAINBUTTONS-->	<!--MAINBUTTONS-->	<!--MAINBUTTONS-->	<!--MAINBUTTONS-->	<!--MAINBUTTONS-->	<!--MAINBUTTONS-->	<!--MAINBUTTONS-->
+
+
+
+
+<!--VISION--><!--VISION--><!--VISION--><!--VISION--><!--VISION--><!--VISION--><!--VISION--><!--VISION--><!--VISION--><!--VISION-->
+<section id="vision" 
+	style="
+		background-color: #fff;
+		padding: 50px;">
+	<div class="vision container" 
 		style="
 			max-width: 10000px;
-			height: 1000px;"
-		>  
-			<div class="queue-top"
+			height: 1000px;">  
+		<div class="vision-top"
+			style="
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				text-align: center;">
+			<h1 class="section-title" 
 				style="
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					flex-direction: column;
-					text-align: center;"
-				>
-				<h1 class="section-title" 
-					style="  
-						font-size: 48px;
-						font-weight: bold;
-						margin-bottom: 20px;
-						color: #000;"
-					>Queue</h1>
-					<p style="
-						font-size: 24px;
-						line-height: 1.5;
-						color: #000;"
-					>Queue</p>
-			</div>
+					font-size: 48px;
+					font-weight: bold;
+					margin-bottom: 20px;
+					color: #000;"
+			>Vision</h1>
+			<p 
+				style="
+					font-size: 24px;
+					line-height: 1.5;
+					color: #000;"
+			>We stand in line so you don't have to ⏰</p>
 		</div>
-	</section>
+	</div>
+</section>
+<!--VISION--><!--VISION--><!--VISION--><!--VISION--><!--VISION--><!--VISION--><!--VISION--><!--VISION--><!--VISION--><!--VISION-->
 
-  <section id="marketing" 
-		style="
-			background-color: #eee;
-			padding: 50px;"
-		>
-		<div class="marketing container"
+
+
+<!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE-->
+<section id="queue" 
+	style="
+		background-color: #eee;
+		padding: 50px;">
+	<div class="queue container"
+	style="
+		max-width: 10000px;
+		height: 1000px;">  
+		<div class="queue-top"
+			style="
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				text-align: center;">
+			<h1 class="section-title" 
+				style="  
+					font-size: 48px;
+					font-weight: bold;
+					margin-bottom: 20px;
+					color: #000;"
+			>Queue</h1>
+			<p style="
+				font-size: 24px;
+				line-height: 1.5;
+				color: #000;"
+			>Queue</p>
+		</div>
+	</div>
+</section>
+<!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE-->
+
+
+
+<!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING-->
+<section id="marketing" 
+	style="
+		background-color: #eee;
+		padding: 50px;">
+	<div class="marketing container"
 			style="
 				max-width: 10000px;
   			height: 1000px;"
@@ -195,41 +264,117 @@ padding: 0;">
 			</div>
 		</div>
 	</section>
+<!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING-->
 
-	<section id="join" 
+
+
+<!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN-->
+<section id="join" 
+	style="
+		background-color: #453d3d;
+		padding: 30px;"
+>
+<div class="join container"
 		style="
-			background-color: #453d3d;
- 		 	padding: 30px;"
-		>
-		<div class="join container"
+			max-width: 10000px;
+			height: 55rem;
+			align-content: center;">   
+	<div class="join-top" 
+		style="
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			text-align: center;">
+		<h1 class="join-title" 
 			style="
-				 max-width: 10000px;
-  			height: 50rem;
-  			align-content: center;"
-			>  
-			<div class="join-top" 
-				style="
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					flex-direction: column;
-					text-align: center;"
-				>
-				<h1 class="join-title" 
+				font-size: 45px;
+				font-weight: bold;
+				color: #ff5963;"
+		>Join</h1>
+	<div class="socials">
+		<a><i class="fa fa-google"></i> </a>
+		<a><i class="fa fa-instagram"></i> </a>
+		<a><i class="fa fa-twitter"></i> </a>
+		<a><i class="fa fa-apple"></i> </a>
+	</div>		
+		<div class="sign-up-form" 
+			style="
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100%;">
+			<form>
+				<input type="text" class="name" placeholder="Name" 
 					style="
-						font-size: 45px;
-						font-weight: bold;
-						color: #ff5963;"
-					>Join</h1>
-				<p
+						background-color: #eee;
+						color: #ff5963;
+						font-size: 1.2rem;
+						font-family: 'Outfit', sans-serif;
+						border-radius: 100px;
+						border: none;
+						padding-left: 5rem;
+						padding-right: 5rem;
+						margin-top: 1.5rem;
+						margin-bottom: 1.5rem;
+						height: 9rem;
+						width: 70rem;">
+				<div class="joinrow" 
 					style="
-						font-size: 24px;
-						line-height: 1.5;
-						color: #eee;"	
-					>Share our vision</p>
+						display: flex;
+						align-items: center;
+						justify-content: space-around;
+						flex-direction: row;">
+				<div class="joincolumn" 
+					style="
+						display: flex;
+						align-items: center;
+						flex-direction: column;">
+					<input type="email" class="email" placeholder="Email"
+						style="
+							background-color: #eee;
+							color: #ff5963;
+							font-size: 1.2rem;
+							font-family: 'Outfit', sans-serif;
+							border-radius: 75px;
+							border: none;
+							padding-left: 5rem;
+							padding-right: 5rem;
+							height: 9rem;
+							width: 45rem;
+							margin-bottom: 2rem;">
+					<input type="password" class="password" placeholder="Password"
+						style="
+							background-color: #eee;
+							color: #ff5963;
+							font-size: 1.2rem;
+							font-family: 'Outfit', sans-serif;
+							border-radius: 75px;
+							border: none;
+							padding-left: 5rem;
+							padding-right: 5rem;
+							height: 9rem;
+							width: 45rem;
+							margin-top: 2rem;">
+				</div>
+					<button class="signup" 
+						style="
+							background-color: #ff5963;
+							font-size: 2rem;
+							color: #eee;
+							border: none;
+							font-family: 'Outfit', sans-serif;
+							border-radius: 80px;
+							height: 25rem;
+							width: 22rem;
+							margin: 0.5rem;">
+					Sign Up</button>
+					</div>
+				</form>
 			</div>
 		</div>
-	</section>
-	
+	</div>
+</section>
+<!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN-->
 </body>
 </html>
