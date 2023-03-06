@@ -5,7 +5,7 @@ html, body {
   font-family: Outfit, sans-serif;
 }
 .container {
-  height: 77.5%;
+  height: 82.5%;
   display: start;
 }
 
@@ -136,7 +136,7 @@ button {
 /*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
 .topstuff {
   background-color: #eee;
-  height: 20%;
+  height: 15%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -151,8 +151,8 @@ button {
   background-color: #fff;
   color: #000;
   border-radius: 2vh;
-  height: 13vh;
-  width: 22vh;
+  height: 11vh;
+  width: 20vh;
   margin: 2vh;
   margin-left: 6vh;
   text-decoration: none;
@@ -169,8 +169,8 @@ button {
   background-color: #fff;
   color: #000;
   border-radius: 2vh;
-  height: 13vh;
-  width: 22vh;
+  height: 11vh;
+  width: 20vh;
   margin: 2vh;
   text-decoration: none;
 }
@@ -186,8 +186,8 @@ button {
   background-color: #fff;
   color: #000;
   border-radius: 2vh;
-  height: 13vh;
-  width: 22vh;
+  height: 11vh;
+  width: 20vh;
   margin: 2vh;
   text-decoration: none;
   }
@@ -197,8 +197,21 @@ button {
 }
   
 .topjoin{
-  padding-bottom: 12vh;
-  padding-left: 65vh;
+  padding-bottom: 8vh;
+  padding-left: 33%;
+}
+.topjoin app {
+  font-family: Outfit, sans-serif;
+  color: #000;
+  border-radius: 6vh;
+  border: none;
+  padding: 1.5vh 2vh;
+  font-size: 1.9vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.topjoin app:hover {
+  background-color: #e8e8e8;
 }
 .topjoin signin {
   font-family: Outfit, sans-serif;
@@ -224,8 +237,8 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.liORsi signup:hover {
-  background-color: #2dc8b6;
+.topjoin signup:hover {
+  background-color: #2dafa0;
 }
 /*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
 
@@ -234,8 +247,8 @@ button {
 /*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*/
 .location {
   position: absolute;
-  top: 30%;
-  left: 6%;
+  top: 25%;
+  left: 5.5%;
   z-index: 1;
   background-color: #fff;
   padding: 1.5vh;
