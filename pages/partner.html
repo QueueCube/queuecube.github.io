@@ -98,7 +98,8 @@
 					padding: 1rem; 
 					padding-top: 0.5rem;
 					height: 100%; 
-					width: 100%;">
+					width: 100%;
+					font-weight: 100;">
 				Queue</a>
 		</div>
 	
@@ -125,7 +126,8 @@
 					padding: 1rem; 
 					padding-top: 0.5rem;
 					height: 100%; 
-					width: 100%;">
+					width: 100%;
+					font-weight: 100;">
 				Marketing</a>
 		</div>
 	
@@ -290,14 +292,9 @@
 			style="
 				font-size: 45px;
 				font-weight: bold;
+				margin-bottom: 5rem;
 				color: #ff5963;"
 		>Join</h1>
-	<div class="socials">
-		<a><i class="fa fa-google"></i> </a>
-		<a><i class="fa fa-instagram"></i> </a>
-		<a><i class="fa fa-twitter"></i> </a>
-		<a><i class="fa fa-apple"></i> </a>
-	</div>		
 		<div class="sign-up-form" 
 			style="
 				display: flex;
@@ -305,19 +302,19 @@
 				align-items: center;
 				height: 100%;">
 			<form>
-				<input type="text" class="name" placeholder="Name" 
+				<input type="text" class="name" placeholder="Business Name" 
 					style="
 						background-color: #eee;
 						color: #ff5963;
-						font-size: 1.2rem;
+						font-size: 1.1rem;
 						font-family: 'Outfit', sans-serif;
-						border-radius: 100px;
+						border-radius: 1.5rem;
 						border: none;
-						padding-left: 5rem;
-						padding-right: 5rem;
+						padding-left: 3rem;
+						padding-right: 3rem;
 						margin-top: 1.5rem;
 						margin-bottom: 1.5rem;
-						height: 9rem;
+						height: 6rem;
 						width: 70rem;">
 				<div class="joinrow" 
 					style="
@@ -330,32 +327,53 @@
 						display: flex;
 						align-items: center;
 						flex-direction: column;">
+					<input type="text" class="ownername" placeholder="Business Address"
+					style="
+							background-color: #eee;
+							color: #ff5963;
+							font-size: 1.1rem;
+							font-family: 'Outfit', sans-serif;
+							border-radius: 1.5rem;
+							border: none;
+							padding-left: 3rem;
+							padding-right: 3rem;
+							height: 6rem;
+							width: 45rem;
+							margin-top: 1rem;
+							margin-bottom: 3rem;"
+					id="autocomplete">
+			
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0RfELl-8CZ73qQoCOoRRS3rGzGEPEelU&libraries=places"></script>
+			
+			<script>
+				var autocomplete = new google.maps.places.Autocomplete(document.getElementById('autocomplete'));
+			</script>
+			
 					<input type="email" class="email" placeholder="Email"
 						style="
 							background-color: #eee;
 							color: #ff5963;
-							font-size: 1.2rem;
+							font-size: 1.1rem;
 							font-family: 'Outfit', sans-serif;
-							border-radius: 75px;
+							border-radius: 1.5rem;
 							border: none;
-							padding-left: 5rem;
-							padding-right: 5rem;
-							height: 9rem;
+							padding-left: 3rem;
+							padding-right: 3rem;
+							height: 6rem;
 							width: 45rem;
-							margin-bottom: 2rem;">
-					<input type="password" class="password" placeholder="Password"
+							margin-bottom: 3rem;">
+					<input type="number" class="phonenumber" placeholder="Phone Number"
 						style="
 							background-color: #eee;
 							color: #ff5963;
-							font-size: 1.2rem;
+							font-size: 1.1rem;
 							font-family: 'Outfit', sans-serif;
-							border-radius: 75px;
+							border-radius: 1.5rem;
 							border: none;
-							padding-left: 5rem;
-							padding-right: 5rem;
-							height: 9rem;
-							width: 45rem;
-							margin-top: 2rem;">
+							padding-left: 3rem;
+							padding-right: 3rem;
+							height: 6rem;
+							width: 45rem;">
 				</div>
 					<button class="signup" 
 						style="
@@ -368,7 +386,7 @@
 							height: 25rem;
 							width: 22rem;
 							margin: 0.5rem;">
-					Sign Up</button>
+					 Join</button>
 					</div>
 				</form>
 			</div>
