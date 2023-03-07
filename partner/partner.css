@@ -2,9 +2,11 @@
   font-family: Outfit, sans-serif;height: 100%;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
   background-color: #fff;
 }
+html {
+  scroll-behavior: smooth;
+  }
 .partner {
   font-size: 2.5rem;
   font-weight: 500;
@@ -14,7 +16,6 @@
   text-align: center;
   justify-content: center;
 }
-
 
 
 /*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*/
