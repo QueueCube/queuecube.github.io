@@ -12,7 +12,7 @@ html {
   font-weight: 500;
   color: #39D2C0;
   margin: 6rem;
-  margin-bottom: 10rem;
+  margin-bottom: 11.5rem;
   text-align: center;
   justify-content: center;
 }
@@ -138,7 +138,7 @@ html {
   cursor: pointer;
   margin: 1rem;
   width: 17rem;
-  height: 7.5rem;
+  height: 7rem;
   padding-left: 4vh;
   padding-top: 1vh;
   padding-bottom: 7vh;
