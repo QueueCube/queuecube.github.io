@@ -40,7 +40,7 @@ html, body {
   margin-top: -6.5rem;
   background-color: #fff;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   z-index: 1;
 }
 .joinrow {
@@ -123,6 +123,7 @@ html, body {
   width: 7rem;
   margin-left: 29rem;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 .queueandmarketing { 
   display: flex; 
@@ -131,7 +132,7 @@ html, body {
   margin-top: 1.5rem;
 }
 .cta-1, .cta-2 {
-  border-radius: 30px;
+  border-radius: 1rem;
   cursor: pointer;
   margin: 1rem;
   width: 17rem;
