@@ -296,12 +296,13 @@ button {
 
 .featuredrow {
   background-color: #fff;
-  height: 40%;
+  height: 42%;
   margin-bottom: 1rem;
 }
 .frrestaurants {
   display: flex;
   flex-direction: row;
+  margin-top: 2vh;
 }
 .fr1 {
   background-color: #eee;
@@ -310,6 +311,12 @@ button {
   margin-left: 5vh;
   border-radius: 2vh;
 }
+  .fr1-details {
+    background-color: #fff;
+    border-radius: 2vh;
+    margin: 2vh;
+    text-align: center;
+  }
 .fr2 {
   background-color: #eee;
   width: 30%;
@@ -328,12 +335,13 @@ button {
 
 .quickestqueuesrow {
   background-color: #fff;
-  height: 40%;
+  height: 42%;
   margin-bottom: 1rem;
 }
 .qqrestaurants {
   display: flex;
   flex-direction: row;
+  margin-top: 2vh;
 }
 .qq1 {
   background-color: #eee;
@@ -361,11 +369,13 @@ button {
 
 .highlyratedrow {
   background-color: #fff;
-  height: 40%;
+  height: 42%;
+  margin-bottom: 1rem;
 }
 .hrrestaurants {
   display: flex;
   flex-direction: row;
+  margin-top: 2vh;
 }
 .hr1 {
   background-color: #eee;
