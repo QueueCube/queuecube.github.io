@@ -269,12 +269,113 @@ button {
   transform: translateX(-50%);
   background-color: #fff;
   width: 3.4vh;
-  height: 4.2vh;
+  height: 4vh;
   border-radius: 50%;
   padding-left: 1.6vh;
-  padding-top: 0.8vh;
+  padding-top: 1vh;
 }
-/*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*/
+/*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*/
+
+
+/*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*/
+.restaurantcontainer {
+  background-color: #eee;
+  height: 100%;
+}
+.rowtitle {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1vh;
+  margin-left: 2vh;
+}
+.rowtitle-icon {
+  color: #f9bc4c;
+  font-size: 2.5vh;
+}
+
+
+.featuredrow {
+  background-color: #fff;
+  height: 32%;
+  margin-bottom: 1rem;
+}
+.frrestaurants {
+  display: flex;
+  flex-direction: row;
+}
+.fr1 {
+  background-color: #eee;
+  width: 30%;
+  margin-left: 5vh;
+}
+.fr2 {
+  background-color: #eee;
+  width: 30%;
+  margin-left: 5vh;
+}
+.fr3 {
+  background-color: #eee;
+  width: 30%;
+  height: 22vh;
+  margin-left: 5vh;
+}
+
+
+.quickestqueuesrow {
+  background-color: #fff;
+  height: 32%;
+  margin-bottom: 1rem;
+}
+.qqrestaurants {
+  display: flex;
+  flex-direction: row;
+}
+.qq1 {
+  background-color: #eee;
+  width: 30%;
+  margin-left: 5vh;
+}
+.qq2 {
+  background-color: #eee;
+  width: 30%;
+  margin-left: 5vh;
+}
+.qq3 {
+  background-color: #eee;
+  width: 30%;
+  height: 22vh;
+  margin-left: 5vh;
+}
+
+
+
+.highlyratedrow {
+  background-color: #fff;
+  height: 32%;
+}
+.hrrestaurants {
+  display: flex;
+  flex-direction: row;
+}
+.hr1 {
+  background-color: #eee;
+  width: 30%;
+  margin-left: 5vh;
+}
+.hr2 {
+  background-color: #eee;
+  width: 30%;
+  margin-left: 5vh;
+}
+.hr3 {
+  background-color: #eee;
+  width: 30%;
+  height: 22vh;
+  margin-left: 5vh;
+}
+/*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*/
+
+
 
 
 
