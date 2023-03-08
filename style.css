@@ -286,46 +286,79 @@ button {
   display: inline-block;
   vertical-align: middle;
   margin-right: 1vh;
-  margin-left: 2vh;
+  margin-left: 4vh;
+  font-size: 3vh;
 }
 .rowtitle-icon {
   color: #f9bc4c;
   font-size: 2.5vh;
+  margin-top: 5vh;
 }
 
 
 .featuredrow {
   background-color: #fff;
-  height: 42%;
-  margin-bottom: 1rem;
+  height: 45%;
+  margin-bottom: 2rem;
 }
+
+.detailscontainer {
+  background-color: #cacacaad;
+  height: 11vh;
+  border-radius: 2vh;
+  margin: 2vh;
+  margin-top: 15vh;
+  color: #fff; 
+  z-index: 2;
+}
+.detailstext {
+  margin: 3vh;
+}
+
 .frrestaurants {
   display: flex;
   flex-direction: row;
-  margin-top: 2vh;
+  margin-top: 3vh;
+  z-index: 1;
+}
+
+.restaurantimg {
+  height: 100%;
+  width: 100%;
+  border-radius: 2vh;
+  z-index: -1; /*set a negative value*/
+}
+
+.titleandheart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.waittime {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .fr1 {
-  background-color: #eee;
+  background-image: url('imgs/restaurant1.jpg');
+  background-size: cover;
   width: 30%;
   height: 28vh;
   margin-left: 5vh;
   border-radius: 2vh;
+  text-justify: center;
 }
-  .fr1-details {
-    background-color: #fff;
-    border-radius: 2vh;
-    margin: 2vh;
-    text-align: center;
-  }
 .fr2 {
-  background-color: #eee;
+  background-image: url('imgs/restaurant2.jpg');
+  background-size: cover;
   width: 30%;
   height: 28vh;
   margin-left: 5vh;
   border-radius: 2vh;
 }
 .fr3 {
-  background-color: #eee;
+  background-image: url('imgs/restaurant3.jpg');
+  background-size: cover;
   width: 30%;
   height: 28vh;
   margin-left: 5vh;
@@ -335,8 +368,8 @@ button {
 
 .quickestqueuesrow {
   background-color: #fff;
-  height: 42%;
-  margin-bottom: 1rem;
+  height: 45%;
+  margin-bottom: 2rem;
 }
 .qqrestaurants {
   display: flex;
@@ -344,21 +377,24 @@ button {
   margin-top: 2vh;
 }
 .qq1 {
-  background-color: #eee;
+  background-image: url('imgs/restaurant4.jpg');
+  background-size: cover;
   width: 30%;
   height: 28vh;
   margin-left: 5vh;
   border-radius: 2vh;
 }
 .qq2 {
-  background-color: #eee;
+  background-image: url('imgs/restaurant5.jpg');
+  background-size: cover;
   width: 30%;
   height: 28vh;
   margin-left: 5vh;
   border-radius: 2vh;
 }
 .qq3 {
-  background-color: #eee;
+  background-image: url('imgs/restaurant6.jpg');
+  background-size: cover;
   width: 30%;
   height: 28vh;
   margin-left: 5vh;
@@ -369,8 +405,8 @@ button {
 
 .highlyratedrow {
   background-color: #fff;
-  height: 42%;
-  margin-bottom: 1rem;
+  height: 45%;
+  margin-bottom: 2rem;
 }
 .hrrestaurants {
   display: flex;
@@ -378,21 +414,24 @@ button {
   margin-top: 2vh;
 }
 .hr1 {
-  background-color: #eee;
+  background-image: url('imgs/restaurant7.jpg');
+  background-size: cover;
   width: 30%;
   height: 28vh;
   margin-left: 5vh;
   border-radius: 2vh;
 }
 .hr2 {
-  background-color: #eee;
+  background-image: url('imgs/restaurant8.jpg');
+  background-size: cover;
   width: 30%;
   height: 28vh;
   margin-left: 5vh;
   border-radius: 2vh;
 }
 .hr3 {
-  background-color: #eee;
+  background-image: url('imgs/restaurant9.jpg');
+  background-size: cover;
   width: 30%;
   height: 28vh;
   margin-left: 5vh;
