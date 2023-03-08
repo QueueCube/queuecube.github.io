@@ -7,7 +7,7 @@ html, body {
 
 .heyuser {
   color: #95A1AC;
-  margin-top: 8vh;
+  margin-top: 6vh;
   margin-left: 6vh;
   margin-bottom: 3vh;
 }
@@ -15,20 +15,20 @@ html, body {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* add this line */
+  align-items: center; 
 }
 .searchbar {
+  background-color: #eee;
   width: 40%;
   height: 5vh;
   padding: 1vh;
   padding-left: 4vh;
   margin-left: 9vh;
   font-family: Outfit, sans-serif;
-  font-size: 2vh;
-  border-radius: 2vh;
+  font-size: 2.2vh;
+  border-radius: 2.5vh;
   outline: none;
   border: none;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 .locationset {
   margin-right: 9vh;
@@ -40,21 +40,24 @@ html, body {
   width: auto;
   font-size: 2vh;
 }
+.locationset i{
+  margin-left: 0.5vh;
+}
 
 
 .categories {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 2vh;
+  margin-bottom: 1vh;
 }
 .category1{
   margin-left: 10vh;
-  background-color: #ff0000;
+  background-color: #eee;
   padding: 2vh;
 }
 .category {
-  background-color: hsl(0, 100%, 50%);
+  background-color: #eee;
   padding: 2vh;
 }
 
