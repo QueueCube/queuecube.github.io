@@ -233,40 +233,5 @@ html, body {
   margin-left: 5vh;
   border-radius: 2vh;
 }
-
-
-.allrestaurantsrow {
-  background-color: #fff;
-  height: 37%;
-  margin-bottom: 2rem;
-}
-.arrestaurants {
-  display: flex;
-  flex-direction: row;
-  margin-top: 2vh;
-}
-.ar1 {
-  background-image: url('imgs/restaurant7.jpg');
-  background-size: cover;
-  width: 30%;
-  height: 30vh;
-  border-radius: 2vh;
-}
-.ar2 {
-  background-image: url('imgs/restaurant8.jpg');
-  background-size: cover;
-  width: 30%;
-  height: 30vh;
-  margin-left: 5vh;
-  border-radius: 2vh;
-}
-.ar3 {
-  background-image: url('imgs/restaurant9.jpg');
-  background-size: cover;
-  width: 30%;
-  height: 30vh;
-  margin-left: 5vh;
-  border-radius: 2vh;
-}
 /*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*/
 
