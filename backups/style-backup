@@ -200,7 +200,7 @@ button {
   padding-bottom: 8vh;
   padding-left: 34.5%;
 }
-.topjoin tryapp {
+.topjoin getapp {
   color: #000;
   border-radius: 6vh;
   border: none;
@@ -209,7 +209,7 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.topjoin tryapp:hover {
+.topjoin getapp:hover {
   background-color: #e8e8e8;
 }
 .topjoin signin {
@@ -274,9 +274,6 @@ button {
   padding-left: 1.6vh;
   padding-top: 0.8vh;
 }
-.arrow-pulse {
-  animation: pulse 1s infinite;
-}
 /*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*/
 
 
@@ -291,31 +288,51 @@ button {
   margin-right: 1vh;
   margin-left: 10vh;
   font-size: 3.5vh;
+  font-weight: 300;
 }
 .rowtitle-icon {
-  color: #f9bc4c;
+  color: #FFE859;
   font-size: 2.5vh;
   margin-top: 5vh;
 }
-
+#arrowmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5vh;
+  font-size: 3vh;
+}
+#arrowmorecircle {
+  background-color: #eee;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3.2vh;
+  height: 4vh;
+  border-radius: 50%;
+  padding-left: 1.8vh;
+  padding-top: 1vh;
+  color: #000;
+}
 
 .featuredrow {
   background-color: #fff;
-  height: 42%;
+  height: 40%;
   margin-bottom: 1rem;
 }
 .detailscontainer {
-  background-color: #ffffff6a;
-  height: auto;
+  background-color: #ffffff26;
+  transform: translate(0%, 50%) ;
+  height: 32%;
   border-radius: 2vh;
-  margin: 2vh;
-  margin-top: 15vh;
+  margin: 02vh;
+  margin-top: 14.5vh;
   color: #fff;
   z-index: 2;
   backdrop-filter: blur(5px); /* Add a blur effect */
 }
 .detailstext {
-  margin: 3vh;
+  margin: 2.5vh;
 }
 .frrestaurants {
   display: flex;
@@ -323,7 +340,7 @@ button {
   margin-top: 3vh;
   z-index: 1;
   margin-left: 10vh;
-  margin-right: 5vh;
+  margin-right: 0vh;
 }
 .restaurantimg {
   height: 100%;
@@ -334,11 +351,13 @@ button {
 .titleandheart {
   display: flex;
   align-items: center;
+  line-height: 0.4vh;
   justify-content: space-between;
 }
 .waittime {
   display: flex;
-  align-items: center;
+  align-items: stretch;
+  line-height: 0vh;
   justify-content: space-between;
 }
 .fr1 {
@@ -437,11 +456,6 @@ button {
   border-radius: 2vh;
 }
 
-.viewmore {
-  margin-left: 153vh;
-  padding-bottom: 2vh;
-  cursor: pointer;
-}
 /*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*/
 
 
@@ -459,7 +473,7 @@ button {
     padding-bottom: 10px;
     padding-left: 0vh;
   }
-  .topjoin tryapp {
+  .topjoin getapp {
     font-size: 12px;
   }
   .topjoin signin {
