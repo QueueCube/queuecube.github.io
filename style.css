@@ -200,7 +200,7 @@ button {
   padding-bottom: 8vh;
   padding-left: 34.5%;
 }
-.topjoin tryapp {
+.topjoin getapp {
   color: #000;
   border-radius: 6vh;
   border: none;
@@ -209,7 +209,7 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.topjoin tryapp:hover {
+.topjoin getapp:hover {
   background-color: #e8e8e8;
 }
 .topjoin signin {
@@ -294,11 +294,28 @@ button {
   font-size: 2.5vh;
   margin-top: 5vh;
 }
-
+#arrowmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5vh;
+  font-size: 3vh;
+}
+#arrowmorecircle {
+  background-color: #eee;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3.2vh;
+  height: 4vh;
+  border-radius: 50%;
+  padding-left: 1.8vh;
+  padding-top: 1vh;
+}
 
 .featuredrow {
   background-color: #fff;
-  height: 42%;
+  height: 40%;
   margin-bottom: 1rem;
 }
 .detailscontainer {
@@ -306,7 +323,7 @@ button {
   height: auto;
   border-radius: 2vh;
   margin: 2vh;
-  margin-top: 15vh;
+  margin-top: 14.5vh;
   color: #fff;
   z-index: 2;
   backdrop-filter: blur(5px); /* Add a blur effect */
@@ -320,7 +337,7 @@ button {
   margin-top: 3vh;
   z-index: 1;
   margin-left: 10vh;
-  margin-right: 5vh;
+  margin-right: 0vh;
 }
 .restaurantimg {
   height: 100%;
@@ -433,6 +450,7 @@ button {
   margin-left: 5vh;
   border-radius: 2vh;
 }
+
 /*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*/
 
 
@@ -450,7 +468,7 @@ button {
     padding-bottom: 10px;
     padding-left: 0vh;
   }
-  .topjoin tryapp {
+  .topjoin getapp {
     font-size: 12px;
   }
   .topjoin signin {
@@ -515,3 +533,19 @@ button {
 }
 
 /*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*/ 
+
+
+
+/*ANIMATION*//*ANIMATION*//*ANIMATION*//*ANIMATION*//*ANIMATION*//*ANIMATION*//*ANIMATION*/
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*ANIMATION*//*ANIMATION*//*ANIMATION*//*ANIMATION*//*ANIMATION*//*ANIMATION*//*ANIMATION*/
