@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QueueCube | Search</title>
+  <title>QueueCube</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0RfELl-8CZ73qQoCOoRRS3rGzGEPEelU&libraries=places"></script>
 </head>
 
 
@@ -15,29 +16,31 @@
 
 <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
   <div class="topstuff">
-    <a href="how/how.html" class="how">
-      <div>
-        <p class="how-text">How it works</p>
-      </div>
-    </a>    
-    <a href="about/about.html" class="about">
-      <div>
-        <p class="about-text">About</p>
-      </div>
-    </a>    
-    <a href="partner/partner.html" class="partner">
-      <div>
-        <p class="partner-text">Partner</p>
-      </div>
-    </a>
-<!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
-
-
-
-
-<!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN-->
 <div class="topjoin">
+  <input id="searchbar" class="searchbar" type="text" placeholder="Restaurant or Location">
+  <script>
+    const searchInput = document.getElementById('searchbar');
+    const autocomplete = new google.maps.places.Autocomplete(searchInput);
+  </script>
+  <!--<a href="how/how.html" class="how">
+    <div>
+      <p class="how-text">How it works</p>
+    </div>
+  </a>    
+  <a href="about/about.html" class="about">
+    <div>
+      <p class="about-text">About</p>
+    </div>
+  </a>    
+  <a href="partner/partner.html" class="partner">
+    <div>
+      <p class="partner-text">Partner</p>
+    </div>
+  </a>-->
   <getapp>Get the App</getapp>
+  <how onclick="window.location.href='how/how.html'">How it Works</how>
+  <about onclick="window.location.href='about/about.html'">About</about>
+  <partner onclick="window.location.href='partner/partner.html'">Partner</partner>
   <signin type="log" onclick="openPopup()">Log In</signin>
   <signup type="signup" onclick="openPopup()">Sign Up</signup>
   <div class="sign-up-form" id="sign-up-form"> 
@@ -81,17 +84,18 @@
 </div>
 <!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN-->
 
-  <div class="searchstuff">
-    <input class="searchbar" type="text" placeholder="Restaurant">
-    <h3 class="locationset">Location <i class="fas fa-map-marker-alt"></i></h3>
-  </div>  
-  
+
+
   <div class="categories">
     <p class="category1">Icon 1</p>
     <p class="category">Icon 2</p>
     <p class="category">Icon 3</p>
     <p class="category">Icon 4</p>
     <p class="category">Icon 5</p>
+    <p class="category">Icon 6</p>
+    <p class="category">Icon 7</p>
+    <p class="category">Icon 8</p>
+    <p class="category">Icon 9</p>
   </div>
 
   
