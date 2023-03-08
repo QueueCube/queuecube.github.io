@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QueueCube | Partner</title>
+	<link rel="stylesheet" href="partner.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body> 
+		<h1 class="partner">Become a Partner</h1>
+
+<!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN-->
+<section id="join">
+<div class="join container">   
+	<div class="join-top">
+		<img class="join image" src="partnerjoinbackground.png" height= 560px style="position:absolute; border-radius: 2rem; margin-top: 6rem; margin-left: 50rem; z-index: 0;">
+		<div class="sign-up-form">
+			<form>
+				<div class="joinrow">
+				<div class="joincolumn">
+					<input type="text" class="name" placeholder="Business Name">
+					<input type="text" class="ownername" placeholder="Business Address" id="autocomplete">
+			<script 
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0RfELl-8CZ73qQoCOoRRS3rGzGEPEelU&libraries=places"></script>
+			<script>
+				var autocomplete = new google.maps.places.Autocomplete(document.getElementById('autocomplete'));
+			</script>
+		
+			<div class="inputrow"><input type="email" class="email" placeholder="Email">
+			<input type="number" class="phonenumber" placeholder="Phone Number">
+			</div>
+				<button class="signup">Join</button>
+			</div>			
+			</div>	
+		</form>
+	</div>	
+</div>
+
+
+<div class="queueandmarketing">
+	<a href="#queue" class="cta-1">
+		<div>
+			<p class="queuetext">Queue</p>
+		</div>
+	</a>    
+	<a href="#marketing" class="cta-2">
+		<div>
+			<p class="marketingtext">Marketing</p>
+		</div>
+	</a>    
+</div> 
+<script>//SMOOTH SCROLL
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+<!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN--><!--JOIN-->
+
+
+
+
+<!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE-->
+<section id="queue"> 
+	<h1 class="section-title">Queue</h1>
+</section>
+<!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE--><!--QUEUE-->
+
+
+
+<!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING-->
+<section id="marketing">
+	<h1 class="section-title">Marketing</h1>
+</section>
+<!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING--><!--MARKETING-->
+</body>
+</html>

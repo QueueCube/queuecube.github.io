@@ -1,0 +1,542 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Outfit, sans-serif;
+}
+.container {
+  height: 82.5%;
+  display: start;
+}
+
+/*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+}
+.open-popup {
+  display: block;
+}
+.overlay-show {
+  display: block;
+}
+.sign-up-form {
+  font-family: Outfit, sans-serif;
+  font-size: 2vh;
+  width: 60vh;
+  height: 70vh;
+  background: #fff;
+  padding: 3vh;
+  border-radius: 3vh;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  visibility: hidden;
+  transition: transform 0.5s;
+  z-index: 2;
+  display: flex; 
+  flex-direction: column;
+}
+
+.sign-up-form > div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 55%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.liORsi {
+  align-items: center;
+  align-self: center;
+  background-color: #f4f4f4;
+  border-radius: 5vh;
+  height: 5vh;
+  width: 25vh;
+  margin-top: 1vh;
+  margin-bottom: 8vh;
+}
+.li-btn {
+  display: inline-block;
+  font-family: Outfit, sans-serif;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  height: 5vh;
+  color: #fff;
+  background-color: #333;
+  outline: none;
+}
+.su-btn {
+  display: inline-block;
+  font-family: Outfit, sans-serif;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  height: 5vh;
+  color: #000;
+  outline: none;
+}
+.login-btn {
+  font-family: Outfit, sans-serif;
+  background-color: #39D2C0;
+  width: 15vh;
+  height: 6vh;
+  margin-bottom: 4vh;
+}
+.fab {
+  color: #eee;
+  background-color: #333;
+  border-radius: 50%;
+  font-size: 2.5vh;
+  width: 8vh;
+  height: 5vh;
+  margin: 3vh;
+  padding-top: 2.5vh;
+  margin-top: 5vh;
+  cursor: pointer;
+}
+.input-box {
+  background-color: #eee;
+  font-family: Outfit, sans-serif;
+  font-size: 2vh;
+  border-radius: 2vh;
+  padding: 2vh;
+  margin-top: 2vh;
+  width: 90%;
+  height: auto;
+  border: none;
+  outline: none;
+}
+button {
+  font-family: Outfit, sans-serif;
+  color: #fff;
+  width: 100%;
+  padding: 1vh;
+  border-radius: 5vh;
+  font-size: 2vh;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*/
+
+
+
+/*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
+.topstuff {
+  background-color: #eee;
+  height: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 0.5vh;
+  padding-top: 2vh;
+}
+.how {
+  font-family: Outfit, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 2vh;
+  height: 11vh;
+  width: 20vh;
+  margin: 2vh;
+  margin-left: 4vh;
+  text-decoration: none;
+}
+.how-text {
+  padding: 0;
+  font-size: 1.9vh;
+}
+.partner {
+  font-family: Outfit, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 2vh;
+  height: 11vh;
+  width: 20vh;
+  margin: 2vh;
+  text-decoration: none;
+}
+.partner-text {
+  padding: 0;
+  font-size: 1.9vh;
+}
+.about {
+  font-family: Outfit, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 2vh;
+  height: 11vh;
+  width: 20vh;
+  margin: 2vh;
+  text-decoration: none;
+  }
+.about-text {
+  padding: 0;
+  font-size: 1.9vh;
+}
+  
+.topjoin{
+  padding-bottom: 8vh;
+  padding-left: 34.5%;
+}
+.topjoin tryapp {
+  color: #000;
+  border-radius: 6vh;
+  border: none;
+  padding: 1.5vh 2vh;
+  font-size: 1.8vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.topjoin tryapp:hover {
+  background-color: #e8e8e8;
+}
+.topjoin signin {
+  color: #000;
+  border-radius: 6vh;
+  border: none;
+  padding: 1.5vh 3vh;
+  font-size: 1.8vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.topjoin signin:hover {
+  background-color: #e8e8e8;
+}
+.topjoin signup {
+  background-color: #2dc8b6;
+  color: #fff;
+  border-radius: 6vh;
+  border: none;
+  padding: 1.5vh 3vh;
+  font-size: 1.8vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.topjoin signup:hover {
+  background-color: #2dafa0;
+}
+/*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
+
+
+
+/*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*/
+.location {
+  position: absolute;
+  top: 27%;
+  left: 6%;
+  z-index: 1;
+  background-color: #fff;
+  padding: 1.5vh;
+  border-radius: 2vh;
+}
+.location input[type="text"] {
+  font-family: Outfit, sans-serif;
+  font-size: 2vh;
+  width: 45vh;
+  padding: 1vh;
+  padding-left: 2vh;
+  border: none;
+  outline: none;
+}
+#arrow {
+  position: absolute;
+  font-size: 1.5rem;
+  bottom: 2rem;
+  left: 50%;
+  color: #4e4e4e;
+  transform: translateX(-50%);
+  background-color: #fff;
+  width: 3.4vh;
+  height: 4.2vh;
+  border-radius: 50%;
+  padding-left: 1.6vh;
+  padding-top: 0.8vh;
+}
+.arrow-pulse {
+  animation: pulse 1s infinite;
+}
+/*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*/
+
+
+/*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*/
+.restaurantcontainer {
+  background-color: #eee;
+  height: 120%;
+}
+.rowtitle {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1vh;
+  margin-left: 10vh;
+  font-size: 3.5vh;
+}
+.rowtitle-icon {
+  color: #f9bc4c;
+  font-size: 2.5vh;
+  margin-top: 5vh;
+}
+
+
+.featuredrow {
+  background-color: #fff;
+  height: 42%;
+  margin-bottom: 1rem;
+}
+.detailscontainer {
+  background-color: #ffffff6a;
+  height: auto;
+  border-radius: 2vh;
+  margin: 2vh;
+  margin-top: 15vh;
+  color: #fff;
+  z-index: 2;
+  backdrop-filter: blur(5px); /* Add a blur effect */
+}
+.detailstext {
+  margin: 3vh;
+}
+.frrestaurants {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3vh;
+  z-index: 1;
+  margin-left: 10vh;
+  margin-right: 5vh;
+}
+.restaurantimg {
+  height: 100%;
+  width: 100%;
+  border-radius: 2vh;
+  z-index: -1; /*set a negative value*/
+}
+.titleandheart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.waittime {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fr1 {
+  background-image: url('imgs/restaurant1.jpg');
+  background-size: cover;
+  width: 30%;
+  height: 30vh;
+  border-radius: 2vh;
+  text-justify: center;
+}
+.fr2 {
+  background-image: url('imgs/restaurant2.jpg');
+  background-size: cover;
+  width: 30%;
+  height: 30vh;
+  margin-left: 5vh;
+  border-radius: 2vh;
+}
+.fr3 {
+  background-image: url('imgs/restaurant3.jpg');
+  background-size: cover;
+  width: 30%;
+  height: 30vh;
+  margin-left: 5vh;
+  border-radius: 2vh;
+}
+
+
+.quickestqueuesrow {
+  background-color: #fff;
+  height: 40%;
+  margin-bottom: 1rem;
+}
+.qqrestaurants {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vh;
+}
+.qq1 {
+  background-image: url('imgs/restaurant4.jpg');
+  background-size: cover;
+  width: 30%;
+  height: 30vh;
+  border-radius: 2vh;
+}
+.qq2 {
+  background-image: url('imgs/restaurant5.jpg');
+  background-size: cover;
+  width: 30%;
+  height: 30vh;
+  margin-left: 5vh;
+  border-radius: 2vh;
+}
+.qq3 {
+  background-image: url('imgs/restaurant6.jpg');
+  background-size: cover;
+  width: 30%;
+  height: 30vh;
+  margin-left: 5vh;
+  border-radius: 2vh;
+}
+
+
+
+.highlyratedrow {
+  background-color: #fff;
+  height: 40%;
+  margin-bottom: 2rem;
+}
+.hrrestaurants {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vh;
+}
+.hr1 {
+  background-image: url('imgs/restaurant7.jpg');
+  background-size: cover;
+  width: 30%;
+  height: 30vh;
+  border-radius: 2vh;
+}
+.hr2 {
+  background-image: url('imgs/restaurant8.jpg');
+  background-size: cover;
+  width: 30%;
+  height: 30vh;
+  margin-left: 5vh;
+  border-radius: 2vh;
+}
+.hr3 {
+  background-image: url('imgs/restaurant9.jpg');
+  background-size: cover;
+  width: 30%;
+  height: 30vh;
+  margin-left: 5vh;
+  border-radius: 2vh;
+}
+
+.viewmore {
+  margin-left: 153vh;
+  padding-bottom: 2vh;
+  cursor: pointer;
+}
+/*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*/
+
+
+
+
+
+
+
+/*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*/
+@media (max-width: 767px) {
+  .topstuff{
+    height: 10%;
+  }
+  .topjoin{
+    padding-bottom: 10px;
+    padding-left: 0vh;
+  }
+  .topjoin tryapp {
+    font-size: 12px;
+  }
+  .topjoin signin {
+    padding: 1vh 1vh;
+    font-size: 12px;
+  }
+  .topjoin signup {
+    padding: 1vh 1vh;
+    font-size: 12px;
+  }
+  .how {
+    height: 7vh;
+    width: 11.5vh;
+    margin: 0.5vh;
+    margin-left: 10px;
+  }
+  .how-text {
+    font-size: 13px;
+  }
+  .partner {
+    height: 7vh;
+    width: 9vh;
+    margin: 0.5vh;
+  }
+  .partner-text{
+     font-size: 13px;
+  }
+  .about {
+    height: 7vh;
+    width: 9vh;
+    margin: 0.5vh;
+    }
+  .about-text{
+     font-size: 13px;
+  }
+  .container {
+    height: 87.5%;
+  }
+  .location {
+    padding: 1vh;
+    border-radius: 2vh;
+    align-self: center;
+    width: 89%;
+    top: 17%;
+    left: 3%;
+  }
+  .location input[type="text"] {
+    width: 90%;
+    padding: 1vh;
+    padding-left: 2vh;
+    border: none;
+    outline: none;
+  }
+  .sign-up-form {
+    width: 40vh;
+    height: 65vh;
+  }
+  .fab {
+    margin: 1vh;
+    margin-top: 5vh;
+  }
+}
+
+/*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*//*MEDIA*/ 
+
+
+
+/*ANIMATION*//*ANIMATION*//*ANIMATION*//*ANIMATION*//*ANIMATION*//*ANIMATION*//*ANIMATION*/
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*ANIMATION*//*ANIMATION*//*ANIMATION*//*ANIMATION*//*ANIMATION*//*ANIMATION*//*ANIMATION*/
