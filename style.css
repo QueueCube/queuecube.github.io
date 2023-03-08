@@ -288,9 +288,10 @@ button {
   margin-right: 1vh;
   margin-left: 10vh;
   font-size: 3.5vh;
+  font-weight: 300;
 }
 .rowtitle-icon {
-  color: #f9bc4c;
+  color: #FFE859;
   font-size: 2.5vh;
   margin-top: 5vh;
 }
