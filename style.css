@@ -325,14 +325,14 @@ button {
   transform: translate(0%, 50%) ;
   height: 32%;
   border-radius: 2vh;
-  margin: 2vh;
+  margin: 02vh;
   margin-top: 14.5vh;
   color: #fff;
   z-index: 2;
   backdrop-filter: blur(5px); /* Add a blur effect */
 }
 .detailstext {
-  margin: 3vh;
+  margin: 2.5vh;
 }
 .frrestaurants {
   display: flex;
@@ -351,13 +351,13 @@ button {
 .titleandheart {
   display: flex;
   align-items: center;
-  line-height: 5.5px;
+  line-height: 0.4vh;
   justify-content: space-between;
 }
 .waittime {
   display: flex;
   align-items: stretch;
-  line-height: 0px;
+  line-height: 0vh;
   justify-content: space-between;
 }
 .fr1 {
