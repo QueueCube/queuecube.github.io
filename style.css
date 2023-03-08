@@ -9,7 +9,7 @@ html, body {
 /*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
 .topstuff {
   background-color: #fff;
-  height: 12%;
+  height: 11%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -28,22 +28,23 @@ html, body {
   padding: 2vh 2vh;
   border-radius: 6vh;
   margin-left: 1vh;
-  margin-right: 50vh;
+  margin-right: 40vh;
   display: flex;
   align-items: center;
 }
 .locationset i {
   margin-right: 1vh;
+  font-size: 2vh;
 }
 .searchbar {
   background-color: #eee;
-  width: 30%;
+  width: 35%;
   height: 5vh;
   padding: 1vh;
   padding-left: 4vh;
   font-family: Outfit, sans-serif;
   font-size: 2vh;
-  border-radius: 2.5vh;
+  border-radius: 6vh;
   outline: none;
   border: none;
 }
@@ -236,9 +237,14 @@ button {
 }
 .category1 {
   padding: 2.5vh;
+  margin-left: 10vh;
 }
 .category {
   padding: 2.5vh;
+}
+.categoryend {
+  padding: 2.5vh;
+  margin-right: 10vh;
 }
 
 
