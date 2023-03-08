@@ -304,11 +304,11 @@ button {
 
 .detailscontainer {
   background-color: #cacacaad;
-  height: 11vh;
+  height: auto;
   border-radius: 2vh;
   margin: 2vh;
-  margin-top: 15vh;
-  color: #fff; 
+  margin-top: 12.5vh;
+  color: #fff;
   z-index: 2;
 }
 .detailstext {
@@ -320,6 +320,8 @@ button {
   flex-direction: row;
   margin-top: 3vh;
   z-index: 1;
+  margin-left: 10vh;
+  margin-right: 5vh;
 }
 
 .restaurantimg {
@@ -344,7 +346,6 @@ button {
   background-size: cover;
   width: 30%;
   height: 28vh;
-  margin-left: 5vh;
   border-radius: 2vh;
   text-justify: center;
 }
@@ -381,7 +382,6 @@ button {
   background-size: cover;
   width: 30%;
   height: 28vh;
-  margin-left: 5vh;
   border-radius: 2vh;
 }
 .qq2 {
@@ -418,7 +418,6 @@ button {
   background-size: cover;
   width: 30%;
   height: 28vh;
-  margin-left: 5vh;
   border-radius: 2vh;
 }
 .hr2 {
