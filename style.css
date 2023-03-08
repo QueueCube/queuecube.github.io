@@ -322,7 +322,8 @@ button {
 }
 .detailscontainer {
   background-color: #ffffff26;
-  height: auto;
+  transform: translate(0%, 50%) ;
+  height: 32%;
   border-radius: 2vh;
   margin: 2vh;
   margin-top: 14.5vh;
@@ -350,11 +351,13 @@ button {
 .titleandheart {
   display: flex;
   align-items: center;
+  line-height: 5.5px;
   justify-content: space-between;
 }
 .waittime {
   display: flex;
-  align-items: center;
+  align-items: stretch;
+  line-height: 0px;
   justify-content: space-between;
 }
 .fr1 {
