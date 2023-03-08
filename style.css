@@ -52,7 +52,7 @@ html, body {
   border-radius: 6vh;
   border: none;
   padding: 1.5vh 2vh;
-  font-size: 1.8vh;
+  font-size: 2vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -64,7 +64,7 @@ html, body {
   border-radius: 6vh;
   border: none;
   padding: 1.5vh 2vh;
-  font-size: 1.8vh;
+  font-size: 2vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -76,7 +76,7 @@ html, body {
   border-radius: 6vh;
   border: none;
   padding: 1.5vh 2vh;
-  font-size: 1.8vh;
+  font-size: 2vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -88,23 +88,23 @@ html, body {
   border-radius: 6vh;
   border: none;
   padding: 1.5vh 2vh;
-  font-size: 1.8vh;
+  font-size: 2vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 .topjoin partner:hover {
   background-color: #e8e8e8;
 }
-.topjoin signin {
+.topjoin login {
   color: #000;
   border-radius: 6vh;
   border: none;
   padding: 1.5vh 3vh;
-  font-size: 1.8vh;
+  font-size: 2vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.topjoin signin:hover {
+.topjoin login:hover {
   background-color: #e8e8e8;
 }
 .topjoin signup {
@@ -113,7 +113,7 @@ html, body {
   border-radius: 6vh;
   border: none;
   padding: 1.5vh 3vh;
-  font-size: 1.8vh;
+  font-size: 2vh;
   margin-right: 10vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
