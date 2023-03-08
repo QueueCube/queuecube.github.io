@@ -28,7 +28,7 @@ html, body {
   padding: 2vh 2vh;
   border-radius: 6vh;
   margin-left: 1vh;
-  margin-right: 40vh;
+  margin-right: 39vh;
   display: flex;
   align-items: center;
 }
@@ -236,15 +236,15 @@ button {
   justify-content: space-between;
 }
 .category1 {
-  padding: 2.5vh;
-  margin-left: 10vh;
+  padding: 2vh;
+  margin-left: 9vh;
 }
 .category {
-  padding: 2.5vh;
+  padding: 2vh;
 }
 .categoryend {
-  padding: 2.5vh;
-  margin-right: 10vh;
+  padding: 2vh;
+  margin-right: 9vh;
 }
 
 
