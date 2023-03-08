@@ -15,34 +15,18 @@
 <body>
 
 <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
-  <div class="topstuff">
+<div class="topstuff">
 <div class="topjoin">
-  <input id="searchbar" class="searchbar" type="text" placeholder="Restaurant or Location">
+  <input id="searchbar" class="searchbar" type="text" placeholder="Search Restaurant">
+  <div class="locationset">Location</div>
   <script>
     const searchInput = document.getElementById('searchbar');
     const autocomplete = new google.maps.places.Autocomplete(searchInput);
   </script>
-  <!--<a href="how/how.html" class="how">
-    <div>
-      <p class="how-text">How it works</p>
-    </div>
-  </a>    
-  <a href="about/about.html" class="about">
-    <div>
-      <p class="about-text">About</p>
-    </div>
-  </a>    
-  <a href="partner/partner.html" class="partner">
-    <div>
-      <p class="partner-text">Partner</p>
-    </div>
-  </a>-->
   <getapp>Get the App</getapp>
-  <how onclick="window.location.href='how/how.html'">How it Works</how>
-  <about onclick="window.location.href='about/about.html'">About</about>
-  <partner onclick="window.location.href='partner/partner.html'">Partner</partner>
   <signin type="log" onclick="openPopup()">Log In</signin>
   <signup type="signup" onclick="openPopup()">Sign Up</signup>
+
   <div class="sign-up-form" id="sign-up-form"> 
     <div class="liORsi">
       <button type="button" class="li-btn">Login</button>
@@ -82,7 +66,7 @@
 </div>
 </div>
 </div>
-<!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN-->
+<!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
 
 
 
@@ -105,7 +89,8 @@
 
 <!--NEARBY--><!--NEARBY--><!--NEARBY--><!--NEARBY--><!--NEARBY--><!--NEARBY--><!--NEARBY--><!--NEARBY-->
   <div class="nearbyrow">
-    <h2 class="rowtitle">Nearby</h2>
+    <h2 class="rowtitle">Featured</h2>
+    <i style="font-size: 1.5rem; color: #FFEB84;" class="fas fa-chess-king rowtitle-icon"></i>
     <div class="frrestaurants">
       <div class="nb1">
         <div class="detailscontainer">
@@ -162,6 +147,7 @@
 <!--QUICKESTQUEUES--><!--QUICKESTQUEUES--><!--QUICKESTQUEUES--><!--QUICKESTQUEUES--><!--QUICKESTQUEUES-->
   <div class="quickestqueuesrow">
     <h2 class="rowtitle">Quickest Queues</h2>
+    <i style="font-size: 1.5rem; color: #FFEB84;" class="fas fa-chess-queen rowtitle-icon"></i>
     <div class="frrestaurants">
       <div class="qq1">
         <div class="detailscontainer">
@@ -218,7 +204,8 @@
   
 <!--MOSTPOPULAR--><!--MOSTPOPULAR--><!--MOSTPOPULAR--><!--MOSTPOPULAR--><!--MOSTPOPULAR--><!--MOSTPOPULAR-->
   <div class="mostpopularrow">
-    <h2 class="rowtitle">Most Popular</h2>
+    <h2 class="rowtitle">Highly Rated</h2>
+    <i style="font-size: 1.5rem; color: #FFEB84;" class="fas fa-chess-pawn rowtitle-icon"></i>
     <div class="frrestaurants">
       <div class="mp1">
         <div class="detailscontainer">
@@ -271,11 +258,20 @@
   </div>
 </div>
 <!--MOSTPOPULAR--><!--MOSTPOPULAR--><!--MOSTPOPULAR--><!--MOSTPOPULAR--><!--MOSTPOPULAR--><!--MOSTPOPULAR-->
-  </div>
-  </div>
+</div>
+</div>
 <!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS-->
-  
-</body>
 
-  
+
+
+<!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO-->
+<div class="footer">
+  <how onclick="window.location.href='how/how.html'">How it Works</how>
+  <about onclick="window.location.href='about/about.html'">About</about>
+  <partner onclick="window.location.href='partner/partner.html'">Partner</partner>
+</div>
+<!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO-->
+
+
+</body> 
 </html>
