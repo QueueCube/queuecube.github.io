@@ -325,7 +325,7 @@ button {
 
 .featuredrow {
   background-color: #fff;
-  height: 21.6%;
+  height: 23%;
   margin-bottom: 1rem;
 }
 .f1 {
@@ -355,7 +355,7 @@ button {
 
 .quickestqueuesrow {
   background-color: #fff;
-  height: 21.6%;
+  height: 23%;
   margin-bottom: 1rem;
 }
 .qqrestaurants {
@@ -391,7 +391,7 @@ button {
 
 .highlyratedrow {
   background-color: #fff;
-  height: 21.6%;
+  height: 23%;
   margin-bottom: 1rem;
 }
 .hrrestaurants {
@@ -426,7 +426,7 @@ button {
 
 .allrestaurantsrow {
   background-color: #fff;
-  height: 26%;
+  height: 30%;
   margin-bottom: 1rem;
 }
 .allrestaurants {
@@ -468,12 +468,12 @@ button {
 }
 .seemore {
   background-color: #eee;
-  width: 6%;
   display: flex;
   justify-content: center;
   align-items: center; 
-  padding: 1.5vh 1.5vh;
-  border-radius: 6vh;
+  padding: 2vh 3vh;
+  margin-top: 0.5vh;
+  border-radius: 10vh;
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
@@ -482,13 +482,30 @@ button {
 }
 
 /*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*/
-
 .footerinfo {
-  background-color: #fff;
-  width: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  padding: 5vh;
-  padding-top: 5vh;
+  align-items: flex-start;
+  background-color: #fff;
+  height: 20%;
+}
+.column-title {
+  color: #000;
+  font-size: 2.5vh;
+  padding-bottom: 1vh;
+}
+.column-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.column-links how, .column-links about, .column-links partner {
+  font-size: 2vh;
+  color: #555;
+  text-decoration: none;
+  margin-bottom: 1.5vh;
+}
+.column-links how:hover, .column-links about:hover, .column-links partner:hover {
+  color: #000;
 }
