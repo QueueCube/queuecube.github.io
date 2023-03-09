@@ -13,8 +13,8 @@ html, body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 1vh;
-  padding-left: 8vh;
+  padding-left: 7vh;
+  padding-right: 7vh;
 }
 .topjoin {
   display: flex;
@@ -24,22 +24,29 @@ html, body {
   width: 100%;
 }
 .locationset {
-  background-color: #eee;
-  padding: 2vh 2vh;
+  background-color: #fff;
   border-radius: 6vh;
-  margin-left: 1vh;
-  margin-right: 39vh;
+  margin-right: 63vh;
+  margin-left: 1.5vh;
+  padding: 1.5vh 1.5vh;
   display: flex;
+  font-size: 1.8vh;
   align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 .locationset i {
-  margin-right: 1vh;
+  padding-right: 1vh;
   font-size: 2vh;
+}
+.locationset:hover {
+  background-color: #e8e8e8;
 }
 .searchbar {
   background-color: #eee;
-  width: 35%;
-  height: 5vh;
+  width: 28%;
+  height: 4.5vh;
   padding: 1vh;
   padding-left: 4vh;
   font-family: Outfit, sans-serif;
@@ -48,60 +55,24 @@ html, body {
   outline: none;
   border: none;
 }
-.topjoin about {
-  color: #000;
-  border-radius: 6vh;
-  border: none;
-  padding: 1.5vh 2vh;
-  font-size: 2vh;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.topjoin about:hover {
-  background-color: #e8e8e8;
-}
-.topjoin how {
-  color: #000;
-  border-radius: 6vh;
-  border: none;
-  padding: 1.5vh 2vh;
-  font-size: 2vh;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.topjoin how:hover {
-  background-color: #e8e8e8;
-}
 .topjoin getapp {
   color: #000;
   border-radius: 6vh;
   border: none;
-  padding: 1.5vh 2vh;
-  font-size: 2vh;
+  padding: 1.5vh 1.5vh;
+  font-size: 1.8vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 .topjoin getapp:hover {
   background-color: #e8e8e8;
 }
-.topjoin partner {
-  color: #000;
-  border-radius: 6vh;
-  border: none;
-  padding: 1.5vh 2vh;
-  font-size: 2vh;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.topjoin partner:hover {
-  background-color: #e8e8e8;
-}
 .topjoin login {
   color: #000;
   border-radius: 6vh;
   border: none;
-  padding: 1.5vh 3vh;
-  font-size: 2vh;
+  padding: 1.5vh 2vh;
+  font-size: 1.8vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -113,9 +84,9 @@ html, body {
   color: #fff;
   border-radius: 6vh;
   border: none;
-  padding: 1.5vh 3vh;
-  font-size: 2vh;
-  margin-right: 10vh;
+  padding: 1.5vh 2vh;
+  margin-left: 0.5vh;
+  font-size: 1.8vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -190,6 +161,7 @@ html, body {
   width: 15vh;
   height: 6vh;
   margin-bottom: 4vh;
+  font-size: 1.8vh;
 }
 .fab {
   color: #eee;
@@ -228,22 +200,29 @@ button {
 }
 /*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*/
 
-
+hr {
+  border: none;
+  height: 0.1vh;
+  background-color: #ccccccc2; /* change to a lighter color if needed */
+}
 .categories {
-  background-color: #eee;
+  background-color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .category1 {
-  padding: 2vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
   margin-left: 9vh;
 }
 .category {
-  padding: 2vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
 }
 .categoryend {
-  padding: 2vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
   margin-right: 9vh;
 }
 
@@ -259,17 +238,17 @@ button {
   margin-right: 1vh;
   margin-left: 12vh;
   margin-top: 3vh;
-  font-size: 3.5vh;
+  font-size: 3.2vh;
   font-weight: 500;
 }
 
 .detailscontainer {
-  background-color: #ffffff24;
+  background-color: #ffffff37;
   transform: translate(0%, 50%) ;
-  height: 32%;
+  height: 27%;
   border-radius: 1.5vh;
   margin: 2vh;
-  margin-top: 13vh;
+  margin-top: 15vh;
   color: #fff;
   z-index: 2;
   backdrop-filter: blur(4vh);
@@ -294,12 +273,14 @@ button {
   display: flex; 
   align-items: center;
   line-height: 0.1vh;
+  font-size: 1.6vh;
   justify-content: space-between;
 }
 .waittime {
   display: flex;
   align-items: stretch;
   line-height: 0vh;
+  font-size: 1.6vh;
   justify-content: space-between;
 }
 #arrowmore {
