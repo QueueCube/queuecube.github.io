@@ -203,7 +203,7 @@ button {
 hr {
   border: none;
   height: 0.1vh;
-  background-color: #ccccccc2; /* change to a lighter color if needed */
+  background-color: #ccccccc2;
 }
 .categories {
   background-color: #fff;
@@ -243,7 +243,7 @@ hr {
 }
 
 .detailscontainer {
-  background-color: #ffffff37;
+  background-color: #ffffff40;
   transform: translate(0%, 50%) ;
   height: 27%;
   border-radius: 1.5vh;
