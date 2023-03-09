@@ -200,6 +200,11 @@ button {
 }
 /*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*/
 
+
+
+
+
+/*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*/
 hr {
   border: none;
   height: 0.1vh;
@@ -211,22 +216,25 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 3vh;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
 }
-.category1 {
-  padding-left: 2vh;
-  padding-right: 2vh;
-  margin-left: 9vh;
+.categorycontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.category {
-  padding-left: 2vh;
-  padding-right: 2vh;
+.categorycontainer img.categoryitem {
+  width: 7vh; 
+  height: 7vh; 
+  margin-bottom: 1vh;
 }
-.categoryend {
-  padding-left: 2vh;
-  padding-right: 2vh;
-  margin-right: 9vh;
-}
+/*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*/
+
+
+
 
 
 /*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*/
