@@ -210,6 +210,8 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
 }
 .category1 {
   padding-left: 2vh;
