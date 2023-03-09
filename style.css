@@ -461,8 +461,11 @@ hr {
 .seemore:hover {
   background-color: #dadada;
 }
+/*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*/
 
-/*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*/
+
+
+/*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*/
 .footerinfo {
   display: flex;
   justify-content: baseline;
@@ -492,11 +495,15 @@ hr {
 .column-links how:hover, .column-links about:hover, .column-links partner:hover {
   color: #000;
 }
-
 .business {
   margin-left: 15vh;
 }
+/*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*/
 
+
+
+
+/*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*/
 .socials {
   text-align: right;
   margin-left: 50vh;
@@ -513,7 +520,6 @@ hr {
   border: none;
   text-decoration: none;
 }
-
 .copyright {
   display: flex;
   justify-content: space-between;
@@ -522,4 +528,5 @@ hr {
   margin-left: 15vh;
   padding-bottom: 5vh;
   color: #555;
- }
+}
+ /*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*/
