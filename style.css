@@ -208,6 +208,7 @@ button {
 hr {
   border: none;
   height: 0.1vh;
+  margin-bottom: 5vh;
   background-color: #ccccccc2;
 }
 .categories {
