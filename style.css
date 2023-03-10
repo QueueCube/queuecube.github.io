@@ -26,10 +26,11 @@ html, body {
 
 
 .logo {
-  height: 6vh;
-  margin-right: 4vh;
+  height: 5vh;
+  margin-right: 2vh;
   cursor: pointer;
 }
+
 .searchbar {
   background-color: #eee;
   width: 30%;
@@ -45,7 +46,7 @@ html, body {
 .locationset {
   background-color: #fff;
   border-radius: 6vh;
-  margin-right: 51vh;
+  margin-right: 54vh;
   padding: 1.5vh 1.5vh;
   display: flex;
   font-size: 1.8vh;
