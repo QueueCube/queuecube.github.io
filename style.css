@@ -26,8 +26,8 @@ html, body {
 .locationset {
   background-color: #fff;
   border-radius: 6vh;
-  margin-right: 63vh;
-  margin-left: 1.5vh;
+  margin-right: 61vh;
+  margin-left: 2vh;
   padding: 1.5vh 1.5vh;
   display: flex;
   font-size: 1.8vh;
@@ -45,7 +45,7 @@ html, body {
 }
 .searchbar {
   background-color: #eee;
-  width: 28%;
+  width: 30%;
   height: 4.5vh;
   padding: 1vh;
   padding-left: 4vh;
@@ -201,16 +201,15 @@ button {
 /*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*/
 
 
-
-
-
-/*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*/
 hr {
   border: none;
   height: 0.1vh;
   margin-bottom: 5vh;
   background-color: #ccccccc2;
 }
+
+
+/*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*/
 .categories {
   background-color: #fff;
   display: flex;
