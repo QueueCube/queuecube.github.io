@@ -26,8 +26,8 @@ html, body {
 
 
 .logo {
-  height: 5vh;
-  margin-right: 2vh;
+  height: 6vh;
+  margin-right: 4vh;
   cursor: pointer;
 }
 
@@ -46,7 +46,7 @@ html, body {
 .locationset {
   background-color: #fff;
   border-radius: 6vh;
-  margin-right: 54vh;
+  margin-right: 51vh;
   padding: 1.5vh 1.5vh;
   display: flex;
   font-size: 1.8vh;
