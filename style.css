@@ -23,11 +23,12 @@ html, body {
   justify-content: space-between;
   width: 100%;
 }
+
+
 .locationset {
   background-color: #fff;
   border-radius: 6vh;
-  margin-right: 61vh;
-  margin-left: 2vh;
+  margin-right: 59vh;
   padding: 1.5vh 1.5vh;
   display: flex;
   font-size: 1.8vh;
@@ -40,9 +41,8 @@ html, body {
   padding-right: 1vh;
   font-size: 2vh;
 }
-.locationset:hover {
-  background-color: #e8e8e8;
-}
+
+
 .searchbar {
   background-color: #eee;
   width: 30%;
@@ -59,7 +59,7 @@ html, body {
   color: #000;
   border-radius: 6vh;
   border: none;
-  padding: 1.5vh 1.5vh;
+  padding: 1.5vh 2.2vh;
   font-size: 1.8vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -71,7 +71,7 @@ html, body {
   color: #000;
   border-radius: 6vh;
   border: none;
-  padding: 1.5vh 2vh;
+  padding: 1.5vh 2.2vh;
   font-size: 1.8vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -84,7 +84,7 @@ html, body {
   color: #fff;
   border-radius: 6vh;
   border: none;
-  padding: 1.5vh 2vh;
+  padding: 1.5vh 2.2vh;
   margin-left: 0.5vh;
   font-size: 1.8vh;
   cursor: pointer;
@@ -204,7 +204,7 @@ button {
 hr {
   border: none;
   height: 0.1vh;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
   background-color: #ccccccc2;
 }
 
