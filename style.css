@@ -496,7 +496,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center; 
-  padding: 2vh 3vh;
+  padding: 1.5vh 2.5vh;
   margin-top: 0.5vh;
   border-radius: 10vh;
   transition: background-color 0.3s ease;
