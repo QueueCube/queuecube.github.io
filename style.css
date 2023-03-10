@@ -233,6 +233,30 @@ hr {
   height: 7vh; 
   margin-bottom: 1vh;
 }
+#categoryarrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1vh;
+  font-size: 3vh;
+}
+#categoryarrowcircle {
+  background-color: #eee;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3.2vh;
+  height: 4vh;
+  border-radius: 50%;
+  padding-left: 2vh;
+  padding-top: 1vh;
+  color: #000;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+#categoryarrowcircle:hover {
+  background-color: #dadada;
+}
 /*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*/
 
 
@@ -313,6 +337,11 @@ hr {
   padding-left: 2vh;
   padding-top: 1vh;
   color: #000;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+#arrowmorecircle:hover {
+  background-color: #dadada;
 }
 
 
