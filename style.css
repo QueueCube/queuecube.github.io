@@ -25,10 +25,27 @@ html, body {
 }
 
 
+.logo {
+  height: 6vh;
+  margin-right: 4vh;
+  cursor: pointer;
+}
+.searchbar {
+  background-color: #eee;
+  width: 30%;
+  height: 4.5vh;
+  padding: 1vh;
+  padding-left: 4vh;
+  font-family: Outfit, sans-serif;
+  font-size: 2vh;
+  border-radius: 6vh;
+  outline: none;
+  border: none;
+}
 .locationset {
   background-color: #fff;
   border-radius: 6vh;
-  margin-right: 59vh;
+  margin-right: 51vh;
   padding: 1.5vh 1.5vh;
   display: flex;
   font-size: 1.8vh;
@@ -42,19 +59,6 @@ html, body {
   font-size: 2vh;
 }
 
-
-.searchbar {
-  background-color: #eee;
-  width: 30%;
-  height: 4.5vh;
-  padding: 1vh;
-  padding-left: 4vh;
-  font-family: Outfit, sans-serif;
-  font-size: 2vh;
-  border-radius: 6vh;
-  outline: none;
-  border: none;
-}
 .topjoin getapp {
   color: #000;
   border-radius: 6vh;
