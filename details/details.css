@@ -444,13 +444,18 @@ hr {
   margin-left: 5vh;
   margin-right: 5vh;
 }
+.menutitle {
+  margin-left: 1vh;
+  margin-bottom: 2vh;
+  font-size: 3vh;
+}
 .menuitemlist {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .menuitem {
-  background-color: #f3f3f3;
+  background-color: #ffff;
   display: flex;
   align-items: center;
   margin-bottom: 2vh;
@@ -459,13 +464,18 @@ hr {
   font-size: 1.8vh;
   cursor: pointer;
   justify-content: space-between;
-  transition: background-color 0.3s ease;
-}
-.menuitem:hover {
-  background-color: #e8e8e8;
+  border: 1px solid #eee;
+  outline: none;
 }
 .itemimage {
   height: 17vh;
   border-radius: 1vh;
 }
 /*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*/
+
+
+
+/*FOODINFO*/
+.foodinfo {
+  color: #777777;
+}
