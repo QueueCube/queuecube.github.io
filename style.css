@@ -339,16 +339,19 @@ hr {
   font-size: 3.2vh;
   font-weight: 500;
 }
+.rating {
+  margin: 2vh;
+  margin-top: 16vh;
+}
 .detailscontainer {
   background-color: #e9e9e913;
-  transform: translate(0%, 50%) ;
   height: 27%;
   border-radius: 1vh;
   margin: 2vh;
-  margin-top: 16.3vh;
+  margin-top: 15.5vh;
   color: #fff;
   z-index: 2;
-  backdrop-filter: blur(4vh);
+  backdrop-filter: blur(5vh);
 }
 .detailstext {
   margin: 2vh;
@@ -363,7 +366,7 @@ hr {
 .titleandheart {
   display: flex; 
   align-items: center;
-  line-height: 0.4vh;
+  line-height: 0.25vh;
   font-size: 1.65vh;
   justify-content: space-between;
 }
@@ -371,10 +374,13 @@ hr {
   display: flex;
   align-items: stretch;
   line-height: 0vh;
-  font-size: 1.65vh;
+  font-size: 1.7vh;
   justify-content: space-between;
   align-items: center;
 }
+    .rating {
+      color: #FFAC50;
+    }
     .progressbar {
       width: 83%;
       height: 2vh;
@@ -425,6 +431,14 @@ hr {
   border-radius: 1vh;
   cursor: pointer;
 }
+.f1 i {
+  color: #fff;
+  margin-top: 2vh;
+  margin-left: 43vh;
+  font-size: 2.5vh;
+}
+
+
 .f2 {
   background-image: url('imgs/restaurant2.jpg');
   background-size: cover;
@@ -434,6 +448,12 @@ hr {
   border-radius: 1vh;
   cursor: pointer;
 }
+.f2 i {
+  color: #fff;
+  margin-top: 2vh;
+  margin-left: 43vh;
+  font-size: 2.5vh;
+}
 .f3 {
   background-image: url('imgs/restaurant3.jpg');
   background-size: cover;
@@ -442,6 +462,12 @@ hr {
   margin-left: 2vh;
   border-radius: 1.5vh;
   cursor: pointer;
+}
+.f3 i {
+  color: #fff;
+  margin-top: 2vh;
+  margin-left: 43vh;
+  font-size: 2.5vh;
 }
 
 
@@ -463,6 +489,12 @@ hr {
   border-radius: 1vh;
   cursor: pointer;
 }
+.qq1 i {
+  color: #fff;
+  margin-top: 2vh;
+  margin-left: 43vh;
+  font-size: 2.5vh;
+}
 .qq2 {
   background-image: url('imgs/restaurant5.jpg');
   background-size: cover;
@@ -472,6 +504,12 @@ hr {
   border-radius: 1vh;
   cursor: pointer;
 }
+.qq2 i {
+  color: #fff;
+  margin-top: 2vh;
+  margin-left: 43vh;
+  font-size: 2.5vh;
+}
 .qq3 {
   background-image: url('imgs/restaurant6.jpg');
   background-size: cover;
@@ -480,6 +518,12 @@ hr {
   margin-left: 2vh;
   border-radius: 1vh;
   cursor: pointer;
+}
+.qq3 i {
+  color: #fff;
+  margin-top: 2vh;
+  margin-left: 43vh;
+  font-size: 2.5vh;
 }
 
 
@@ -502,6 +546,12 @@ hr {
   border-radius: 1vh;
   cursor: pointer;
 }
+.hr1 i {
+  color: #fff;
+  margin-top: 2vh;
+  margin-left: 43vh;
+  font-size: 2.5vh;
+}
 .hr2 {
   background-image: url('imgs/restaurant5.jpg');
   background-size: cover;
@@ -511,6 +561,12 @@ hr {
   border-radius: 1vh;
   cursor: pointer;
 }
+.hr2 i {
+  color: #fff;
+  margin-top: 2vh;
+  margin-left: 43vh;
+  font-size: 2.5vh;
+}
 .hr3 {
   background-image: url('imgs/restaurant6.jpg');
   background-size: cover;
@@ -519,6 +575,12 @@ hr {
   margin-left: 2vh;
   border-radius: 1vh;
   cursor: pointer;
+}
+.hr3 i {
+  color: #fff;
+  margin-top: 2vh;
+  margin-left: 43vh;
+  font-size: 2.5vh;
 }
 
 
@@ -542,6 +604,12 @@ hr {
   border-radius: 1vh;
   cursor: pointer;
 }
+.ar1 i {
+  color: #fff;
+  margin-top: 2vh;
+  margin-left: 43vh;
+  font-size: 2.5vh;
+}
 .ar2 {
   background-image: url('imgs/restaurant8.jpg');
   background-size: cover;
@@ -551,6 +619,12 @@ hr {
   border-radius: 1vh;
   cursor: pointer;
 }
+.ar2 i {
+  color: #fff;
+  margin-top: 2vh;
+  margin-left: 43vh;
+  font-size: 2.5vh;
+}
 .ar3 {
   background-image: url('imgs/restaurant9.jpg');
   background-size: cover;
@@ -559,6 +633,12 @@ hr {
   margin-left: 1.5vh;
   border-radius: 1vh;
   cursor: pointer;
+}
+.ar3 i {
+  color: #fff;
+  margin-top: 2vh;
+  margin-left: 43vh;
+  font-size: 2.5vh;
 }
 
 .seemorecontainer {
