@@ -239,7 +239,7 @@ button {
 }
 .uselocation {
   color: #ff3a3a;
-  padding: 2vh;
+  padding: 1.5vh;
   border-radius: 1vh;
   transition: background-color 0.3s ease;
   cursor: pointer;
@@ -420,7 +420,7 @@ hr {
 
 .featuredrow {
   background-color: #fff;
-  height: 23.5%;
+  height: 23%;
   margin-bottom: 1vh;
 }
 .f1 {
@@ -437,7 +437,6 @@ hr {
   margin-left: 43vh;
   font-size: 2.5vh;
 }
-
 
 .f2 {
   background-image: url('imgs/restaurant2.jpg');
@@ -473,7 +472,7 @@ hr {
 
 .quickestqueuesrow {
   background-color: #fff;
-  height: 23.5%;
+  height: 23%;
   margin-bottom: 1vh;
 }
 .qqrestaurants {
@@ -530,7 +529,7 @@ hr {
 
 .highlyratedrow {
   background-color: #fff;
-  height: 23.5%;
+  height: 23%;
   margin-bottom: 1vh;
 }
 .hrrestaurants {
