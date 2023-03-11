@@ -330,6 +330,7 @@ hr {
   background-color: #eee;
   height: 190%;
 }
+
 .rowtitle {
   display: inline-block;
   vertical-align: middle;
@@ -339,10 +340,12 @@ hr {
   font-size: 3.2vh;
   font-weight: 500;
 }
+
 .rating {
   margin: 2vh;
   margin-top: 16vh;
 }
+
 .detailscontainer {
   background-color: #e9e9e913;
   height: 27%;
@@ -353,9 +356,11 @@ hr {
   z-index: 2;
   backdrop-filter: blur(5vh);
 }
+
 .detailstext {
   margin: 2vh;
 }
+
 .frrestaurants {
   display: flex;
   flex-direction: row;
@@ -363,6 +368,7 @@ hr {
   margin-left: 12vh;
   margin-right: 5vh;
 }
+
 .titleandheart {
   display: flex; 
   align-items: center;
@@ -370,6 +376,7 @@ hr {
   font-size: 1.65vh;
   justify-content: space-between;
 }
+
 .waittime {
   display: flex;
   align-items: stretch;
@@ -378,20 +385,24 @@ hr {
   justify-content: space-between;
   align-items: center;
 }
-    .rating {
-      color: #FFAC50;
-    }
-    .progressbar {
-      width: 83%;
-      height: 2vh;
-      background-color: #eee;
-      border-radius: 6vh;
-    }
-    .progressbar-fill {
-      height: 100%;
-      border-radius: 6vh;
-      transition: width 0.3s ease-in-out;
-    }
+
+.rating {
+  color: #FFAC50;
+}
+
+.progressbar {
+  width: 83%;
+  height: 2vh;
+  background-color: #eee;
+  border-radius: 6vh;
+}
+
+.progressbar-fill {
+  height: 100%;
+  border-radius: 6vh;
+  transition: width 0.3s ease-in-out;
+}
+
 #arrowmore {
   display: flex;
   justify-content: center;
@@ -399,6 +410,7 @@ hr {
   margin-left: 5vh;
   font-size: 3vh;
 }
+
 #arrowmorecircle {
   background-color: #eee;
   bottom: 2rem;
@@ -413,16 +425,17 @@ hr {
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
+
 #arrowmorecircle:hover {
   background-color: #dadada;
 }
-
 
 .featuredrow {
   background-color: #fff;
   height: 23%;
   margin-bottom: 1vh;
 }
+
 .f1 {
   background-image: url('imgs/restaurant1.jpg');
   background-size: cover;
@@ -431,12 +444,20 @@ hr {
   border-radius: 1vh;
   cursor: pointer;
 }
+
 .f1 i {
   color: #fff;
   margin-top: 2vh;
   margin-left: 43vh;
   font-size: 2.5vh;
 }
+
+/* Add styles for anchor tag */
+a {
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove underline */
+}
+
 
 .f2 {
   background-image: url('imgs/restaurant2.jpg');
