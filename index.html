@@ -68,8 +68,7 @@
 
   <getapp>Get the App</getapp>
   <login type="log" onclick="openPopup()">Log In</login>
-  <signup type="signup" onclick="openPopup()">Sign Up</signup>
-
+  <signup type="signup" onclick="openPopup();">Sign Up</signup>
   <div class="sign-up-form" id="sign-up-form"> 
     <div class="liORsi">
       <button type="button" class="li-btn">Login</button>
@@ -92,11 +91,15 @@
 
 <script>
   let popup = document.getElementById("sign-up-form");
-  let overlay = document.getElementById("overlay");
+  let overlay = document.getElementById("background-overlay");
 
   function openPopup() {
     popup.classList.add("open-popup");
+    overlay.classList.add("background-overlay")
   }
+  function closePopup() {
+    popup.classList.remove("open-popup");
+  }  
 </script>
 </div>
 </div>
@@ -179,18 +182,16 @@
     <i style="font-size: 1.3rem; color: #ffc86a;" class="fas fa-chess-king rowtitle-icon"></i>
     <div class="frrestaurants">
       <a class="f1" href="details/details.html">
-        <div class="f1">
-          <i class="far fa-heart"></i>
-          <div class="detailscontainer" >
-            <div class="detailstext">
-              <div class="titleandheart">
-                <h3>Forest Gump's Frosted Flakes</h3>
-              </div>
-              <div class="waittime">
-                <p>5 min</p>
-                <div class="progressbar">
-                  <div class="progressbar-fill" style="width: 5.5%; background-color: #39D2C0;"></div>
-                </div>
+        <i class="far fa-heart"></i>
+        <div class="detailscontainer">
+          <div class="detailstext">
+            <div class="titleandheart">
+              <h3>Forest Gump's Frosted Flakes</h3>
+            </div>
+            <div class="waittime">
+              <p>5 min</p>
+              <div class="progressbar">
+                <div class="progressbar-fill" style="width: 5.5%; background-color: #39D2C0;"></div>
               </div>
             </div>
           </div>
@@ -198,7 +199,7 @@
       </a>
       
     
-      <div class="f2">
+      <a class="f2" href="details/details.html">
         <i class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
@@ -213,9 +214,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </a>
   
-      <div class="f3">
+      <a class="f3" href="details/details.html">
         <i class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
@@ -230,7 +231,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </a>
       <div id="arrowmore">
         <i id="arrowmorecircle" class="fas fa-angle-right"></i>
       </div>
@@ -246,7 +247,7 @@
     <h2 class="rowtitle">Quickest Queues</h2>
     <i style="font-size: 1.3rem; color: #ffc86a;" class="fas fa-chess-queen rowtitle-icon"></i>
     <div class="frrestaurants">
-      <div class="qq1">
+      <a class="qq1" href="details/details.html">
         <i class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
@@ -261,9 +262,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </a>
 
-      <div class="qq2">
+      <a class="qq2" href="details/details.html">
         <i class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
@@ -278,9 +279,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </a>
   
-      <div class="qq3">
+      <a class="qq3" href="details/details.html">
         <i class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
@@ -295,7 +296,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </a>
       <div id="arrowmore">
           <i id="arrowmorecircle" class="fas fa-angle-right"></i>
       </div>
@@ -310,7 +311,7 @@
   <h2 class="rowtitle">Highly Rated</h2>
   <i style="font-size: 1.3rem; color: #ffc86a;" class="fas fa-chess-pawn rowtitle-icon"></i>
   <div class="frrestaurants">
-    <div class="qq1">
+    <a class="hr1" href="details/details.html">
       <i class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
@@ -325,9 +326,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </a>
 
-    <div class="qq2">
+    <a class="hr2" href="details/details.html">
       <i class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
@@ -342,9 +343,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </a>
 
-    <div class="qq3">
+    <a class="hr3" href="details/details.html">
       <i class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
@@ -359,7 +360,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </a>
     <div id="arrowmore">
         <i id="arrowmorecircle" class="fas fa-angle-right"></i>
     </div>
@@ -374,7 +375,7 @@
 <div class="allrestaurantsrow">
   <h2 class="rowtitle">All Restaurants</h2>
   <div class="allrestaurants">
-    <div class="ar1">
+    <a class="ar1" href="details/details.html">
       <i class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
@@ -389,9 +390,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </a>
   
-    <div class="ar2">
+    <a class="ar2" href="details/details.html">
       <i class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
@@ -406,9 +407,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </a>
 
-  <div class="ar3">
+    <a class="ar3" href="details/details.html">
     <i class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
@@ -424,7 +425,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </a>
       <div class="seemorecontainer">
         <div class="seemore">
           See More
