@@ -374,7 +374,8 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 4vh;
+  margin-left: 4vh;
+  margin-right: 4vh;
   margin-top: 0vh;
   margin-bottom: 4vh;
 }
@@ -384,11 +385,9 @@ hr {
 }
 .queuetime {
   background-color: #eee;
-  width: 12vh;
+  width: 17vh;
   height: 11vh;
   padding: 5vh;
-  margin-left: 1vh;
-  margin-right: 1vh;
   border-radius: 1vh;
   display: flex;
   flex-direction: column;
@@ -401,15 +400,13 @@ hr {
 }
 .ratings {
   background-color: #eee;
-  width: 12vh;
+  width: 17vh;
   height: 11vh;
   padding: 5vh;
-  margin-left: 1vh;
-  margin-right: 1vh;
   border-radius: 1vh;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;  
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
@@ -418,15 +415,13 @@ hr {
 }
 .call {
   background-color: #eee;
-  width: 12vh;
+  width: 17vh;
   height: 11vh;
   padding: 5vh;
-  margin-left: 1vh;
-  margin-right: 1vh;
   border-radius: 1vh;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;  
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
