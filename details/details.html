@@ -5,18 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QueueCube | Restaurant</title>
   <link rel="stylesheet" href="details.css">
+  <link rel="shortcut icon" type="image/png" href="imgs/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
+<div class="topstuff">
+  <div class="topjoin">
+    <img class="logo" src="logo(clear).png" onclick="window.location.href='index.html';">
+  
+      <input id="searchbar" class="searchbar" type="text" placeholder="Search Restaurant" >
+      <script>
+        const searchInput = document.getElementById('searchbar');
+        const autocomplete = new google.maps.places.Autocomplete(searchInput);
+      </script>
+     
+  
+    <div class="locationset" onclick="openlocationsetPopup();dim(true)">
+      <i class="fas fa-map-marker-alt"></i> Location
+    </div>
+    <script>
+    function openlocationsetPopup() {
+      // Add your code to open a popup here
+      var locationsetPopup = window.open("", "locationsetPopup", "width=400,height=400");
+      var locationsetForm = document.getElementById("locationset-form").outerHTML;
+      locationsetPopup.document.write(locationsetForm);
+    }
+    </script>
+    <div class="locationset-form" id="locationset-form"> 
+      <div class="locationsettopinfo">
+        <h3 class="enteraddress">
+          Enter Your Address
+        </h3>
+        <div class="uselocation">
+          <i class="fas fa-map-marker-alt"></i> Current Location
+        </div>
+      </div>     
+      <hr style="margin-left: 1vh; margin-right: 1vh;"> 
+      <input type="text" class="locationsetinput" id="address-input" placeholder="Address">
+      <script>
+        const locationsetInput = document.getElementById('searchbar');
+        const locationsetautocomplete = new google.maps.places.Autocomplete(searchInput);
+      </script>
+      <script>
+        var input = document.getElementById('address-input');
+        var locationautocomplete = new google.maps.places.Autocomplete(input);
+      </script>
+    </div>
+    <script>
+      let locationsetpopup = document.getElementById("locationset-form");
+      function openlocationsetPopup() {
+        locationsetpopup.classList.add("open-locationsetpopup");
+      }
+      function closelocationsetPopup() {
+        locationsetpopup.classList.remove("open-locationsetpopup");
+      }
+    </script>
+    
+
+    <getapp>Get the App</getapp>
+    <login type="log" onclick="openPopup();dim(true)">Log In</login>
+    <signup type="signup" onclick="openPopup();dim(true);">Sign Up</signup>
+    <button id="dimmer" onclick="dim(false);closePopup();closelocationsetPopup()"></button>  <!--the background used when dimmed - add to this as dimming buttons added-->
+  
+    <div class="sign-up-form" id="sign-up-form"> 
+      <div class="liORsi">
+        <button type="button" class="li-btn">Login</button>
+        <button type="button" class="su-btn">Sign Up</button>
+      </div>
+      <form>
+        <input type="email" class="input-box" placeholder="Email">
+        <input type="password" class="input-box" placeholder="Password">
+        <p><button type="button" class="login-btn">Login</button></p>
+        <hr>
+        <div>
+          <i class="fab fa-google"></i> 
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook-f"></i>
+        </div>
+      </form>
+    </div>
+  
+  
+  <script>
+    let popup = document.getElementById("sign-up-form");
+    function openPopup() {
+      popup.classList.add("open-popup");
+    }
+    function closePopup() {
+      popup.classList.remove("open-popup");
+    }
+    function dim(bool)
+  {
+      if (typeof bool=='undefined') bool=true; // so you can shorten dim(true) to dim()
+      if (typeof bool=='true') bool=false;
+      if (typeof bool=='false') bool=true;
+      document.getElementById('dimmer').style.display=(bool?'block':'none');
+  }    
+  dim(true); // on
+  dim(false); // off
+  </script>
+  </div>
+  </div>
+  </div>
+<hr> 
+<!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
+  
 <div class="allstuff">
 <!--IMAGECONTAINER--><!--IMAGECONTAINER--><!--IMAGECONTAINER--><!--IMAGECONTAINER--><!--IMAGECONTAINER-->
   <div class="imagecontainer">
     <div id="arrowless">
       <i id="arrowlesscircle" class="fas fa-angle-left"></i>
     </div>
-    <img src="restaurant1.jpg" class="restaurantimg-details">
+    <img src="restaurant3.jpg" class="restaurantimg-details">
     <div id="arrowmore">
       <i id="arrowmorecircle" class="fas fa-angle-right"></i>
     </div>
@@ -28,38 +131,60 @@
 <!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO-->
 <div class="details">
   <div class="title">Forest Gump's Frosted Flakes</div>
-  <p class="description">Welcome to Forest Gumps, the ultimate dining destination for nature lovers and to those enjo...
+  <p class="description">Welcome to Forest Gumps, the ultimate dining destination for nature lovers and to those en...
     <i class="fas fa-angle-down"></i>
   </p>
 
-<div class="detailsrow">
-  <div class="queuetime">
-    <i class="fas fa-clock" style="color: #2dc8b6;"></i>
-    <h3>5 min</h3>
-  </div>
-  <div class="ratings">
-    <i class="fas fa-star" style="color: #FFAC50;"></i>
-    <h3>4.5</h3>
-  </div>
-  <div class="call">
-    <i class="fas fa-phone-alt"></i>
-    <h3>5 min</h3>
-  </div>
-</div> 
-      <hr style="margin-left: 6vh; margin-right: 6vh;"> 
-</div>
-<!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO-->
-
+  <div class="detailsrow">
+    <div class="queuetime">
+      <i class="fas fa-clock" style="color: #2dc8b6;"></i>
+      <h3>5 min</h3>
+    </div>
+    <div class="ratings">
+      <i class="fas fa-star" style="color: #FFAC50;"></i>
+      <h3>4.5</h3>
+    </div>
+    <div class="call">
+      <i class="fas fa-phone-alt"></i>
+      <h3>Call</h3>
+    </div>
+  </div> 
+  <hr style="margin-left: 2vh; margin-right: 2vh;"> 
 
 
 
 <!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU-->
 <div class="menu">
-
+  <h1>Menu</h1>
+  <div class="menuitemlist">
+    <div class="menuitem">
+      <p style="font-size: 2vh;">Penis sack</p>
+      <img src="item1.jpg" class="itemimage">
+    </div>
+    <div class="menuitem">
+      <p style="font-size: 2vh;">ranch dipped horse hair</p>
+      <img src="item1.jpg" class="itemimage">
+    </div>
+    <div class="menuitem">
+      <p style="font-size: 2vh;">jesus water</p>
+      <img src="item1.jpg" class="itemimage">
+    </div>
+    <div class="menuitem">
+      <p style="font-size: 2vh;">GBP special</p>
+      <img src="item1.jpg" class="itemimage">
+    </div>
+    <div class="menuitem">
+      <p style="font-size: 2vh;">lololol</p>
+      <img src="item1.jpg" class="itemimage">
+    </div>
+  </div>
 </div>
 <!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU-->
 
+</div>
+<!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO-->
 
 </div>
 </body>
 </html>
+

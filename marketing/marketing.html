@@ -12,480 +12,212 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0RfELl-8CZ73qQoCOoRRS3rGzGEPEelU&libraries=places"></script>
 </head>
 
-
-<body>
-
-<!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
 <div class="topstuff">
-<div class="topjoin">
-  <img class="logo" src="imgs/logo(clear).png" onclick="location.reload();">
+    <div class="topjoin">
+    <a href="https://www.queuecube.com">
+      <img class="logo" src="marketingpagelogo.png" width="75" height="75">
+      </a>
+</div>
 
-    <input id="searchbar" class="searchbar" type="text" placeholder="Search Restaurant" >
-    <script>
-      const searchInput = document.getElementById('searchbar');
-      const autocomplete = new google.maps.places.Autocomplete(searchInput);
-    </script>
-   
-
-  <div class="locationset" onclick="openlocationsetPopup();dim(true)">
-    <i class="fas fa-map-marker-alt"></i> Location
-  </div>
-  <script>
-  function openlocationsetPopup() {
-    // Add your code to open a popup here
-    var locationsetPopup = window.open("", "locationsetPopup", "width=400,height=400");
-    var locationsetForm = document.getElementById("locationset-form").outerHTML;
-    locationsetPopup.document.write(locationsetForm);
-  }
-  </script>
-  <div class="locationset-form" id="locationset-form"> 
-    <div class="locationsettopinfo">
-      <h3 class="enteraddress">
-        Enter Your Address
-      </h3>
-      <div class="uselocation">
-        <i class="fas fa-map-marker-alt"></i> Current Location
-      </div>
-    </div>     
-    <hr style="margin-left: 1vh; margin-right: 1vh;"> 
-    <input type="text" class="locationsetinput" id="address-input" placeholder="Address">
-    <script>
-      const locationsetInput = document.getElementById('searchbar');
-      const locationsetautocomplete = new google.maps.places.Autocomplete(searchInput);
-    </script>
-    <script>
-      var input = document.getElementById('address-input');
-      var locationautocomplete = new google.maps.places.Autocomplete(input);
-    </script>
-  </div>
-  <script>
-    let locationsetpopup = document.getElementById("locationset-form");
-    function openlocationsetPopup() {
-      locationsetpopup.classList.add("open-locationsetpopup");
-    }
-    function closelocationsetPopup() {
-      locationsetpopup.classList.remove("open-locationsetpopup");
-    }
-  </script>
-  
-
-  <getapp>Get the App</getapp>
-  <login type="log" onclick="openPopup();dim(true)">Log In</login>
-  <signup type="signup" onclick="openPopup();dim(true);">Sign Up</signup>
-  <button id="dimmer" onclick="dim(false);closePopup();closelocationsetPopup()"></button>  <!--the background used when dimmed - add to this as dimming buttons added-->
-
-  <div class="sign-up-form" id="sign-up-form"> 
-    <div class="liORsi">
-      <button type="button" class="li-btn">Login</button>
-      <button type="button" class="su-btn">Sign Up</button>
-    </div>
     <form>
-      <input type="email" class="input-box" placeholder="Email">
-      <input type="password" class="input-box" placeholder="Password">
-      <p><button type="button" class="login-btn">Login</button></p>
-      <hr>
-      <div>
-        <i class="fab fa-google"></i> 
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-facebook-f"></i>
-      </div>
-    </form>
-  </div>
-
-
-
+        <input type="latitude" class="input-box" placeholder="latitude">
+        <input type="longitude" class="input-box" placeholder="longitude">
+        <input type="range" class="input-box" placeholder="range (meters)" value="1500" min="0" max="3000" oninput="this.nextElementSibling.value = this.value">
+        <output>1500</output> <output> meters</output>
+        <p><button type="button" class="login-btn">find restaurants</button></p>
+        <hr>
+      </form>
 <script>
-  let popup = document.getElementById("sign-up-form");
+    const sdk = require('api')('@yelp-developers/v1.0#2vqu0dboldn2hxnb');
+const fs = require('fs');
+const axios = require('axios');
+const prompt = require('prompt-sync')();
 
-  function openPopup() {
-    popup.classList.add("open-popup");
+const cliProgress = require('cli-progress');
+
+const accountSid = "AC6c9f81d866a4ef46958e8ca48d7e51d0";
+const authToken = "8438f0ef3fb3242a47f332b5b19fd89f";
+const client = require('twilio')(accountSid, authToken);
+
+sdk.auth('Bearer 6kOAkt5SJnpjxY-KwUzUTMOkTbxvcfZapyaVeD_1Mc5_8MUucPYINwrWiKI1RM-53kqlZaiLz_crS4rHuv9pDRZOjS0cOYo6UeQ3KUSDOLh9NosmYJADnLbrOG_1Y3Yx');
+
+let reviewdata = JSON.parse(fs.readFileSync("reviews.json", "utf8"));
+
+let latitude = 21.3099;
+let longitude = -157.8581;
+let radius = 2000;
+
+main(latitude+"", longitude+"", radius);
+
+async function getname(number){
+
+  number = number.replace(/\D/g, "");
+
+  try{
+    let phone_number = await client.lookups.v2.phoneNumbers(number).fetch({fields: 'caller_name'})
+    let name = phone_number.callerName
+
+    if(name == null) return null;
+    else if(name.caller_name == undefined) return null;
+    else return name.caller_name;
   }
-  function closePopup() {
-    popup.classList.remove("open-popup");
+  catch(err){
+    return null;
   }
-  function dim(bool)
-{
-    if (typeof bool=='undefined') bool=true; // so you can shorten dim(true) to dim()
-    if (typeof bool=='true') bool=false;
-    if (typeof bool=='false') bool=true;
-    document.getElementById('dimmer').style.display=(bool?'block':'none');
-}    
+
+}
+
+async function main(latitude, longitude, radius){
+
+  console.log("\n");
+  console.log("---------------");
+  console.log("Beginning Search...")
+  console.log("Latitude:",latitude);
+  console.log("Longitude",longitude);
+  console.log("Radius:", (radius + " meters"));
+  console.log("---------------");
+  console.log("\n");
+
+  let fullarray = [];
+
+  let offset = 0;
+
+  console.log("Gathering Business-Datas...");
+
+  let businessesarray = [];
+
+  while(true){
+    let {data} = await sdk.v3_business_search({
+      latitude: latitude,
+      longitude: longitude,
+      term: 'restaurants',
+      radius: radius+"",
+      categories: '',
+      price: '1,2,3',
+      sort_by: 'best_match',
+      limit: '50',
+      offset: offset+""
+    })
+
+    for(var i = 0; i < data.businesses.length; i++){
+      businessesarray.push(data.businesses[i]);
+    }
+
+    if(data.businesses.length < 50){
+      break;
+    }
+
+    offset += 50;
+
+  }
+
+  const bar = new cliProgress.SingleBar({format: '{bar} | {name} | {value}/{total}'}, cliProgress.Presets.shades_grey);
+  bar.start(businessesarray.length, 0);
+
+  for(var i = 0; i < businessesarray.length; i++){
+    let book_value = await formula(businessesarray[i]);
+
+    bar.update(i+1, {name: businessesarray[i].name});
+
+    if(book_value == false){
+      continue;
+    }
+
+    fullarray.push([businessesarray[i], book_value]);
+
+  }
+
+  bar.stop();
 
 
-dim(true); // on
-dim(false); // off
+  fullarray.sort((a,b) => a[1] - b[1]);
+
+  let string = "";
+
+  console.log("\nGetting CEO-Names");
+
+  const namebar = new cliProgress.SingleBar({format: '{bar} | {name} | {value}/{total}'}, cliProgress.Presets.shades_grey);
+  namebar.start(fullarray.length, 0);
+
+  for(var i = 0; i < fullarray.length; i++){
+
+    let distance = Math.floor(fullarray[i][0].distance * 1.6 / 100)/10;
+    let business = fullarray[i][0];
+
+    string += `#${i+1}: ${business.name} | ${distance} miles | ${business.display_phone} | ${business.rating} | `;
+      let ownername = await getname(business.display_phone);
+
+      if(ownername != null) string += ownername + " |";
+      else string += "name-not-found |"
+
+      namebar.update( (i+1), {name: business.name})
+
+    string += "\n";
+  }
+
+  namebar.stop();
+  console.log(string)
+
+}
+
+async function formula(business){
+
+  let price = 10 ** (business.price.length - 1);
+  let rating_score = (business.rating * business.review_count);
+
+  let market_value = await marketvalue(business.name);
+
+  if(market_value != 0) return false;
+
+  if(business.name in reviewdata){
+    rating_score = reviewdata[business.name].value * reviewdata[business.name].amount;
+
+    if(reviewdata[business.name].amount > 50) return false;
+
+  }
+
+  let price_rating = price * rating_score;
+  let realestatevalue = await realestate(business.location.zip_code);
+  let book_value = realestatevalue + price_rating + market_value;
+
+  return book_value;
+
+}
+
+async function getsymbol(name){
+  let data = await fetch(`https://query2.finance.yahoo.com/v1/finance/search?q=${name}&lang=en-US&region=US&quotesCount=6&newsCount=0&listsCount=2&enableFuzzyQuery=false&quotesQueryId=tss_match_phrase_query&multiQuoteQueryId=multi_quote_single_token_query&newsQueryId=news_cie_vespa&enableCb=true&enableNavLinks=true&enableEnhancedTrivialQuery=true&enableResearchReports=true&enableCulturalAssets=true&enableLogoUrl=true&researchReportsCount=0`);
+
+  data = await data.json();
+
+  if(data.quotes[0] == undefined) return undefined;
+
+  return data.quotes[0].symbol;
+
+}
+
+async function marketvalue(name){
+
+  let symbol = await getsymbol(name);
+
+  if(symbol == undefined) return 0;
+  else return 1;
+
+}
+
+async function realestate(zip){
+    let data = await fetch("https://www.rentdata.org/data/zip", {
+      "credentials": "include",
+      "headers": {
+          "Accept": "application/json, text/javascript, */*; q=0.01",
+          "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+      },
+      "referrer": "https://www.rentdata.org/lookup?zip=95014",
+      "body": "size=fmr0&zip="+zip,
+      "method": "POST",});
+   data = await data.json();
+
+   return data.fmr0;
+}
+
 </script>
-</div>
-</div>
-</div>
-<!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
-
-
-<div class="categories">
-  <div class="categorycontainer">
-    <img class="categoryitem" src="imgs/category1.png">
-    <p">Korean</p>
-  </div>
-
-  <div class="categorycontainer">
-    <img class="categoryitem" src="imgs/category2.png">
-    <p">Indian</p>
-  </div>
-
-  <div class="categorycontainer">
-    <img class="categoryitem" src="imgs/category3.png">
-    <p">Chinese</p>
-  </div>
-
-  <div class="categorycontainer">
-    <img class="categoryitem" src="imgs/category4.png">
-    <p">Wings</p>
-  </div>
-
-  <div class="categorycontainer">
-    <img class="categoryitem" src="imgs/category5.png">
-    <p">Mexican</p>
-  </div>
-
-  <div class="categorycontainer">
-    <img class="categoryitem" src="imgs/category6.png">
-    <p">Vegan</p>
-  </div>
-
-  <div class="categorycontainer">
-    <img class="categoryitem" src="imgs/category7.png">
-    <p">Steak</p>
-  </div>
-
-  <div class="categorycontainer">
-    <img class="categoryitem" src="imgs/category8.png">
-    <p">Soups</p>
-  </div>
-
-  <div class="categorycontainer">
-    <img class="categoryitem" src="imgs/category9.png">
-    <p">Cafe</p>
-  </div>
-
-  <div class="categorycontainer">
-    <img class="categoryitem" src="imgs/category10.png">
-    <p">Diner</p>
-  </div>
-
-  <div class="categorycontainer">
-    <img class="categoryitem" src="imgs/category11.png">
-    <p">Burgers</p>
-  </div>
-  <div id="categoryarrow">
-    <i id="categoryarrowcircle" class="fas fa-angle-right"></i>
-  </div>
-</div>
-<hr style="margin-left: 7vh; margin-right: 11vh;"> 
-  
-
-<!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS-->
-
-
-
-
-
-<div class="restaurantcontainer" >
-<!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED-->
-  <div class="featuredrow">
-    <h2 class="rowtitle">Featured</h2>
-    <i style="font-size: 1.3rem; color: #ffc86a;" class="fas fa-chess-king rowtitle-icon"></i>
-    <div class="frrestaurants">
-      <a class="f1" href="details/details.html">
-        <i class="far fa-heart"></i>
-        <div class="detailscontainer">
-          <div class="detailstext">
-            <div class="titleandheart">
-              <h3>Forest Gump's Frosted Flakes</h3>
-            </div>
-            <div class="waittime">
-              <p>5 min</p>
-              <div class="progressbar">
-                <div class="progressbar-fill" style="width: 5.5%; background-color: #39D2C0;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-      
-    
-      <a class="f2" href="details/details.html">
-        <i class="far fa-heart"></i>
-        <div class="detailscontainer">
-          <div class="detailstext">
-            <div class="titleandheart">
-              <h3>Top G's Market</h3>
-            </div>
-            <div class="waittime">
-              <p>1 hr</p>
-              <div class="progressbar">
-                <div class="progressbar-fill" style="width: 66%; background-color: #FF5963;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-  
-      <a class="f3" href="details/details.html">
-        <i class="far fa-heart"></i>
-        <div class="detailscontainer">
-          <div class="detailstext">
-            <div class="titleandheart">
-              <h3>Mr. Riley's Kitchen</h3>
-            </div>
-            <div class="waittime">
-              <p>0 min</p>
-              <div class="progressbar">
-                <div class="progressbar-fill" style="width: 0%; background-color: #39D2C0;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-      <div id="arrowmore">
-        <i id="arrowmorecircle" class="fas fa-angle-right"></i>
-      </div>
-  </div>
-</div>
-<!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED-->
-
-
-
-  
-<!--QUICKESTQUEUES--><!--QUICKESTQUEUES--><!--QUICKESTQUEUES--><!--QUICKESTQUEUES--><!--QUICKESTQUEUES-->
-  <div class="quickestqueuesrow">
-    <h2 class="rowtitle">Quickest Queues</h2>
-    <i style="font-size: 1.3rem; color: #ffc86a;" class="fas fa-chess-queen rowtitle-icon"></i>
-    <div class="frrestaurants">
-      <a class="qq1" href="details/details.html">
-        <i class="far fa-heart"></i>
-        <div class="detailscontainer">
-          <div class="detailstext">
-            <div class="titleandheart">
-              <h3>Thai Basil</h3>
-            </div>
-            <div class="waittime">
-              <p>2 min</p>
-              <div class="progressbar">
-                <div class="progressbar-fill" style="width: 2.2%; background-color: #39D2C0;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <a class="qq2" href="details/details.html">
-        <i class="far fa-heart"></i>
-        <div class="detailscontainer">
-          <div class="detailstext">
-            <div class="titleandheart">
-              <h3>Pizza Plaza</h3>
-            </div>
-            <div class="waittime">
-              <p>6 min</p>
-              <div class="progressbar">
-                <div class="progressbar-fill" style="width: 6.6%; background-color: #39D2C0;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-  
-      <a class="qq3" href="details/details.html">
-        <i class="far fa-heart"></i>
-        <div class="detailscontainer">
-          <div class="detailstext">
-            <div class="titleandheart">
-              <h3>Restaurant test</h3>
-            </div>
-            <div class="waittime">
-              <p>8 min</p>
-              <div class="progressbar">
-                <div class="progressbar-fill" style="width: 5.5%; background-color: #39D2C0;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-      <div id="arrowmore">
-          <i id="arrowmorecircle" class="fas fa-angle-right"></i>
-      </div>
-  </div>
-</div>
-<!--QUICKESTQUEUES--><!--QUICKESTQUEUES--><!--QUICKESTQUEUES--><!--QUICKESTQUEUES--><!--QUICKESTQUEUES-->
-  
-
-  
-<!--HIGHLYRATED--><!--HIGHLYRATED--><!--HIGHLYRATED--><!--HIGHLYRATED--><!--HIGHLYRATED--><!--HIGHLYRATED-->
-<div class="highlyratedrow">
-  <h2 class="rowtitle">Nearby</h2>
-  <i style="font-size: 1.3rem; color: #ffc86a;" class="fas fa-chess-pawn rowtitle-icon"></i>
-  <div class="frrestaurants">
-    <a class="hr1" href="details/details.html">
-      <i class="far fa-heart"></i>
-      <div class="detailscontainer">
-        <div class="detailstext">
-          <div class="titleandheart">
-            <h3>Thai Basil</h3>
-          </div>
-          <div class="waittime">
-            <p>55 min</p>
-            <div class="progressbar">
-              <div class="progressbar-fill" style="width: 61%; background-color: #FF5963;"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </a>
-
-    <a class="hr2" href="details/details.html">
-      <i class="far fa-heart"></i>
-      <div class="detailscontainer">
-        <div class="detailstext">
-          <div class="titleandheart">
-            <h3>Pizza Plaza</h3>
-          </div>
-          <div class="waittime">
-            <p>6 min</p>
-            <div class="progressbar">
-              <div class="progressbar-fill" style="width: 6.6%; background-color: #39D2C0;"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </a>
-
-    <a class="hr3" href="details/details.html">
-      <i class="far fa-heart"></i>
-      <div class="detailscontainer">
-        <div class="detailstext">
-          <div class="titleandheart">
-            <h3>Restaurant test</h3>
-          </div>
-          <div class="waittime">
-            <p>19 min</p>
-            <div class="progressbar">
-              <div class="progressbar-fill" style="width: 21%; background-color: #39D2C0;"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </a>
-    <div id="arrowmore">
-        <i id="arrowmorecircle" class="fas fa-angle-right"></i>
-    </div>
-</div>
-</div>
-<!--HIGHLYRATED--><!--HIGHLYRATED--><!--HIGHLYRATED--><!--HIGHLYRATED--><!--HIGHLYRATED--><!--HIGHLYRATED-->
-
-
-
-
-<!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS-->
-<div class="allrestaurantsrow">
-  <h2 class="rowtitle">All Restaurants</h2>
-  <div class="allrestaurants">
-    <a class="ar1" href="details/details.html">
-      <i class="far fa-heart"></i>
-      <div class="detailscontainer">
-        <div class="detailstext">
-          <div class="titleandheart">
-            <h3>Junsa's Kitchen</h3>
-          </div>
-          <div class="waittime">
-            <p>3 min</p>
-            <div class="progressbar">
-              <div class="progressbar-fill" style="width: 3.3%; background-color: #39D2C0;"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </a>
-  
-    <a class="ar2" href="details/details.html">
-      <i class="far fa-heart"></i>
-      <div class="detailscontainer">
-        <div class="detailstext">
-          <div class="titleandheart">
-            <h3>Pranav's Pasta</h3>
-          </div>
-          <div class="waittime">
-            <p>9 min</p>
-            <div class="progressbar">
-              <div class="progressbar-fill" style="width: 10%; background-color: #39D2C0;"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </a>
-
-    <a class="ar3" href="details/details.html">
-    <i class="far fa-heart"></i>
-      <div class="detailscontainer">
-        <div class="detailstext">
-          <div class="titleandheart">
-            <h3>Eddy's Elephant Cafe</h3>
-          </div>
-          <div class="waittime">
-            <p>11 min</p>
-            <div class="progressbar">
-              <div class="progressbar-fill" style="width: 12.2%; background-color: #39D2C0;"></div>
-            </div>
-          </div>          
-        </div>
-      </div>
-    </div>
-  </a>
-      <div class="seemorecontainer">
-        <div class="seemore">
-          See More
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS-->
-
-
-
-
-
-<!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO-->
-<hr>
-  <div class="footerinfo">
-  <div class="user">
-    <h3 class="column-title">About</h3>
-    <div class="column-links">
-      <how onclick="window.location.href='how/how.html'" style="margin-right: 10vh;">How it Works</how>
-      <about onclick="window.location.href='about/about.html'">About us</about>
-    </div>
-  </div>
-  <div class="business">
-    <h3 class="column-title">Business</h3>
-    <div class="column-links">
-      <partner onclick="window.location.href='partner/partner.html'">Partner</partner>
-    </div>
-  </div>
-  <div class="socials">
-    <h3 class="rightcolumn-name">QueueCube</h3>
-    <div class="socialslinks">
-      <a href="https://www.instagram.com/queuecubeofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.linkedin.com/company/queuecube/about/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://twitter.com/QueueCube" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=100089205723506" target="_blank"><i class="fab fa-facebook"></i></a>
-    </div>     
-</div>
-</div>
-<div class="copyright">
-<p>© 2023 QueueCube</p>
-</div>
-<!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO-->
-</div>
-</div>
-<!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS-->
-</body> 
 </html>
