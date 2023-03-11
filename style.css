@@ -105,7 +105,7 @@ html, body {
   font-family: Outfit, sans-serif;
   font-size: 2vh;
   width: 60vh;
-  height: 70vh;
+  height: 65vh;
   background: #fff;
   padding: 3vh;
   border-radius: 1vh;
@@ -118,6 +118,7 @@ html, body {
   z-index: 2;
   display: flex; 
   flex-direction: column;
+  box-shadow: 0 0 2vh rgba(0, 0, 0, 0.3);
 }
 .sign-up-form > div {
   display: flex;
@@ -172,13 +173,11 @@ html, body {
   background-color: #333;
   border-radius: 1vh;
   font-size: 2.5vh;
-  width: 0vh;
-  height: 5vh;
+  width: 10vh;
+  height: 6vh;
+  padding-top: 3vh;
   margin: 3vh;
-  padding-top: 2.5vh;
-  margin-top: 5vh;
-  cursor: pointer;
-  
+  margin-top: 4vh;
 }
 .input-box {
   background-color: #eee;
@@ -341,7 +340,7 @@ hr {
   font-weight: 500;
 }
 .detailscontainer {
-  background-color: #ffffff40;
+  background-color: #e9e9e913;
   transform: translate(0%, 50%) ;
   height: 27%;
   border-radius: 1vh;
@@ -364,17 +363,29 @@ hr {
 .titleandheart {
   display: flex; 
   align-items: center;
-  line-height: 0.5vh;
-  font-size: 1.6vh;
+  line-height: 0.4vh;
+  font-size: 1.65vh;
   justify-content: space-between;
 }
 .waittime {
   display: flex;
   align-items: stretch;
   line-height: 0vh;
-  font-size: 1.6vh;
+  font-size: 1.65vh;
   justify-content: space-between;
+  align-items: center;
 }
+    .progressbar {
+      width: 83%;
+      height: 2vh;
+      background-color: #eee;
+      border-radius: 6vh;
+    }
+    .progressbar-fill {
+      height: 100%;
+      border-radius: 6vh;
+      transition: width 0.3s ease-in-out;
+    }
 #arrowmore {
   display: flex;
   justify-content: center;
@@ -603,9 +614,6 @@ hr {
 .column-links how:hover, .column-links about:hover, .column-links partner:hover {
   color: #000;
 }
-.business {
-  margin-left: 15vh;
-}
 /*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*/
 
 
@@ -614,11 +622,10 @@ hr {
 /*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*/
 .socials {
   text-align: right;
-  margin-left: 52vh;
+  margin-left: 50vh;
 }
 .socialslinks {
   display: flex;
-  transform: translate(135%,-50%)
 
 }
 .socialslinks i {
@@ -635,8 +642,5 @@ hr {
   margin-left: 15vh;
   padding-bottom: 5vh;
   color: #555;
-}
-.rightcolumn-name {
-  transform: translate(132%, 0%);
 }
  /*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*/
