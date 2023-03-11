@@ -1,49 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="image/png" href="imgs/favicon.png">
-  <title>QueueCube</title>
   <meta charset="UTF-8">
-  <meta name="description" content="Functionality, simplicity, and good people. These are the values at QueueCube, a company removing wait times around the world.">
-  <meta name="keywords" content="QueueCube, Queue management system, Restaurant wait time">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QueueCube</title>
+  <link rel="shortcut icon" type="image/png" href="imgs/favicon.png">
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0RfELl-8CZ73qQoCOoRRS3rGzGEPEelU&libraries=places">
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0RfELl-8CZ73qQoCOoRRS3rGzGEPEelU&libraries=places"></script>
 </head>
 
 
-<!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
 <body>
-  <div class="topstuff">
-    <a href="how/how.html" class="how">
-      <div>
-        <p class="how-text">How it works</p>
-      </div>
-    </a>    
-    <a href="about/about.html" class="about">
-      <div>
-        <p class="about-text">About</p>
-      </div>
-    </a>    
-    <a href="partner/partner.html" class="partner">
-      <div>
-        <p class="partner-text">Partner</p>
-      </div>
-    </a>
+
 <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
-
-
-<!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN-->
+<div class="topstuff">
 <div class="topjoin">
+  <img class="logo" src="imgs/logo(clear).png" onclick="location.reload();">
+
+    <input id="searchbar" class="searchbar" type="text" placeholder="Search Restaurant" >
+    <script>
+      const searchInput = document.getElementById('searchbar');
+      const autocomplete = new google.maps.places.Autocomplete(searchInput);
+    </script>
+   
+
+  <div class="locationset" onclick="openlocationsetPopup();dim(true)">
+    <i class="fas fa-map-marker-alt"></i> Location
+  </div>
+  <script>
+  function openlocationsetPopup() {
+    // Add your code to open a popup here
+    var locationsetPopup = window.open("", "locationsetPopup", "width=400,height=400");
+    var locationsetForm = document.getElementById("locationset-form").outerHTML;
+    locationsetPopup.document.write(locationsetForm);
+  }
+  </script>
+  <div class="locationset-form" id="locationset-form"> 
+    <div class="locationsettopinfo">
+      <h3 class="enteraddress">
+        Enter Your Address
+      </h3>
+      <div class="uselocation">
+        <i class="fas fa-map-marker-alt"></i> Current Location
+      </div>
+    </div>     
+    <hr style="margin-left: 1vh; margin-right: 1vh;"> 
+    <input type="text" class="locationsetinput" id="address-input" placeholder="Address">
+    <script>
+      const locationsetInput = document.getElementById('searchbar');
+      const locationsetautocomplete = new google.maps.places.Autocomplete(searchInput);
+    </script>
+    <script>
+      var input = document.getElementById('address-input');
+      var locationautocomplete = new google.maps.places.Autocomplete(input);
+    </script>
+  </div>
+  <script>
+    let locationsetpopup = document.getElementById("locationset-form");
+    function openlocationsetPopup() {
+      locationsetpopup.classList.add("open-locationsetpopup");
+    }
+    function closelocationsetPopup() {
+      locationsetpopup.classList.remove("open-locationsetpopup");
+    }
+  </script>
+  
+
   <getapp>Get the App</getapp>
-  <signin type="log" onclick="openPopup()">Log In</signin>
-  <signup type="signup" onclick="openPopup()">Sign Up</signup>
+  <login type="log" onclick="openPopup();dim(true)">Log In</login>
+  <signup type="signup" onclick="openPopup();dim(true);">Sign Up</signup>
+  <button id="dimmer" onclick="dim(false);closePopup();closelocationsetPopup()"></button>  <!--the background used when dimmed - add to this as dimming buttons added-->
+
   <div class="sign-up-form" id="sign-up-form"> 
     <div class="liORsi">
       <button type="button" class="li-btn">Login</button>
@@ -61,304 +91,401 @@
       </div>
     </form>
   </div>
+
+
+
 <script>
   let popup = document.getElementById("sign-up-form");
-  let overlay = document.getElementById("overlay");
 
   function openPopup() {
     popup.classList.add("open-popup");
-    overlay.classList.add("overlay-show");
   }
-
   function closePopup() {
     popup.classList.remove("open-popup");
-    overlay.classList.remove("overlay-show");
   }
-  function outsideClickHandler(event) {
-    if (!popup.contains(event.target)) {
-      closePopup();
-    }
-  }
+  function dim(bool)
+{
+    if (typeof bool=='undefined') bool=true; // so you can shorten dim(true) to dim()
+    if (typeof bool=='true') bool=false;
+    if (typeof bool=='false') bool=true;
+    document.getElementById('dimmer').style.display=(bool?'block':'none');
+}    
+
+
+dim(true); // on
+dim(false); // off
 </script>
 </div>
 </div>
-<!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN--><!--POPUP SIGNIN-->
-
-
-
-<!--SEARCHLOCATION--><!--SEARCHLOCATION--><!--SEARCHLOCATION--><!--SEARCHLOCATION--><!--SEARCHLOCATION-->
-<div class="location">
-  <input id="searchTextField" type="text" size="50" placeholder="Location  or  Restaurant">
 </div>
-  <div id="map" class="container">
+<!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
+
+
+<div class="categories">
+  <div class="categorycontainer">
+    <img class="categoryitem" src="imgs/category1.png">
+    <p">Korean</p>
+  </div>
+
+  <div class="categorycontainer">
+    <img class="categoryitem" src="imgs/category2.png">
+    <p">Indian</p>
+  </div>
+
+  <div class="categorycontainer">
+    <img class="categoryitem" src="imgs/category3.png">
+    <p">Chinese</p>
+  </div>
+
+  <div class="categorycontainer">
+    <img class="categoryitem" src="imgs/category4.png">
+    <p">Wings</p>
+  </div>
+
+  <div class="categorycontainer">
+    <img class="categoryitem" src="imgs/category5.png">
+    <p">Mexican</p>
+  </div>
+
+  <div class="categorycontainer">
+    <img class="categoryitem" src="imgs/category6.png">
+    <p">Vegan</p>
+  </div>
+
+  <div class="categorycontainer">
+    <img class="categoryitem" src="imgs/category7.png">
+    <p">Steak</p>
+  </div>
+
+  <div class="categorycontainer">
+    <img class="categoryitem" src="imgs/category8.png">
+    <p">Soups</p>
+  </div>
+
+  <div class="categorycontainer">
+    <img class="categoryitem" src="imgs/category9.png">
+    <p">Cafe</p>
+  </div>
+
+  <div class="categorycontainer">
+    <img class="categoryitem" src="imgs/category10.png">
+    <p">Diner</p>
+  </div>
+
+  <div class="categorycontainer">
+    <img class="categoryitem" src="imgs/category11.png">
+    <p">Burgers</p>
+  </div>
+  <div id="categoryarrow">
+    <i id="categoryarrowcircle" class="fas fa-angle-right"></i>
+  </div>
 </div>
-<!--SEARCHLOCATION--><!--SEARCHLOCATION--><!--SEARCHLOCATION--><!--SEARCHLOCATION--><!--SEARCHLOCATION-->
-
-
-
-<!--MAP--><!--MAP--><!--MAP--><!--MAP--><!--MAP--><!--MAP--><!--MAP--><!--MAP--><!--MAP--><!--MAP-->
-<script>
-  var map;
-  var service;
-  var infowindow;
-
-function initialize() {
-var pyrmont = new google.maps.LatLng(37.7749, -122.4194);
-map = new google.maps.Map(document.getElementById('map'), {
-  center: pyrmont,
-  zoom: 10,
-  mapTypeControl: false,
-  streetViewControl: false,
-  fullscreenControl: false,
-  zoomControl: false,
-})
-var input = document.getElementById('searchTextField');
-let autocomplete = new google.maps.places.Autocomplete(input);
-autocomplete.bindTo('bounds', map)
-let marker = new google.maps.Marker({
-  map: map
-})
-google.maps.event.addListener(autocomplete, 'place_changed', () => {
-  let place = autocomplete.getPlace()
-  console.log(place)
-  console.log(place.photos[0].getUrl())
-  if (place.geometry.viewport) {
-    map.fitBounds(place.geometry.viewport)
-  } else {
-    map.setCenter(place.geometry.location)
-    map.setZoom(30)
-  }
-    marker.setPosition(place.geometry.location)
-    marker.setVisible(true)
-    let request = {
-      location: place.geometry.location,
-      radius: '500',
-      type: ['atm']
-    }
-  service = new google.maps.places.PlacesService(map)
-  service.nearbySearch(request, callback)
-});
-}
-function createMarker(place) {
-var marker = new google.maps.Marker({
-  map: map,
-  position: place.geometry.location
-});
-google.maps.event.addListener(marker, 'click', function () {
-  alert(place.name);
-  window.open(place.photos[0].getUrl(), "_blank");
-});
-}
-google.maps.event.addDomListener(window, 'load', initialize)
-</script>
-<div id="map"></div>
-<div id="arrow">
-  <i class="fas fa-angle-down"></i>
-</div>
-<script>
-const arrow = document.querySelector('#arrow');
-arrow.addEventListener('click', () => {
-  const viewportHeight = window.innerHeight;
-  window.scrollTo({
-    top: viewportHeight,
-    behavior: 'smooth'
-  });
-});
-</script>
-<!--MAP--><!--MAP--><!--MAP--><!--MAP--><!--MAP--><!--MAP--><!--MAP--><!--MAP--><!--MAP--><!--MAP-->
-
-<script>
-  const matchResult = window.matchMedia("(prefers-color-scheme: dark)");
-  console.log(matchResult.matches);
-</script>
-
+<hr style="margin-left: 7vh; margin-right: 7vh;"> 
+  
 
 <!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS-->
+
+
+
+
+
 <div class="restaurantcontainer" >
-
 <!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED-->
-<div class="featuredrow">
-  <h2 class="rowtitle">Featured</h2>
-    <i style="font-size: 1.6rem; " class="fas fa-chess-king rowtitle-icon"></i>
-      <div class="frrestaurants">
-        <div class="fr1">
-          <div class="detailscontainer">
-            <div class="detailstext">
-              <div class="titleandheart">
-                <h3>Forest Gump's Frosted Flakes</h3>
-                <i style="font-size: 1.2rem;" class="far fa-heart"></i>
-              </div>
-              <div class="waittime">
-                <p>5 min</p>
-                <p>PROGRESS BAR</p>
+  <div class="featuredrow">
+    <h2 class="rowtitle">Featured</h2>
+    <i style="font-size: 1.3rem; color: #ffc86a;" class="fas fa-chess-king rowtitle-icon"></i>
+    <div class="frrestaurants">
+      <a class="f1" href="details/details.html">
+        <i class="far fa-heart"></i>
+        <div class="detailscontainer">
+          <div class="detailstext">
+            <div class="titleandheart">
+              <h3>Forest Gump's Frosted Flakes</h3>
+            </div>
+            <div class="waittime">
+              <p>5 min</p>
+              <div class="progressbar">
+                <div class="progressbar-fill" style="width: 5.5%; background-color: #39D2C0;"></div>
               </div>
             </div>
           </div>
         </div>
+      </a>
+      
+    
+      <a class="f2" href="details/details.html">
+        <i class="far fa-heart"></i>
+        <div class="detailscontainer">
+          <div class="detailstext">
+            <div class="titleandheart">
+              <h3>Top G's Market</h3>
+            </div>
+            <div class="waittime">
+              <p>1 hr</p>
+              <div class="progressbar">
+                <div class="progressbar-fill" style="width: 66%; background-color: #FF5963;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
   
-        <div class="fr2">
-          <div class="detailscontainer">
-            <div class="detailstext">
-              <div class="titleandheart">
-                <h3>Top G's Market</h3>
-                <i style="font-size: 1.2rem;" class="far fa-heart"></i>
-              </div>
-              <div class="waittime">
-                <p>12 min</p>
-                <p>PROGRESS BAR</p>
+      <a class="f3" href="details/details.html">
+        <i class="far fa-heart"></i>
+        <div class="detailscontainer">
+          <div class="detailstext">
+            <div class="titleandheart">
+              <h3>Mr. Riley's Kitchen</h3>
+            </div>
+            <div class="waittime">
+              <p>0 min</p>
+              <div class="progressbar">
+                <div class="progressbar-fill" style="width: 0%; background-color: #39D2C0;"></div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="fr3">
-          <div class="detailscontainer">
-            <div class="detailstext">
-              <div class="titleandheart">
-                <h3>Mr. Riley's Kitchen</h3>
-                <i style="font-size: 1.2rem;" class="far fa-heart"></i>
-              </div>
-              <div class="waittime">
-                <p>23 min</p>
-                <p>PROGRESS BAR</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="arrowmore">
-        <a href="search/search.html">
-          <i id="arrowmorecircle" class="fas fa-angle-right"></i>
-        </div>
-        </a>
-
-    </div>
+      </a>
+      <div id="arrowmore">
+        <i id="arrowmorecircle" class="fas fa-angle-right"></i>
+      </div>
   </div>
+</div>
 <!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED-->
 
 
-<!--QQ--><!--QQ--><!--QQ--><!--QQ--><!--QQ--><!--QQ--><!--QQ--><!--QQ--><!--QQ--><!--QQ--><!--QQ--><!--QQ-->
-<div class="quickestqueuesrow">
-  <h2 class="rowtitle">Quickest Queues</h2>
-    <i style="font-size: 1.7rem;" class="fas fa-chess-queen rowtitle-icon"></i>
-      <div class="frrestaurants">
-        <div class="qq1">
-          <div class="detailscontainer">
-            <div class="detailstext">
-              <div class="titleandheart">
-                <h3>Thai Basil</h3>
-                <i style="font-size: 1.2rem;" class="far fa-heart"></i>
-              </div>
-              <div class="waittime">
-                <p>2 min</p>
-                <p>PROGRESS BAR</p>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="qq2">
-          <div class="detailscontainer">
-            <div class="detailstext">
-              <div class="titleandheart">
-                <h3>Pizza Plaza</h3>
-                <i style="font-size: 1.2rem;" class="far fa-heart"></i>
-              </div>
-              <div class="waittime">
-                <p>6 min</p>
-                <p>PROGRESS BAR</p>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="qq3">
-          <div class="detailscontainer">
-            <div class="detailstext">
-              <div class="titleandheart">
-                <h3>Restaurant test</h3>
-                <i style="font-size: 1.2rem;" class="far fa-heart"></i>
-              </div>
-              <div class="waittime">
-                <p>19 min</p>
-                <p>PROGRESS BAR</p>
+  
+<!--QUICKESTQUEUES--><!--QUICKESTQUEUES--><!--QUICKESTQUEUES--><!--QUICKESTQUEUES--><!--QUICKESTQUEUES-->
+  <div class="quickestqueuesrow">
+    <h2 class="rowtitle">Quickest Queues</h2>
+    <i style="font-size: 1.3rem; color: #ffc86a;" class="fas fa-chess-queen rowtitle-icon"></i>
+    <div class="frrestaurants">
+      <a class="qq1" href="details/details.html">
+        <i class="far fa-heart"></i>
+        <div class="detailscontainer">
+          <div class="detailstext">
+            <div class="titleandheart">
+              <h3>Thai Basil</h3>
+            </div>
+            <div class="waittime">
+              <p>2 min</p>
+              <div class="progressbar">
+                <div class="progressbar-fill" style="width: 2.2%; background-color: #39D2C0;"></div>
               </div>
             </div>
           </div>
         </div>
-        <div id="arrowmore">
-        <a href="search/search.html">
+      </a>
+
+      <a class="qq2" href="details/details.html">
+        <i class="far fa-heart"></i>
+        <div class="detailscontainer">
+          <div class="detailstext">
+            <div class="titleandheart">
+              <h3>Pizza Plaza</h3>
+            </div>
+            <div class="waittime">
+              <p>6 min</p>
+              <div class="progressbar">
+                <div class="progressbar-fill" style="width: 6.6%; background-color: #39D2C0;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+  
+      <a class="qq3" href="details/details.html">
+        <i class="far fa-heart"></i>
+        <div class="detailscontainer">
+          <div class="detailstext">
+            <div class="titleandheart">
+              <h3>Restaurant test</h3>
+            </div>
+            <div class="waittime">
+              <p>8 min</p>
+              <div class="progressbar">
+                <div class="progressbar-fill" style="width: 5.5%; background-color: #39D2C0;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div id="arrowmore">
           <i id="arrowmorecircle" class="fas fa-angle-right"></i>
-        </div>
-        </a>
-    </div>
+      </div>
   </div>
+</div>
+<!--QUICKESTQUEUES--><!--QUICKESTQUEUES--><!--QUICKESTQUEUES--><!--QUICKESTQUEUES--><!--QUICKESTQUEUES-->
   
-<!--QQ--><!--QQ--><!--QQ--><!--QQ--><!--QQ--><!--QQ--><!--QQ--><!--QQ--><!--QQ--><!--QQ--><!--QQ--><!--QQ-->
 
-
-
-<!--HR--><!--HR--><!--HR--><!--HR--><!--HR--><!--HR--><!--HR--><!--HR--><!--HR--><!--HR--><!--HR--><!--HR-->
+  
+<!--HIGHLYRATED--><!--HIGHLYRATED--><!--HIGHLYRATED--><!--HIGHLYRATED--><!--HIGHLYRATED--><!--HIGHLYRATED-->
 <div class="highlyratedrow">
   <h2 class="rowtitle">Highly Rated</h2>
-    <i style="font-size: 1.7rem;" class="fas fa-chess-pawn rowtitle-icon"></i>
-      <div class="frrestaurants">
-        <div class="hr1">
-          <div class="detailscontainer">
-            <div class="detailstext">
-              <div class="titleandheart">
-                <h3>Junsa's Kitchen</h3>
-                <i style="font-size: 1.2rem;" class="far fa-heart"></i>
-              </div>
-              <div class="waittime">
-                <p>3 min</p>
-                <p>PROGRESS BAR</p>
-              </div>
+  <i style="font-size: 1.3rem; color: #ffc86a;" class="fas fa-chess-pawn rowtitle-icon"></i>
+  <div class="frrestaurants">
+    <a class="hr1" href="details/details.html">
+      <i class="far fa-heart"></i>
+      <div class="detailscontainer">
+        <div class="detailstext">
+          <div class="titleandheart">
+            <h3>Thai Basil</h3>
+          </div>
+          <div class="waittime">
+            <p>55 min</p>
+            <div class="progressbar">
+              <div class="progressbar-fill" style="width: 61%; background-color: #FF5963;"></div>
             </div>
           </div>
         </div>
-  
-        <div class="hr2">
-          <div class="detailscontainer">
-            <div class="detailstext">
-              <div class="titleandheart">
-                <h3>Pranav Pasta</h3>
-                <i style="font-size: 1.2rem;" class="far fa-heart"></i>
-              </div>
-              <div class="waittime">
-                <p>9 min</p>
-                <p>PROGRESS BAR</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
+      </div>
+    </a>
 
-        <div class="hr3">
-          <div class="detailscontainer">
-            <div class="detailstext">
-              <div class="titleandheart">
-                <h3>Eddy's Elephant Cafe</h3>
-                <i style="font-size: 1.2rem;" class="far fa-heart"></i>
-              </div>
-              <div class="waittime">
-                <p>11 min</p>
-                <p>PROGRESS BAR</p>
-              </div>
+    <a class="hr2" href="details/details.html">
+      <i class="far fa-heart"></i>
+      <div class="detailscontainer">
+        <div class="detailstext">
+          <div class="titleandheart">
+            <h3>Pizza Plaza</h3>
+          </div>
+          <div class="waittime">
+            <p>6 min</p>
+            <div class="progressbar">
+              <div class="progressbar-fill" style="width: 6.6%; background-color: #39D2C0;"></div>
             </div>
           </div>
         </div>
-        <div id="arrowmore">
-          <a href="search/search.html">
-            <i id="arrowmorecircle" class="fas fa-angle-right"></i>
+      </div>
+    </a>
+
+    <a class="hr3" href="details/details.html">
+      <i class="far fa-heart"></i>
+      <div class="detailscontainer">
+        <div class="detailstext">
+          <div class="titleandheart">
+            <h3>Restaurant test</h3>
           </div>
-          </a>
+          <div class="waittime">
+            <p>19 min</p>
+            <div class="progressbar">
+              <div class="progressbar-fill" style="width: 21%; background-color: #39D2C0;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    <div id="arrowmore">
+        <i id="arrowmorecircle" class="fas fa-angle-right"></i>
+    </div>
+</div>
+</div>
+<!--HIGHLYRATED--><!--HIGHLYRATED--><!--HIGHLYRATED--><!--HIGHLYRATED--><!--HIGHLYRATED--><!--HIGHLYRATED-->
+
+
+
+
+<!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS-->
+<div class="allrestaurantsrow">
+  <h2 class="rowtitle">All Restaurants</h2>
+  <div class="allrestaurants">
+    <a class="ar1" href="details/details.html">
+      <i class="far fa-heart"></i>
+      <div class="detailscontainer">
+        <div class="detailstext">
+          <div class="titleandheart">
+            <h3>Junsa's Kitchen</h3>
+          </div>
+          <div class="waittime">
+            <p>3 min</p>
+            <div class="progressbar">
+              <div class="progressbar-fill" style="width: 3.3%; background-color: #39D2C0;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  
+    <a class="ar2" href="details/details.html">
+      <i class="far fa-heart"></i>
+      <div class="detailscontainer">
+        <div class="detailstext">
+          <div class="titleandheart">
+            <h3>Pranav's Pasta</h3>
+          </div>
+          <div class="waittime">
+            <p>9 min</p>
+            <div class="progressbar">
+              <div class="progressbar-fill" style="width: 10%; background-color: #39D2C0;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a class="ar3" href="details/details.html">
+    <i class="far fa-heart"></i>
+      <div class="detailscontainer">
+        <div class="detailstext">
+          <div class="titleandheart">
+            <h3>Eddy's Elephant Cafe</h3>
+          </div>
+          <div class="waittime">
+            <p>11 min</p>
+            <div class="progressbar">
+              <div class="progressbar-fill" style="width: 12.2%; background-color: #39D2C0;"></div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </a>
+      <div class="seemorecontainer">
+        <div class="seemore">
+          See More
+      </div>
     </div>
   </div>
-<!--HR--><!--HR--><!--HR--><!--HR--><!--HR--><!--HR--><!--HR--><!--HR--><!--HR--><!--HR--><!--HR--><!--HR-->
+</div>
+</div>
+<!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS-->
+
+
+
+
+
+<!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO-->
+<hr>
+  <div class="footerinfo">
+  <div class="user">
+    <h3 class="column-title">About</h3>
+    <div class="column-links">
+      <how onclick="window.location.href='how/how.html'" style="margin-right: 10vh;">How it Works</how>
+      <about onclick="window.location.href='about/about.html'">About us</about>
+    </div>
   </div>
+  <div class="business">
+    <h3 class="column-title">Business</h3>
+    <div class="column-links">
+      <partner onclick="window.location.href='partner/partner.html'">Partner</partner>
+    </div>
+  </div>
+  <div class="socials">
+    <h3 class="rightcolumn-name">QueueCube</h3>
+    <div class="socialslinks">
+      <a href="https://www.instagram.com/queuecubeofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/queuecube/about/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/QueueCube" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100089205723506" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>     
+</div>
+</div>
+<div class="copyright">
+<p>© 2023 QueueCube</p>
+</div>
+<!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO-->
+</div>
 </div>
 <!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS-->
-
-</body>
+</body> 
 </html>
