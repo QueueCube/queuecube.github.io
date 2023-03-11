@@ -27,7 +27,7 @@
     </script>
    
 
-  <div class="locationset" onclick="openlocationsetPopup()">
+  <div class="locationset" onclick="openlocationsetPopup();dim(true)">
     <i class="fas fa-map-marker-alt"></i> Location
   </div>
   <script>
@@ -63,12 +63,17 @@
     function openlocationsetPopup() {
       locationsetpopup.classList.add("open-locationsetpopup");
     }
+    function closelocationsetPopup() {
+      locationsetpopup.classList.remove("open-locationsetpopup");
+    }
   </script>
   
 
   <getapp>Get the App</getapp>
-  <login type="log" onclick="openPopup()">Log In</login>
-  <signup type="signup" onclick="openPopup();">Sign Up</signup>
+  <login type="log" onclick="openPopup();dim(true)">Log In</login>
+  <signup type="signup" onclick="openPopup();dim(true);">Sign Up</signup>
+  <button id="dimmer" onclick="dim(false);closePopup();closelocationsetPopup()"></button>  <!--the background used when dimmed - add to this as dimming buttons added-->
+
   <div class="sign-up-form" id="sign-up-form"> 
     <div class="liORsi">
       <button type="button" class="li-btn">Login</button>
@@ -91,15 +96,24 @@
 
 <script>
   let popup = document.getElementById("sign-up-form");
-  let overlay = document.getElementById("background-overlay");
 
   function openPopup() {
     popup.classList.add("open-popup");
-    overlay.classList.add("background-overlay")
   }
   function closePopup() {
     popup.classList.remove("open-popup");
-  }  
+  }
+  function dim(bool)
+{
+    if (typeof bool=='undefined') bool=true; // so you can shorten dim(true) to dim()
+    if (typeof bool=='true') bool=false;
+    if (typeof bool=='false') bool=true;
+    document.getElementById('dimmer').style.display=(bool?'block':'none');
+}    
+
+
+dim(true); // on
+dim(false); // off
 </script>
 </div>
 </div>
