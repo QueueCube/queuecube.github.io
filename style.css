@@ -294,7 +294,7 @@ hr {
   margin-top: 3vh;
   margin-bottom: 1vh;
   margin-left: 10vh;
-  margin-right: 10vh;
+  margin-right: 5vh;
 }
 .categorycontainer {
   display: flex;
@@ -374,7 +374,7 @@ hr {
   flex-direction: row;
   z-index: 1;
   margin-left: 12vh;
-  margin-right: 10vh;
+  margin-right: 7vh;
 }
 .titleandheart {
   display: flex; 
