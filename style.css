@@ -281,7 +281,6 @@ hr {
   font-size: 3.2vh;
   font-weight: 500;
 }
-
 .detailscontainer {
   background-color: #ffffff40;
   transform: translate(0%, 50%) ;
@@ -302,12 +301,6 @@ hr {
   z-index: 1;
   margin-left: 12vh;
   margin-right: 5vh;
-}
-.restaurantimg {
-  height: 100%;
-  width: 100%;
-  border-radius: 2vh;
-  z-index: -1; /*set a negative value*/
 }
 .titleandheart {
   display: flex; 
@@ -360,6 +353,7 @@ hr {
   width: 32%;
   height: 30vh;
   border-radius: 1.5vh;
+  cursor: pointer;
 }
 .f2 {
   background-image: url('imgs/restaurant2.jpg');
@@ -368,6 +362,7 @@ hr {
   height: 30vh;
   margin-left: 2vh;
   border-radius: 1.5vh;
+  cursor: pointer;
 }
 .f3 {
   background-image: url('imgs/restaurant3.jpg');
@@ -376,6 +371,7 @@ hr {
   height: 30vh;
   margin-left: 2vh;
   border-radius: 1.5vh;
+  cursor: pointer;
 }
 
 
@@ -395,6 +391,7 @@ hr {
   width: 32%;
   height: 30vh;
   border-radius: 1.5vh;
+  cursor: pointer;
 }
 .qq2 {
   background-image: url('imgs/restaurant5.jpg');
@@ -403,6 +400,7 @@ hr {
   height: 30vh;
   margin-left: 2vh;
   border-radius: 1.5vh;
+  cursor: pointer;
 }
 .qq3 {
   background-image: url('imgs/restaurant6.jpg');
@@ -411,6 +409,7 @@ hr {
   height: 30vh;
   margin-left: 2vh;
   border-radius: 1.5vh;
+  cursor: pointer;
 }
 
 
@@ -431,6 +430,7 @@ hr {
   width: 32%;
   height: 30vh;
   border-radius: 1.5vh;
+  cursor: pointer;
 }
 .hr2 {
   background-image: url('imgs/restaurant5.jpg');
@@ -439,6 +439,7 @@ hr {
   height: 30vh;
   margin-left: 2vh;
   border-radius: 1.5vh;
+  cursor: pointer;
 }
 .hr3 {
   background-image: url('imgs/restaurant6.jpg');
@@ -447,6 +448,7 @@ hr {
   height: 30vh;
   margin-left: 2vh;
   border-radius: 1.5vh;
+  cursor: pointer;
 }
 
 
@@ -468,6 +470,7 @@ hr {
   width: 32%;
   height: 30vh;
   border-radius: 1.5vh;
+  cursor: pointer;
 }
 .ar2 {
   background-image: url('imgs/restaurant8.jpg');
@@ -476,6 +479,7 @@ hr {
   height: 30vh;
   margin-left: 1.5vh;
   border-radius: 1.5vh;
+  cursor: pointer;
 }
 .ar3 {
   background-image: url('imgs/restaurant9.jpg');
@@ -484,6 +488,7 @@ hr {
   height: 30vh;
   margin-left: 1.5vh;
   border-radius: 1.5vh;
+  cursor: pointer;
 }
 
 .seemorecontainer {
