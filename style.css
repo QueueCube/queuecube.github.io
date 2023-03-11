@@ -172,12 +172,13 @@ html, body {
   background-color: #333;
   border-radius: 1vh;
   font-size: 2.5vh;
-  width: 8vh;
+  width: 0vh;
   height: 5vh;
   margin: 3vh;
   padding-top: 2.5vh;
   margin-top: 5vh;
   cursor: pointer;
+  
 }
 .input-box {
   background-color: #eee;
@@ -617,6 +618,7 @@ hr {
 }
 .socialslinks {
   display: flex;
+  transform: translate(135%,-50%)
 
 }
 .socialslinks i {
@@ -633,5 +635,8 @@ hr {
   margin-left: 15vh;
   padding-bottom: 5vh;
   color: #555;
+}
+.rightcolumn-name {
+  transform: translate(132%, 0%);
 }
  /*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*/
