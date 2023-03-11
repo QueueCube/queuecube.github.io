@@ -120,6 +120,19 @@ html, body {
   flex-direction: column;
   box-shadow: 0 0 2vh rgba(0, 0, 0, 0.3);
 }
+#dimmer
+{
+    background:#000;
+    opacity:0.5;
+    position:fixed; /* important to use fixed, not absolute */
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:none;
+    z-index:1; /* may not be necessary */
+    cursor: pointer;
+}
 .sign-up-form > div {
   display: flex;
   justify-content: space-around;
@@ -128,9 +141,6 @@ html, body {
   visibility: visible;
   top: 55%;
   transform: translate(-50%, -50%) scale(1);
-}
-.card-overlay {
-  background: rgba(0, 0, 0, 0.5);
 }
 .liORsi {
   align-items: center;
@@ -284,7 +294,7 @@ hr {
   margin-top: 3vh;
   margin-bottom: 1vh;
   margin-left: 10vh;
-  margin-right: 10vh;
+  margin-right: 5vh;
 }
 .categorycontainer {
   display: flex;
@@ -364,7 +374,7 @@ hr {
   flex-direction: row;
   z-index: 1;
   margin-left: 12vh;
-  margin-right: 5vh;
+  margin-right: 7vh;
 }
 .titleandheart {
   display: flex; 
