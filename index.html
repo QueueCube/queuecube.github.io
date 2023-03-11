@@ -18,17 +18,61 @@
 <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
 <div class="topstuff">
 <div class="topjoin">
+  <img class="logo" src="imgs/logo(clear).png" onclick="location.reload();">
+
     <input id="searchbar" class="searchbar" type="text" placeholder="Search Restaurant" >
-  <div class="locationset">
-    <i class="fas fa-angle-down"></i>Location
-  </div>  
+    <script>
+      const searchInput = document.getElementById('searchbar');
+      const autocomplete = new google.maps.places.Autocomplete(searchInput);
+    </script>
+   
+
+  <div class="locationset" onclick="openlocationsetPopup();dim(true)">
+    <i class="fas fa-map-marker-alt"></i> Location
+  </div>
   <script>
-    const searchInput = document.getElementById('searchbar');
-    const autocomplete = new google.maps.places.Autocomplete(searchInput);
+  function openlocationsetPopup() {
+    // Add your code to open a popup here
+    var locationsetPopup = window.open("", "locationsetPopup", "width=400,height=400");
+    var locationsetForm = document.getElementById("locationset-form").outerHTML;
+    locationsetPopup.document.write(locationsetForm);
+  }
   </script>
+  <div class="locationset-form" id="locationset-form"> 
+    <div class="locationsettopinfo">
+      <h3 class="enteraddress">
+        Enter Your Address
+      </h3>
+      <div class="uselocation">
+        <i class="fas fa-map-marker-alt"></i> Current Location
+      </div>
+    </div>     
+    <hr style="margin-left: 1vh; margin-right: 1vh;"> 
+    <input type="text" class="locationsetinput" id="address-input" placeholder="Address">
+    <script>
+      const locationsetInput = document.getElementById('searchbar');
+      const locationsetautocomplete = new google.maps.places.Autocomplete(searchInput);
+    </script>
+    <script>
+      var input = document.getElementById('address-input');
+      var locationautocomplete = new google.maps.places.Autocomplete(input);
+    </script>
+  </div>
+  <script>
+    let locationsetpopup = document.getElementById("locationset-form");
+    function openlocationsetPopup() {
+      locationsetpopup.classList.add("open-locationsetpopup");
+    }
+    function closelocationsetPopup() {
+      locationsetpopup.classList.remove("open-locationsetpopup");
+    }
+  </script>
+  
+
   <getapp>Get the App</getapp>
-  <login type="log" onclick="openPopup()">Log In</login>
-  <signup type="signup" onclick="openPopup()">Sign Up</signup>
+  <login type="log" onclick="openPopup();dim(true)">Log In</login>
+  <signup type="signup" onclick="openPopup();dim(true);">Sign Up</signup>
+  <button id="dimmer" onclick="dim(false);closePopup();closelocationsetPopup()"></button>  <!--the background used when dimmed - add to this as dimming buttons added-->
 
   <div class="sign-up-form" id="sign-up-form"> 
     <div class="liORsi">
@@ -47,24 +91,29 @@
       </div>
     </form>
   </div>
+
+
+
 <script>
   let popup = document.getElementById("sign-up-form");
-  let overlay = document.getElementById("overlay");
 
   function openPopup() {
     popup.classList.add("open-popup");
-    overlay.classList.add("overlay-show");
   }
-
   function closePopup() {
     popup.classList.remove("open-popup");
-    overlay.classList.remove("overlay-show");
   }
-  function outsideClickHandler(event) {
-    if (!popup.contains(event.target)) {
-      closePopup();
-    }
-  }
+  function dim(bool)
+{
+    if (typeof bool=='undefined') bool=true; // so you can shorten dim(true) to dim()
+    if (typeof bool=='true') bool=false;
+    if (typeof bool=='false') bool=true;
+    document.getElementById('dimmer').style.display=(bool?'block':'none');
+}    
+
+
+dim(true); // on
+dim(false); // off
 </script>
 </div>
 </div>
@@ -127,62 +176,76 @@
     <img class="categoryitem" src="imgs/category11.png">
     <p">Burgers</p>
   </div>
+  <div id="categoryarrow">
+    <i id="categoryarrowcircle" class="fas fa-angle-right"></i>
+  </div>
 </div>
 <hr style="margin-left: 7vh; margin-right: 7vh;"> 
   
 
 <!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS-->
-<div class="restaurantcontainer" >
 
+
+
+
+
+<div class="restaurantcontainer" >
 <!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED-->
   <div class="featuredrow">
     <h2 class="rowtitle">Featured</h2>
     <i style="font-size: 1.3rem; color: #ffc86a;" class="fas fa-chess-king rowtitle-icon"></i>
     <div class="frrestaurants">
-      <div class="f1">
+      <a class="f1" href="details/details.html">
+        <i class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
             <div class="titleandheart">
               <h3>Forest Gump's Frosted Flakes</h3>
-              <i style="font-size: 1rem;" class="far fa-heart"></i>
             </div>
             <div class="waittime">
               <p>5 min</p>
-              <p>PROGRESS BAR</p>
+              <div class="progressbar">
+                <div class="progressbar-fill" style="width: 5.5%; background-color: #39D2C0;"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </a>
+      
     
-      <div class="f2">
+      <a class="f2" href="details/details.html">
+        <i class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
             <div class="titleandheart">
               <h3>Top G's Market</h3>
-              <i style="font-size: 1rem;" class="far fa-heart"></i>
             </div>
             <div class="waittime">
-              <p>12 min</p>
-              <p>PROGRESS BAR</p>
+              <p>1 hr</p>
+              <div class="progressbar">
+                <div class="progressbar-fill" style="width: 66%; background-color: #FF5963;"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </a>
   
-      <div class="f3">
+      <a class="f3" href="details/details.html">
+        <i class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
             <div class="titleandheart">
               <h3>Mr. Riley's Kitchen</h3>
-              <i style="font-size: 1rem;" class="far fa-heart"></i>
             </div>
             <div class="waittime">
-              <p>23 min</p>
-              <p>PROGRESS BAR</p>
+              <p>0 min</p>
+              <div class="progressbar">
+                <div class="progressbar-fill" style="width: 0%; background-color: #39D2C0;"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </a>
       <div id="arrowmore">
         <i id="arrowmorecircle" class="fas fa-angle-right"></i>
       </div>
@@ -198,50 +261,56 @@
     <h2 class="rowtitle">Quickest Queues</h2>
     <i style="font-size: 1.3rem; color: #ffc86a;" class="fas fa-chess-queen rowtitle-icon"></i>
     <div class="frrestaurants">
-      <div class="qq1">
+      <a class="qq1" href="details/details.html">
+        <i class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
             <div class="titleandheart">
               <h3>Thai Basil</h3>
-              <i style="font-size: 1rem;" class="far fa-heart"></i>
             </div>
             <div class="waittime">
               <p>2 min</p>
-              <p>PROGRESS BAR</p>
+              <div class="progressbar">
+                <div class="progressbar-fill" style="width: 2.2%; background-color: #39D2C0;"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </a>
 
-      <div class="qq2">
+      <a class="qq2" href="details/details.html">
+        <i class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
             <div class="titleandheart">
               <h3>Pizza Plaza</h3>
-              <i style="font-size: 1rem;" class="far fa-heart"></i>
             </div>
             <div class="waittime">
               <p>6 min</p>
-              <p>PROGRESS BAR</p>
+              <div class="progressbar">
+                <div class="progressbar-fill" style="width: 6.6%; background-color: #39D2C0;"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </a>
   
-      <div class="qq3">
+      <a class="qq3" href="details/details.html">
+        <i class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
             <div class="titleandheart">
               <h3>Restaurant test</h3>
-              <i style="font-size: 1rem;" class="far fa-heart"></i>
             </div>
             <div class="waittime">
-              <p>19 min</p>
-              <p>PROGRESS BAR</p>
+              <p>8 min</p>
+              <div class="progressbar">
+                <div class="progressbar-fill" style="width: 5.5%; background-color: #39D2C0;"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </a>
       <div id="arrowmore">
           <i id="arrowmorecircle" class="fas fa-angle-right"></i>
       </div>
@@ -256,50 +325,56 @@
   <h2 class="rowtitle">Highly Rated</h2>
   <i style="font-size: 1.3rem; color: #ffc86a;" class="fas fa-chess-pawn rowtitle-icon"></i>
   <div class="frrestaurants">
-    <div class="qq1">
+    <a class="hr1" href="details/details.html">
+      <i class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
           <div class="titleandheart">
             <h3>Thai Basil</h3>
-            <i style="font-size: 1rem;" class="far fa-heart"></i>
           </div>
           <div class="waittime">
-            <p>2 min</p>
-            <p>PROGRESS BAR</p>
+            <p>55 min</p>
+            <div class="progressbar">
+              <div class="progressbar-fill" style="width: 61%; background-color: #FF5963;"></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </a>
 
-    <div class="qq2">
+    <a class="hr2" href="details/details.html">
+      <i class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
           <div class="titleandheart">
             <h3>Pizza Plaza</h3>
-            <i style="font-size: 1rem;" class="far fa-heart"></i>
           </div>
           <div class="waittime">
             <p>6 min</p>
-            <p>PROGRESS BAR</p>
+            <div class="progressbar">
+              <div class="progressbar-fill" style="width: 6.6%; background-color: #39D2C0;"></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </a>
 
-    <div class="qq3">
+    <a class="hr3" href="details/details.html">
+      <i class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
           <div class="titleandheart">
             <h3>Restaurant test</h3>
-            <i style="font-size: 1rem;" class="far fa-heart"></i>
           </div>
           <div class="waittime">
             <p>19 min</p>
-            <p>PROGRESS BAR</p>
+            <div class="progressbar">
+              <div class="progressbar-fill" style="width: 21%; background-color: #39D2C0;"></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </a>
     <div id="arrowmore">
         <i id="arrowmorecircle" class="fas fa-angle-right"></i>
     </div>
@@ -314,51 +389,57 @@
 <div class="allrestaurantsrow">
   <h2 class="rowtitle">All Restaurants</h2>
   <div class="allrestaurants">
-    <div class="ar1">
+    <a class="ar1" href="details/details.html">
+      <i class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
           <div class="titleandheart">
             <h3>Junsa's Kitchen</h3>
-            <i style="font-size: 1rem;" class="far fa-heart"></i>
           </div>
           <div class="waittime">
             <p>3 min</p>
-            <p>PROGRESS BAR</p>
+            <div class="progressbar">
+              <div class="progressbar-fill" style="width: 3.3%; background-color: #39D2C0;"></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </a>
   
-    <div class="ar2">
+    <a class="ar2" href="details/details.html">
+      <i class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
           <div class="titleandheart">
-            <h3>Pranav Pasta</h3>
-            <i style="font-size: 1rem;" class="far fa-heart"></i>
+            <h3>Pranav's Pasta</h3>
           </div>
           <div class="waittime">
             <p>9 min</p>
-            <p>PROGRESS BAR</p>
+            <div class="progressbar">
+              <div class="progressbar-fill" style="width: 10%; background-color: #39D2C0;"></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </a>
 
-  <div class="ar3">
+    <a class="ar3" href="details/details.html">
+    <i class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
           <div class="titleandheart">
             <h3>Eddy's Elephant Cafe</h3>
-            <i style="font-size: 1rem;" class="far fa-heart"></i>
           </div>
           <div class="waittime">
             <p>11 min</p>
-            <p>PROGRESS BAR</p>
-          </div>
+            <div class="progressbar">
+              <div class="progressbar-fill" style="width: 12.2%; background-color: #39D2C0;"></div>
+            </div>
+          </div>          
         </div>
       </div>
     </div>
-  </div>
+  </a>
       <div class="seemorecontainer">
         <div class="seemore">
           See More
@@ -369,13 +450,17 @@
 </div>
 <!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS--><!--ALLRESTAURANTS-->
 
+
+
+
+
 <!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO-->
 <hr>
   <div class="footerinfo">
   <div class="user">
     <h3 class="column-title">About</h3>
     <div class="column-links">
-      <how onclick="window.location.href='how/how.html'">How it Works</how>
+      <how onclick="window.location.href='how/how.html'" style="margin-right: 10vh;">How it Works</how>
       <about onclick="window.location.href='about/about.html'">About us</about>
     </div>
   </div>
@@ -386,7 +471,7 @@
     </div>
   </div>
   <div class="socials">
-    <h3>QueueCube</h3>
+    <h3 class="rightcolumn-name">QueueCube</h3>
     <div class="socialslinks">
       <a href="https://www.instagram.com/queuecubeofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://www.linkedin.com/company/queuecube/about/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin"></i></a>
