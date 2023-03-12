@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QueueCube | Forest Gump's Frosted Flakes</title>
   <link rel="stylesheet" href="details.css">
-  <link rel="shortcut icon" type="image/png" href="imgs/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="logo(clear).png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
+<!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
 <div class="topstuff">
   <div class="topjoin">
     <img class="logo" src="logo(clear).png" onclick="window.location.href='index.html';">
@@ -119,46 +119,44 @@
     <div id="arrowless">
       <i id="arrowlesscircle" class="fas fa-angle-left"></i>
     </div>
-    <img src="restaurant3.jpg" class="restaurantimg-details">
+    <img src="restaurant3.jpg" class="restaurant-image" style="object-fit: cover;">
     <div id="arrowmore">
       <i id="arrowmorecircle" class="fas fa-angle-right"></i>
     </div>
   </div>
 <!--IMAGECONTAINER--><!--IMAGECONTAINER--><!--IMAGECONTAINER--><!--IMAGECONTAINER--><!--IMAGECONTAINER-->
-
-
-
+  
+  
 <!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO-->
 <div class="details">
   <div class="title">Forest Gump's Frosted Flakes</div>
-  <p class="description">Welcome to Forest Gumps, the ultimate dining destination for nature lovers and to those en...
+  <p class="description">Welcome to Forest Gumps, the ultimate dining destination for nature lovers and to those enjoy...
     <i class="fas fa-angle-down"></i>
   </p>
-
   <div class="detailsrow">
     <div class="queuetime">
-      <i class="fas fa-clock" style="color: #2dc8b6;"></i>
       <h4>5 min</h4>
+      <i class="fas fa-clock" style="color: #2dc8b6;"></i>
     </div>
     <div class="ratings">
-      <i class="fas fa-star" style="color: #FFAC50;"></i>
       <h4>4.5</h4>
+      <i class="fas fa-star" style="color: #FFAC50;"></i>
     </div>
     <div class="call">
-      <i class="fas fa-phone-alt"></i>
       <h4>Call</h4>
+      <i class="fas fa-phone-alt"></i>
     </div>
     <div class="directions">
-      <i class="far fa-compass"></i>
       <h4>Directions</h4>
+      <i class="far fa-compass"></i>
     </div>
   </div> 
   <hr style="margin-left: 2vh; margin-right: 2vh;"> 
 
-
-
+  
+  
 <!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU-->
-<div class="menu">
+<div class="menu"  style="height: 55.5vh; overflow-y: auto;">
   <div class="menutitle">Menu</div>
   <div class="menuitemlist">
     <div class="menuitem">
@@ -192,22 +190,6 @@
       </div>
       <img src="item1.jpg" class="itemimage">
     </div>
-
-    <div class="menuitem">
-      <div>
-        <p style="font-size: 2.2vh;">Item</p>
-        <p class="foodinfo">details</p>
-      </div>
-      <img src="item1.jpg" class="itemimage">
-    </div>
-  </div>
-</div>
-<!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU-->
-
-</div>
-<!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO-->
-
-</div>
 </body>
 </html>
 
