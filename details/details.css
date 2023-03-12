@@ -296,19 +296,17 @@ hr {
   position: relative;
   display: inline-block;
   margin-left: 2vh;
-  margin-top: 1vh;
-  margin-bottom: 2vh;
 }
-.restaurantimg-details {
+.restaurant-image {
+  object-fit: cover;
   width: 80vh;
-  height: 85vh;
+  height: 85.5vh;
   border-radius: 1vh;
 }
 #arrowless {
   position: absolute;
   top: 50%;
   right: 73vh;
-  transform: translateY(-50%);
 }
 #arrowlesscircle {
   background-color: #eee;
@@ -327,7 +325,6 @@ hr {
   position: absolute;
   top: 50%;
   right: 2vh;
-  transform: translateY(-50%);
 }
 #arrowmorecircle {
   background-color: #eee;
@@ -356,11 +353,10 @@ hr {
   color: #000;
   margin-left: 3vh;
   margin-top: 1vh;
-  margin-bottom: 0vh;
   font-size: 4vh;
 }
 .description {
-  margin: 4vh;
+  margin-bottom: 2vh;
   margin-left: 2vh;
   margin-top: 0.5vh;
   padding: 1vh;
@@ -377,22 +373,21 @@ hr {
   justify-content: space-between;
   margin-left: 3vh;
   margin-right: 3vh;
-  margin-top: 0vh;
-  margin-bottom: 4vh;
+  margin-bottom: 3vh;
 }
 .detailsrow i {
-  font-size: 3vh;
-  margin-bottom: 2vh;
+  font-size: 2.7vh;
+  margin-left: 2vh;
 }
 .queuetime {
   background-color: #eee;
   width: 10vh;
-  height: 11vh;
+  height: 4vh;
   padding: 5vh;
   border-radius: 1vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;  
+  align-items: center; 
+  justify-content: center;  
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
@@ -402,12 +397,12 @@ hr {
 .ratings {
   background-color: #eee;
   width: 10vh;
-  height: 11vh;
+  height: 4vh;
   padding: 5vh;
   border-radius: 1vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;  
+  align-items: center; 
+  justify-content: center; 
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
@@ -417,12 +412,12 @@ hr {
 .call {
   background-color: #eee;
   width: 10vh;
-  height: 11vh;
+  height: 4vh;
   padding: 5vh;
   border-radius: 1vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;  
+  align-items: center; 
+  justify-content: center;  
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
@@ -432,12 +427,12 @@ hr {
 .directions {
   background-color: #eee;
   width: 10vh;
-  height: 11vh;
+  height: 4vh;
   padding: 5vh;
   border-radius: 1vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;  
+  align-items: center; 
+  justify-content: center;  
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
@@ -456,8 +451,8 @@ hr {
   margin-right: 5vh;
 }
 .menutitle {
-  margin-top: 3.5vh;
-  margin-bottom: 2vh;
+  margin-top: 1vh;
+  margin-bottom: 3vh;
   font-size: 3vh;
 }
 .menuitemlist {
@@ -483,7 +478,6 @@ hr {
   border-radius: 1vh;
 }
 /*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*/
-
 
 
 /*FOODINFO*/
