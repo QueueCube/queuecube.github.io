@@ -9,7 +9,7 @@ html, body {
 /*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
 .topstuff {
   background-color: #fff;
-  height: 8%;
+  height: 9%;
   padding-top: 1vh;
   display: flex;
   justify-content: flex-start;
@@ -354,14 +354,15 @@ hr {
 }
 .title {
   color: #000;
-  margin-left: 5vh;
-  margin-top: 2vh;
+  margin-left: 3vh;
+  margin-top: 1vh;
   margin-bottom: 0vh;
   font-size: 4vh;
 }
 .description {
   margin: 4vh;
-  margin-top: 1.5vh;
+  margin-left: 2vh;
+  margin-top: 0.5vh;
   padding: 1vh;
   border-radius: 1vh;
   cursor: pointer;
@@ -374,8 +375,8 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 4vh;
-  margin-right: 4vh;
+  margin-left: 3vh;
+  margin-right: 3vh;
   margin-top: 0vh;
   margin-bottom: 4vh;
 }
@@ -385,7 +386,7 @@ hr {
 }
 .queuetime {
   background-color: #eee;
-  width: 17vh;
+  width: 10vh;
   height: 11vh;
   padding: 5vh;
   border-radius: 1vh;
@@ -400,7 +401,7 @@ hr {
 }
 .ratings {
   background-color: #eee;
-  width: 17vh;
+  width: 10vh;
   height: 11vh;
   padding: 5vh;
   border-radius: 1vh;
@@ -415,7 +416,7 @@ hr {
 }
 .call {
   background-color: #eee;
-  width: 17vh;
+  width: 10vh;
   height: 11vh;
   padding: 5vh;
   border-radius: 1vh;
@@ -428,6 +429,21 @@ hr {
 .call:hover {
   background-color: #e8e8e8;
 }
+.directions {
+  background-color: #eee;
+  width: 10vh;
+  height: 11vh;
+  padding: 5vh;
+  border-radius: 1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.directions:hover {
+  background-color: #e8e8e8;
+}
 /*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*/
 
 
@@ -436,11 +452,11 @@ hr {
 .menu {
   font-size: 1.7vh;
   font-weight: 300;
-  margin-left: 5vh;
+  margin-left: 3vh;
   margin-right: 5vh;
 }
 .menutitle {
-  margin-left: 1vh;
+  margin-top: 3.5vh;
   margin-bottom: 2vh;
   font-size: 3vh;
 }
