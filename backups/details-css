@@ -4,8 +4,6 @@ html, body {
   padding: 0;
   font-family: Outfit, sans-serif;
 }
-
-
 /*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
 .topstuff {
   background-color: #fff;
@@ -99,8 +97,6 @@ html, body {
   background-color: #2dafa0;
 }
 /*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
-
-
 /*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*/
 .sign-up-form {
   font-family: Outfit, sans-serif;
@@ -217,9 +213,6 @@ button {
   cursor: pointer;
 }
 /*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*/
-
-
-
 /*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*/
 .locationset-form {
   font-family: Outfit, sans-serif;
@@ -281,6 +274,8 @@ button {
 }
 /*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*/
 
+
+
 hr {
   border: none;
   height: 0.1vh;
@@ -340,14 +335,10 @@ hr {
   background-color: #e8e8e8;
 }
 /*IMAGE*//*IMAGE*//*IMAGE*//*IMAGE*//*IMAGE*//*IMAGE*//*IMAGE*//*IMAGE*//*IMAGE*//*IMAGE*//*IMAGE*//*IMAGE*/
-
-
-
 /*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*/
 .details {
  background-color: #fff;
- height: 90vh;
- width: 100vh;
+ width: 110vh;
 }
 .title {
   color: #000;
@@ -440,15 +431,12 @@ hr {
   background-color: #e8e8e8;
 }
 /*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*/
-
-
-
 /*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*/
 .menu {
   font-size: 1.7vh;
   font-weight: 300;
   margin-left: 3vh;
-  margin-right: 5vh;
+  margin-right: 3vh;
 }
 .menutitle {
   margin-top: 1vh;
@@ -478,9 +466,8 @@ hr {
   border-radius: 1vh;
 }
 /*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*/
-
-
-/*FOODINFO*/
+/*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*/
 .foodinfo {
   color: #777777;
 }
+/*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*/

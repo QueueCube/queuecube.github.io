@@ -333,11 +333,6 @@ hr {
   background-color: #dadada;
 }
 /*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*/
-
-
-
-
-
 /*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*/
 .restaurantcontainer {
   background-color: #eee;
@@ -453,8 +448,6 @@ a {
   color: inherit; /* Inherit color from parent */
   text-decoration: none; /* Remove underline */
 }
-
-
 .f2 {
   background-image: url('imgs/restaurant2.jpg');
   background-size: cover;
@@ -485,8 +478,6 @@ a {
   margin-left: 43vh;
   font-size: 2.5vh;
 }
-
-
 .quickestqueuesrow {
   background-color: #fff;
   height: 23%;
@@ -541,9 +532,6 @@ a {
   margin-left: 43vh;
   font-size: 2.5vh;
 }
-
-
-
 .highlyratedrow {
   background-color: #fff;
   height: 23%;
@@ -598,8 +586,6 @@ a {
   margin-left: 43vh;
   font-size: 2.5vh;
 }
-
-
 .allrestaurantsrow {
   background-color: #fff;
   height: 30%;
@@ -656,7 +642,6 @@ a {
   margin-left: 43vh;
   font-size: 2.5vh;
 }
-
 .seemorecontainer {
   display: flex;
   justify-content: center; /* Center horizontally */
@@ -677,9 +662,6 @@ a {
   background-color: #dadada;
 }
 /*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*/
-
-
-
 /*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*/
 .footerinfo {
   display: flex;
@@ -711,10 +693,6 @@ a {
   color: #000;
 }
 /*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*/
-
-
-
-
 /*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*/
 .socials {
   text-align: right;
