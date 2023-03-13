@@ -6,15 +6,26 @@ html, body {
 }
 
 
-/*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
+/*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
 .topstuff {
-  background-color: #fff;
   height: 11%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: 8vh;
   padding-right: 7vh;
+}
+queuecube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 101vh;
+  cursor: pointer;
+}
+.logo {
+  height: 5vh;
+  margin-right: 1vh;
 }
 .topjoin {
   display: flex;
@@ -30,10 +41,11 @@ html, body {
 }
 .searchbar {
   background-color: #eee;
-  width: 30%;
+  width: 35%;
   height: 4.5vh;
   padding: 1vh;
   padding-left: 3vh;
+  margin-right: 1vh;
   font-family: Outfit, sans-serif;
   font-size: 2vh;
   border-radius: 1vh;
@@ -42,9 +54,8 @@ html, body {
 }
 .locationset {
   border-radius: 1vh;
-  margin-left: 1vh;
-  margin-right: 51vh;
   padding: 2vh 1.5vh;
+  width: 16vh;
   display: flex;
   font-size: 1.8vh;
   align-items: center;
@@ -56,8 +67,8 @@ html, body {
   background-color: #eee;
 }
 .locationset i {
-  padding-right: 1vh;
-  font-size: 2vh;
+  font-size: 20px;
+  margin-right: 1vh;
 }
 .topjoin getapp {
   color: #000;
@@ -97,10 +108,8 @@ html, body {
 .topjoin signup:hover {
   background-color: #2dafa0;
 }
-/*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
-
-
-/*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*/
+/*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
+/*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*/
 .sign-up-form {
   font-family: Outfit, sans-serif;
   font-size: 2vh;
@@ -215,9 +224,81 @@ button {
   outline: none;
   cursor: pointer;
 }
-/*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*/
-
-/*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*/
+/*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*/
+/*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*/
+.locationset-form {
+  font-family: Outfit, sans-serif;
+  font-size: 2vh;
+  width: 55vh;
+  height: 23vh;
+  background: #fff;
+  padding: 3vh;
+  border-radius: 1vh;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  visibility: hidden;
+  transition: transform 0.3s;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 2vh rgba(0, 0, 0, 0.3);
+}
+.locationsettopinfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.enteraddress {
+  text-align: left;
+  margin-bottom: 2vh;
+  margin-left: 1vh;
+}
+.uselocation {
+  color: #ff3a3a;
+  padding: 1.5vh;
+  border-radius: 1vh;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.uselocation i {
+  margin-right: 1vh;
+}
+.uselocation:hover {
+  background-color: #eee;
+}
+.locationsetinput {
+  font-family: Outfit, sans-serif;
+  background-color: #eee;
+  border: none;
+  outline: none;
+  margin-top: 3vh;
+  padding: 2vh;
+  padding-left: 3vh;
+  border-radius: 1vh;
+  font-size: 2vh;
+}
+.open-locationsetpopup {
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+/*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*/
+/*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*/
+.middlestuff {
+  background-color: #2dc8b6;
+  height: 835px;
+  width: 1440px;
+}
+.middleinfo {
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*/
+/*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*/
 .footerinfo {
   display: flex;
   justify-content: baseline;
