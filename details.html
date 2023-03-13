@@ -3,29 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QueueCube | Restaurant</title>
+  <title>QueueCube | Forest Gump's Frosted Flakes</title>
   <link rel="stylesheet" href="details.css">
-  <link rel="shortcut icon" type="image/png" href="imgs/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="imgs/logo(clear).png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
+<!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
 <div class="topstuff">
   <div class="topjoin">
-    <img class="logo" src="logo(clear).png" onclick="window.location.href='index.html';">
+  
+    <bars><i class="fas fa-bars" style="font-size: 3vh;"></i></bars>
+  
+    <queuecube onclick="window.location.href = 'home.html';">
+      <img class="logo" src="imgs/logo(clear).png"> 
+      <h2 style="font-weight: 100;">QueueCube</h2>
+    </queuecube>
+    
+    <div class="locationset" onclick="openlocationsetPopup();dim(true)">
+      <i class="fas fa-map-marker-alt"></i> Sunnyvale,  CA
+    </div>
   
       <input id="searchbar" class="searchbar" type="text" placeholder="Search Restaurant" >
       <script>
         const searchInput = document.getElementById('searchbar');
         const autocomplete = new google.maps.places.Autocomplete(searchInput);
       </script>
-     
-  
-    <div class="locationset" onclick="openlocationsetPopup();dim(true)">
-      <i class="fas fa-map-marker-alt"></i> Location
-    </div>
+    
     <script>
     function openlocationsetPopup() {
       // Add your code to open a popup here
@@ -63,11 +69,7 @@
         locationsetpopup.classList.remove("open-locationsetpopup");
       }
     </script>
-    
-
-    <getapp>Get the App</getapp>
-    <login type="log" onclick="openPopup();dim(true)">Log In</login>
-    <signup type="signup" onclick="openPopup();dim(true);">Sign Up</signup>
+  
     <button id="dimmer" onclick="dim(false);closePopup();closelocationsetPopup()"></button>  <!--the background used when dimmed - add to this as dimming buttons added-->
   
     <div class="sign-up-form" id="sign-up-form"> 
@@ -89,8 +91,10 @@
     </div>
   
   
+  
   <script>
     let popup = document.getElementById("sign-up-form");
+  
     function openPopup() {
       popup.classList.add("open-popup");
     }
@@ -104,13 +108,15 @@
       if (typeof bool=='false') bool=true;
       document.getElementById('dimmer').style.display=(bool?'block':'none');
   }    
-  dim(true); // on
-  dim(false); // off
-  </script>
-  </div>
-  </div>
-  </div>
-<hr> 
+  
+
+dim(true); // on
+dim(false); // off
+</script>
+</div>
+</div>
+</div>
+  <hr>
 <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
   
 <div class="allstuff">
@@ -119,72 +125,78 @@
     <div id="arrowless">
       <i id="arrowlesscircle" class="fas fa-angle-left"></i>
     </div>
-    <img src="restaurant3.jpg" class="restaurantimg-details">
+    <img src="imgs/restaurant3.jpg" class="restaurant-image" style="object-fit: cover;">
     <div id="arrowmore">
       <i id="arrowmorecircle" class="fas fa-angle-right"></i>
     </div>
   </div>
 <!--IMAGECONTAINER--><!--IMAGECONTAINER--><!--IMAGECONTAINER--><!--IMAGECONTAINER--><!--IMAGECONTAINER-->
-
-
-
+  
+  
 <!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO-->
 <div class="details">
   <div class="title">Forest Gump's Frosted Flakes</div>
-  <p class="description">Welcome to Forest Gumps, the ultimate dining destination for nature lovers and to those en...
+  <p class="description">Welcome to Forest Gumps, the ultimate dining destination for nature lovers and to those enjoy...
     <i class="fas fa-angle-down"></i>
   </p>
-
   <div class="detailsrow">
     <div class="queuetime">
+      <h4>5 min</h4>
       <i class="fas fa-clock" style="color: #2dc8b6;"></i>
-      <h3>5 min</h3>
     </div>
     <div class="ratings">
+      <h4>4.5</h4>
       <i class="fas fa-star" style="color: #FFAC50;"></i>
-      <h3>4.5</h3>
     </div>
     <div class="call">
+      <h4>Call</h4>
       <i class="fas fa-phone-alt"></i>
-      <h3>Call</h3>
+    </div>
+    <div class="directions">
+      <h4>Directions</h4>
+      <i class="far fa-compass"></i>
     </div>
   </div> 
   <hr style="margin-left: 2vh; margin-right: 2vh;"> 
 
-
-
+  
+  
 <!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU-->
-<div class="menu">
-  <h1>Menu</h1>
+<div class="menu"  style="height: 55.5vh; overflow-y: auto;">
+  <div class="menutitle">Menu</div>
   <div class="menuitemlist">
     <div class="menuitem">
-      <p style="font-size: 2vh;">Penis sack</p>
-      <img src="item1.jpg" class="itemimage">
+      <div>
+        <p style="font-size: 2.2vh;">Item</p>
+        <p class="foodinfo">details</p>
+      </div>
+      <img src="imgs/item1.jpg" class="itemimage">
     </div>
+
     <div class="menuitem">
-      <p style="font-size: 2vh;">ranch dipped horse hair</p>
-      <img src="item1.jpg" class="itemimage">
+      <div>
+        <p style="font-size: 2.2vh;">Item</p>
+        <p class="foodinfo">details</p>
+      </div>
+      <img src="imgs/item1.jpg" class="itemimage">
     </div>
+
     <div class="menuitem">
-      <p style="font-size: 2vh;">jesus water</p>
-      <img src="item1.jpg" class="itemimage">
+      <div>
+        <p style="font-size: 2.2vh;">Item</p>
+        <p class="foodinfo">details</p>
+      </div>
+      <img src="imgs/item1.jpg" class="itemimage">
     </div>
+
     <div class="menuitem">
-      <p style="font-size: 2vh;">GBP special</p>
-      <img src="item1.jpg" class="itemimage">
-    </div>
-    <div class="menuitem">
-      <p style="font-size: 2vh;">lololol</p>
-      <img src="item1.jpg" class="itemimage">
+      <div>
+        <p style="font-size: 2.2vh;">Item</p>
+        <p class="foodinfo">details</p>
+      </div>
+      <img src="imgs/item1.jpg" class="itemimage">
     </div>
   </div>
-</div>
-<!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU--><!--MENU-->
-
-</div>
-<!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO--><!--DETAILINFO-->
-
-</div>
 </body>
 </html>
 

@@ -4,16 +4,15 @@ html, body {
   padding: 0;
   font-family: Outfit, sans-serif;
 }
-
-
 /*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
 .topstuff {
   background-color: #fff;
-  height: 8%;
-  padding-top: 1vh;
+  margin-top: 1vh;
+  height: 7%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 1.15vh;
   padding-left: 8vh;
   padding-right: 7vh;
 }
@@ -24,9 +23,28 @@ html, body {
   justify-content: space-between;
   width: 100%;
 }
+
+queuecube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 61vh;
+  cursor: pointer;
+}
 .logo {
-  height: 6vh;
-  margin-right: 3vh;
+  height: 5vh;
+  margin-right: 1vh;
+}
+.topjoin bars {
+  color: #000;
+  border-radius: 1vh;
+  margin-right: 5vh;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 1.8vh;
   cursor: pointer;
 }
 .searchbar {
@@ -43,9 +61,8 @@ html, body {
 }
 .locationset {
   border-radius: 1vh;
-  margin-left: 1vh;
-  margin-right: 51vh;
-  padding: 1.5vh 1.5vh;
+  margin-right: 1vh;
+  padding: 2vh 1.5vh;
   display: flex;
   font-size: 1.8vh;
   align-items: center;
@@ -60,47 +77,7 @@ html, body {
   padding-right: 1vh;
   font-size: 2vh;
 }
-.topjoin getapp {
-  color: #000;
-  border-radius: 1vh;
-  border: none;
-  padding: 1.5vh 2.2vh;
-  font-size: 1.8vh;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.topjoin getapp:hover {
-  background-color: #e8e8e8;
-}
-.topjoin login {
-  color: #000;
-  border-radius: 1vh;
-  border: none;
-  padding: 1.5vh 2.2vh;
-  font-size: 1.8vh;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.topjoin login:hover {
-  background-color: #e8e8e8;
-}
-.topjoin signup {
-  background-color: #2dc8b6;
-  color: #fff;
-  border-radius: 1vh;
-  border: none;
-  padding: 1.5vh 2.2vh;
-  margin-left: 0.5vh;
-  font-size: 1.8vh;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.topjoin signup:hover {
-  background-color: #2dafa0;
-}
 /*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
-
-
 /*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*/
 .sign-up-form {
   font-family: Outfit, sans-serif;
@@ -217,9 +194,6 @@ button {
   cursor: pointer;
 }
 /*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*/
-
-
-
 /*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*/
 .locationset-form {
   font-family: Outfit, sans-serif;
@@ -281,6 +255,8 @@ button {
 }
 /*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*/
 
+
+
 hr {
   border: none;
   height: 0.1vh;
@@ -296,19 +272,17 @@ hr {
   position: relative;
   display: inline-block;
   margin-left: 2vh;
-  margin-top: 1vh;
-  margin-bottom: 2vh;
 }
-.restaurantimg-details {
+.restaurant-image {
+  object-fit: cover;
   width: 80vh;
-  height: 85vh;
+  height: 85.5vh;
   border-radius: 1vh;
 }
 #arrowless {
   position: absolute;
   top: 50%;
   right: 73vh;
-  transform: translateY(-50%);
 }
 #arrowlesscircle {
   background-color: #eee;
@@ -327,7 +301,6 @@ hr {
   position: absolute;
   top: 50%;
   right: 2vh;
-  transform: translateY(-50%);
 }
 #arrowmorecircle {
   background-color: #eee;
@@ -343,25 +316,21 @@ hr {
   background-color: #e8e8e8;
 }
 /*IMAGE*//*IMAGE*//*IMAGE*//*IMAGE*//*IMAGE*//*IMAGE*//*IMAGE*//*IMAGE*//*IMAGE*//*IMAGE*//*IMAGE*//*IMAGE*/
-
-
-
 /*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*/
 .details {
  background-color: #fff;
- height: 90vh;
- width: 100vh;
+ width: 110vh;
 }
 .title {
   color: #000;
-  margin-left: 5vh;
-  margin-top: 2vh;
-  margin-bottom: 0vh;
+  margin-left: 3vh;
+  margin-top: 1vh;
   font-size: 4vh;
 }
 .description {
-  margin: 4vh;
-  margin-top: 1.5vh;
+  margin-bottom: 2vh;
+  margin-left: 2vh;
+  margin-top: 0.5vh;
   padding: 1vh;
   border-radius: 1vh;
   cursor: pointer;
@@ -374,25 +343,23 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 4vh;
-  margin-top: 0vh;
-  margin-bottom: 4vh;
+  margin-left: 3vh;
+  margin-right: 3vh;
+  margin-bottom: 3vh;
 }
 .detailsrow i {
-  font-size: 3vh;
-  margin-bottom: 2vh;
+  font-size: 2.7vh;
+  margin-left: 2vh;
 }
 .queuetime {
   background-color: #eee;
-  width: 12vh;
-  height: 11vh;
-  padding: 5vh;
-  margin-left: 1vh;
-  margin-right: 1vh;
+  width: 14vh;
+  height: 4vh;
+  padding: 3vh;
   border-radius: 1vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;  
+  align-items: center; 
+  justify-content: center;  
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
@@ -401,15 +368,13 @@ hr {
 }
 .ratings {
   background-color: #eee;
-  width: 12vh;
-  height: 11vh;
-  padding: 5vh;
-  margin-left: 1vh;
-  margin-right: 1vh;
+  width: 14vh;
+  height: 4vh;
+  padding: 3vh;
   border-radius: 1vh;
   display: flex;
-  flex-direction: column;
   align-items: center; 
+  justify-content: center; 
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
@@ -418,31 +383,46 @@ hr {
 }
 .call {
   background-color: #eee;
-  width: 12vh;
-  height: 11vh;
-  padding: 5vh;
-  margin-left: 1vh;
-  margin-right: 1vh;
+  width: 14vh;
+  height: 4vh;
+  padding: 3vh;
   border-radius: 1vh;
   display: flex;
-  flex-direction: column;
   align-items: center; 
+  justify-content: center;  
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
 .call:hover {
   background-color: #e8e8e8;
 }
+.directions {
+  background-color: #eee;
+  width: 14vh;
+  height: 4vh;
+  padding: 3vh;
+  border-radius: 1vh;
+  display: flex;
+  align-items: center; 
+  justify-content: center;  
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.directions:hover {
+  background-color: #e8e8e8;
+}
 /*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*//*DETAILS*/
-
-
-
 /*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*/
 .menu {
   font-size: 1.7vh;
   font-weight: 300;
-  margin-left: 5vh;
-  margin-right: 5vh;
+  margin-left: 3vh;
+  margin-right: 3vh;
+}
+.menutitle {
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+  font-size: 3vh;
 }
 .menuitemlist {
   display: flex;
@@ -450,7 +430,7 @@ hr {
   justify-content: space-between;
 }
 .menuitem {
-  background-color: #f3f3f3;
+  background-color: #ffff;
   display: flex;
   align-items: center;
   margin-bottom: 2vh;
@@ -459,13 +439,16 @@ hr {
   font-size: 1.8vh;
   cursor: pointer;
   justify-content: space-between;
-  transition: background-color 0.3s ease;
-}
-.menuitem:hover {
-  background-color: #e8e8e8;
+  border: 1px solid #eee;
+  outline: none;
 }
 .itemimage {
   height: 17vh;
   border-radius: 1vh;
 }
 /*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*//*MENU*/
+/*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*/
+.foodinfo {
+  color: #777777;
+}
+/*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*//*FOODINFO*/

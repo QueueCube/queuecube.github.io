@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QueueCube</title>
-  <link rel="shortcut icon" type="image/png" href="imgs/favicon.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="imgs/logo(clear).png">
+  <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,22 +14,27 @@
 
 
 <body>
-
 <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
 <div class="topstuff">
 <div class="topjoin">
-  <img class="logo" src="imgs/logo(clear).png" onclick="location.reload();">
+
+  <bars><i class="fas fa-bars" style="font-size: 3vh;"></i></bars>
+
+  <queuecube onclick="window.location.href = 'home.html';">
+    <img class="logo" src="imgs/logo(clear).png"> 
+    <h2 style="font-weight: 100;">QueueCube</h2>
+  </queuecube>
+
+  <div class="locationset" onclick="openlocationsetPopup();dim(true)">
+    <i class="fas fa-map-marker-alt"></i> Sunnyvale,  CA
+  </div>
 
     <input id="searchbar" class="searchbar" type="text" placeholder="Search Restaurant" >
     <script>
       const searchInput = document.getElementById('searchbar');
       const autocomplete = new google.maps.places.Autocomplete(searchInput);
     </script>
-   
-
-  <div class="locationset" onclick="openlocationsetPopup();dim(true)">
-    <i class="fas fa-map-marker-alt"></i> Location
-  </div>
+  
   <script>
   function openlocationsetPopup() {
     // Add your code to open a popup here
@@ -67,11 +72,7 @@
       locationsetpopup.classList.remove("open-locationsetpopup");
     }
   </script>
-  
 
-  <getapp>Get the App</getapp>
-  <login type="log" onclick="openPopup();dim(true)">Log In</login>
-  <signup type="signup" onclick="openPopup();dim(true);">Sign Up</signup>
   <button id="dimmer" onclick="dim(false);closePopup();closelocationsetPopup()"></button>  <!--the background used when dimmed - add to this as dimming buttons added-->
 
   <div class="sign-up-form" id="sign-up-form"> 
@@ -195,7 +196,7 @@ dim(false); // off
     <h2 class="rowtitle">Featured</h2>
     <i style="font-size: 1.3rem; color: #ffc86a;" class="fas fa-chess-king rowtitle-icon"></i>
     <div class="frrestaurants">
-      <a class="f1" href="details/details.html">
+      <a class="f1" href="details.html">
         <i class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
@@ -213,7 +214,7 @@ dim(false); // off
       </a>
       
     
-      <a class="f2" href="details/details.html">
+      <a class="f2" href="details.html">
         <i class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
@@ -230,7 +231,7 @@ dim(false); // off
         </div>
       </a>
   
-      <a class="f3" href="details/details.html">
+      <a class="f3" href="details.html">
         <i class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
@@ -261,7 +262,7 @@ dim(false); // off
     <h2 class="rowtitle">Quickest Queues</h2>
     <i style="font-size: 1.3rem; color: #ffc86a;" class="fas fa-chess-queen rowtitle-icon"></i>
     <div class="frrestaurants">
-      <a class="qq1" href="details/details.html">
+      <a class="qq1" href="details.html">
         <i class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
@@ -278,7 +279,7 @@ dim(false); // off
         </div>
       </a>
 
-      <a class="qq2" href="details/details.html">
+      <a class="qq2" href="details.html">
         <i class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
@@ -295,7 +296,7 @@ dim(false); // off
         </div>
       </a>
   
-      <a class="qq3" href="details/details.html">
+      <a class="qq3" href="details.html">
         <i class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
@@ -325,7 +326,7 @@ dim(false); // off
   <h2 class="rowtitle">Nearby</h2>
   <i style="font-size: 1.3rem; color: #ffc86a;" class="fas fa-chess-pawn rowtitle-icon"></i>
   <div class="frrestaurants">
-    <a class="hr1" href="details/details.html">
+    <a class="hr1" href="details.html">
       <i class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
@@ -342,7 +343,7 @@ dim(false); // off
       </div>
     </a>
 
-    <a class="hr2" href="details/details.html">
+    <a class="hr2" href="details.html">
       <i class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
@@ -359,7 +360,7 @@ dim(false); // off
       </div>
     </a>
 
-    <a class="hr3" href="details/details.html">
+    <a class="hr3" href="details.html">
       <i class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
@@ -389,7 +390,7 @@ dim(false); // off
 <div class="allrestaurantsrow">
   <h2 class="rowtitle">All Restaurants</h2>
   <div class="allrestaurants">
-    <a class="ar1" href="details/details.html">
+    <a class="ar1" href="details.html">
       <i class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
@@ -406,7 +407,7 @@ dim(false); // off
       </div>
     </a>
   
-    <a class="ar2" href="details/details.html">
+    <a class="ar2" href="details.html">
       <i class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
@@ -423,7 +424,7 @@ dim(false); // off
       </div>
     </a>
 
-    <a class="ar3" href="details/details.html">
+    <a class="ar3" href="details.html">
     <i class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
@@ -460,23 +461,23 @@ dim(false); // off
   <div class="user">
     <h3 class="column-title">About</h3>
     <div class="column-links">
-      <how onclick="window.location.href='how/how.html'" style="margin-right: 10vh;">How it Works</how>
-      <about onclick="window.location.href='about/about.html'">About us</about>
+      <how onclick="window.location.href='fluffstuff/how.html'" style="margin-right: 10vh;">How it Works</how>
+      <about onclick="window.location.href='fluffstuff/about.html'">About us</about>
     </div>
   </div>
   <div class="business">
     <h3 class="column-title">Business</h3>
     <div class="column-links">
-      <partner onclick="window.location.href='partner/partner.html'">Partner</partner>
+      <partner onclick="window.location.href='fluffstuff/partner.html'">Partner</partner>
     </div>
   </div>
   <div class="socials">
     <h3 class="rightcolumn-name">QueueCube</h3>
     <div class="socialslinks">
       <a href="https://www.instagram.com/queuecubeofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.linkedin.com/company/queuecube/about/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://twitter.com/QueueCube" target="_blank"><i class="fab fa-twitter"></i></a>
       <a href="https://www.facebook.com/profile.php?id=100089205723506" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/QueueCube" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/queuecube/about/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>     
 </div>
 </div>
