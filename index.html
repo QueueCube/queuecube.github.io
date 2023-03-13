@@ -11,18 +11,37 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0RfELl-8CZ73qQoCOoRRS3rGzGEPEelU&libraries=places"></script>
 </head>
+
+
 <body>
 <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
 <div class="topstuff">
 <div class="topjoin">
-  <queuecube onclick="window.location.reload();">
-    <img class="logo" src="imgs/logo(clear).png"> 
-    <h2 style="font-weight: 100;">QueueCube</h2>
-  </queuecube>  
+  <img class="logo" src="imgs/logo(clear).png" onclick="location.reload();">
+
+    <input id="searchbar" class="searchbar" type="text" placeholder="Search Restaurant" >
+    <script>
+      const searchInput = document.getElementById('searchbar');
+      const autocomplete = new google.maps.places.Autocomplete(searchInput);
+    </script>
+   
+
+  
+  
+  <script>
+    let locationsetpopup = document.getElementById("locationset-form");
+    function openlocationsetPopup() {
+      locationsetpopup.classList.add("open-locationsetpopup");
+    }
+    function closelocationsetPopup() {
+      locationsetpopup.classList.remove("open-locationsetpopup");
+    }
+  </script>
+  
 
   <getapp>Get the App</getapp>
   <login type="log" onclick="openPopup();dim(true)">Log In</login>
-  <a href="home.html"><signup> Sign Up</signup></a> 
+  <signup>  <a href="home.html">Sign Up</a> </signup>
   <button id="dimmer" onclick="dim(false);closePopup();closelocationsetPopup()"></button>  <!--the background used when dimmed - add to this as dimming buttons added-->
 
   <div class="sign-up-form" id="sign-up-form"> 
@@ -68,42 +87,31 @@ dim(false); // off
 </script>
 </div>
 </div>
-<hr>
 </div>
-<!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
-<!--BREADANDBUTTER--><!--BREADANDBUTTER--><!--BREADANDBUTTER--><!--BREADANDBUTTER--><!--BREADANDBUTTER--><!--BREADANDBUTTER-->
-<div class="breadandbutter">
-  <input id="searchbar" class="searchbar" type="text" placeholder="Search Restaurant" >
-    <script>
-      const searchInput = document.getElementById('searchbar');
-      const autocomplete = new google.maps.places.Autocomplete(searchInput);
-    </script>
-</div>
-<!--BREADANDBUTTER--><!--BREADANDBUTTER--><!--BREADANDBUTTER--><!--BREADANDBUTTER--><!--BREADANDBUTTER--><!--BREADANDBUTTER-->
 <!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO-->
 <hr>
   <div class="footerinfo">
   <div class="user">
     <h3 class="column-title">About</h3>
     <div class="column-links">
-      <how onclick="window.location.href='fluffstuff/how.html'" style="margin-right: 10vh;">How it Works</how>
-      <about onclick="window.location.href='fluffstuff/about.html'">About us</about>
+      <how onclick="window.location.href='how/how.html'" style="margin-right: 10vh;">How it Works</how>
+      <about onclick="window.location.href='about/about.html'">About us</about>
     </div>
   </div>
   <div class="business">
     <h3 class="column-title">Business</h3>
     <div class="column-links">
-      <partner onclick="window.location.href='fluffstuff/partner.html'">Partner</partner>
+      <partner onclick="window.location.href='partner/partner.html'">Partner</partner>
     </div>
   </div>
   <div class="socials">
     <h3 class="rightcolumn-name">QueueCube</h3>
     <div class="socialslinks">
       <a href="https://www.instagram.com/queuecubeofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=100089205723506" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://twitter.com/QueueCube" target="_blank"><i class="fab fa-twitter"></i></a>
       <a href="https://www.linkedin.com/company/queuecube/about/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>      
+      <a href="https://twitter.com/QueueCube" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100089205723506" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>     
 </div>
 </div>
   <div class="copyright">
