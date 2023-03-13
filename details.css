@@ -253,9 +253,6 @@ button {
   transform: translate(-50%, -50%) scale(1);
 }
 /*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*/
-
-
-
 hr {
   border: none;
   height: 0.1vh;
@@ -271,17 +268,18 @@ hr {
   position: relative;
   display: inline-block;
   margin-left: 2vh;
+  margin-top: 2vh;
 }
 .restaurant-image {
   object-fit: cover;
-  width: 80vh;
-  height: 85.5vh;
+  width: 75vh;
+  height: 83vh;
   border-radius: 1vh;
 }
 #arrowless {
   position: absolute;
   top: 50%;
-  right: 73.5vh;
+  right: 69vh;
 }
 #arrowlesscircle {
   background-color: #f2f2f2;
@@ -299,7 +297,7 @@ hr {
 #arrowmore {
   position: absolute;
   top: 50%;
-  right: 2vh;
+  right: 1.5vh;
 }
 #arrowmorecircle {
   background-color: #f2f2f2;
@@ -420,7 +418,7 @@ hr {
 }
 .menutitle {
   margin-top: 1vh;
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
   font-size: 3vh;
 }
 .menuitemlist {
