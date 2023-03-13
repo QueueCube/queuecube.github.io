@@ -346,11 +346,11 @@ hr {
 }
 .detailsrow i {
   font-size: 2.7vh;
-  margin-left: 2vh;
+  margin-left: 2.5vh;
 }
 .queuetime {
   background-color: #f2f2f2;
-  width: 14vh;
+  width: 15vh;
   height: 4vh;
   padding: 3vh;
   border-radius: 1vh;
@@ -365,7 +365,7 @@ hr {
 }
 .ratings {
   background-color: #f2f2f2;
-  width: 14vh;
+  width: 15vh;
   height: 4vh;
   padding: 3vh;
   border-radius: 1vh;
@@ -380,7 +380,7 @@ hr {
 }
 .call {
   background-color: #f2f2f2;
-  width: 14vh;
+  width: 15vh;
   height: 4vh;
   padding: 3vh;
   border-radius: 1vh;
@@ -395,7 +395,7 @@ hr {
 }
 .directions {
   background-color: #f2f2f2;
-  width: 14vh;
+  width: 15vh;
   height: 4vh;
   padding: 3vh;
   border-radius: 1vh;
