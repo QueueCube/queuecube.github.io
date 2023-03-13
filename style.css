@@ -52,14 +52,14 @@ queuecube {
   transform: translateY(-50%);
   color: #fff;
   background-color: #ff4753;
-  padding: 2vh;
+  padding: 2vh 2.5vh;
   border-radius: 1vh;
   cursor: pointer;
 }
 .searchbar {
   background-color: #eee;
   height: 4.5vh;
-  width: 55vh;
+  width: 50vh;
   padding: 1vh;
   padding-left: 5.5vh;
   margin-right: 1vh;
