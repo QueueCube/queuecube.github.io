@@ -7,11 +7,11 @@ html, body {
 /*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
 .topstuff {
   background-color: #fff;
-  height: 9%;
-  padding-top: 1vh;
+  height: 8.5%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 1.15vh;
   padding-left: 8vh;
   padding-right: 7vh;
 }
@@ -22,9 +22,28 @@ html, body {
   justify-content: space-between;
   width: 100%;
 }
+
+queuecube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 61vh;
+  cursor: pointer;
+}
 .logo {
-  height: 6vh;
-  margin-right: 3vh;
+  height: 5vh;
+  margin-right: 1vh;
+}
+.topjoin bars {
+  color: #000;
+  border-radius: 1vh;
+  margin-right: 5vh;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 1.8vh;
   cursor: pointer;
 }
 .searchbar {
@@ -41,9 +60,8 @@ html, body {
 }
 .locationset {
   border-radius: 1vh;
-  margin-left: 1vh;
-  margin-right: 51vh;
-  padding: 1.5vh 1.5vh;
+  margin-right: 1vh;
+  padding: 2vh 1.5vh;
   display: flex;
   font-size: 1.8vh;
   align-items: center;
@@ -57,44 +75,6 @@ html, body {
 .locationset i {
   padding-right: 1vh;
   font-size: 2vh;
-}
-.topjoin getapp {
-  color: #000;
-  border-radius: 1vh;
-  border: none;
-  padding: 1.5vh 2.2vh;
-  font-size: 1.8vh;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.topjoin getapp:hover {
-  background-color: #e8e8e8;
-}
-.topjoin login {
-  color: #000;
-  border-radius: 1vh;
-  border: none;
-  padding: 1.5vh 2.2vh;
-  font-size: 1.8vh;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.topjoin login:hover {
-  background-color: #e8e8e8;
-}
-.topjoin signup {
-  background-color: #2dc8b6;
-  color: #fff;
-  border-radius: 1vh;
-  border: none;
-  padding: 1.5vh 2.2vh;
-  margin-left: 0.5vh;
-  font-size: 1.8vh;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.topjoin signup:hover {
-  background-color: #2dafa0;
 }
 /*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
 /*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*/
