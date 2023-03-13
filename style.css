@@ -15,6 +15,12 @@ html, body {
   padding-left: 8vh;
   padding-right: 7vh;
 }
+.middlestuff {
+  background-image: url("imgs/backgroundimage.png");
+  height: 75vh; 
+  width: 175.5vh; 
+  background-size: cover;
+}
 queuecube {
   display: flex;
   justify-content: center;
@@ -51,23 +57,23 @@ queuecube {
   right: 1.5vh;
   transform: translateY(-50%);
   color: #fff;
-  background-color: #ff4753;
+  background-color: #ff2f3d;
   padding: 2vh 2.5vh;
   border-radius: 1vh;
   cursor: pointer;
 }
 .searchbar {
-  background-color: #eee;
+  background-color: #fff;
   height: 4.5vh;
-  width: 50vh;
-  padding: 1vh;
+  width: 55vh;
+  padding: 1.5vh;
   padding-left: 5.5vh;
   margin-right: 1vh;
   font-family: Outfit, sans-serif;
   font-size: 2vh;
   border-radius: 1vh;
   outline: none;
-  border: none;
+  border: 0.1vh solid #ccc;
 }
 .pac-container {
   margin-top: 2vh;
@@ -299,12 +305,6 @@ button {
 }
 /*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*/
 /*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*/
-.middlestuff {
-  background-image: url("imgs/backgroundimage.png");
-  height: 100vh; 
-  width: 175.5vh; 
-  background-size: cover;
-}
 .middleinfo {
   margin-top: 15%;
   display: flex;
@@ -315,6 +315,7 @@ button {
 hr {
   border: none;
   height: 0.1vh;
+  margin-top: 0vh;
   margin-bottom: 2vh;
   background-color: #ccccccc2;
 }
