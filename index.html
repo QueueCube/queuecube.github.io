@@ -11,8 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0RfELl-8CZ73qQoCOoRRS3rGzGEPEelU&libraries=places"></script>
 </head>
-
-
 <body>
 <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
 <div class="topstuff">
@@ -70,7 +68,18 @@ dim(false); // off
 </script>
 </div>
 </div>
+<hr>
 </div>
+<!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
+<!--BREADANDBUTTER--><!--BREADANDBUTTER--><!--BREADANDBUTTER--><!--BREADANDBUTTER--><!--BREADANDBUTTER--><!--BREADANDBUTTER-->
+<div class="breadandbutter">
+  <input id="searchbar" class="searchbar" type="text" placeholder="Search Restaurant" >
+    <script>
+      const searchInput = document.getElementById('searchbar');
+      const autocomplete = new google.maps.places.Autocomplete(searchInput);
+    </script>
+</div>
+<!--BREADANDBUTTER--><!--BREADANDBUTTER--><!--BREADANDBUTTER--><!--BREADANDBUTTER--><!--BREADANDBUTTER--><!--BREADANDBUTTER-->
 <!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO-->
 <hr>
   <div class="footerinfo">
