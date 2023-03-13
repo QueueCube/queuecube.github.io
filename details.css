@@ -47,7 +47,7 @@ queuecube {
   cursor: pointer;
 }
 .searchbar {
-  background-color: #eee;
+  background-color: #f2f2f2;
   width: 30%;
   height: 4.5vh;
   padding: 1vh;
@@ -70,7 +70,7 @@ queuecube {
   transition: background-color 0.3s ease;
 }
 .locationset:hover {
-  background-color: #eee;
+  background-color: #f2f2f2;
 }
 .locationset i {
   padding-right: 1vh;
@@ -158,7 +158,7 @@ queuecube {
   font-size: 1.8vh;
 }
 .fab {
-  color: #eee;
+  color: #f2f2f2;
   background-color: #333;
   border-radius: 1vh;
   font-size: 2.5vh;
@@ -170,7 +170,7 @@ queuecube {
   cursor: pointer;
 }
 .input-box {
-  background-color: #eee;
+  background-color: #f2f2f2;
   font-family: Outfit, sans-serif;
   font-size: 2vh;
   border-radius: 1vh;
@@ -235,11 +235,11 @@ button {
   margin-right: 1vh;
 }
 .uselocation:hover {
-  background-color: #eee;
+  background-color: #f2f2f2;
 }
 .locationsetinput {
   font-family: Outfit, sans-serif;
-  background-color: #eee;
+  background-color: #f2f2f2;
   border: none;
   outline: none;
   margin-top: 3vh;
@@ -284,7 +284,7 @@ hr {
   right: 73vh;
 }
 #arrowlesscircle {
-  background-color: #eee;
+  background-color: #f2f2f2;
   color: #333;
   font-size: 3.5vh;
   padding: 0.7vh;
@@ -302,7 +302,7 @@ hr {
   right: 2vh;
 }
 #arrowmorecircle {
-  background-color: #eee;
+  background-color: #f2f2f2;
   color: #333;
   font-size: 3.5vh;
   padding: 0.7vh;
@@ -351,7 +351,7 @@ hr {
   margin-left: 2vh;
 }
 .queuetime {
-  background-color: #eee;
+  background-color: #f2f2f2;
   width: 14vh;
   height: 4vh;
   padding: 3vh;
@@ -366,7 +366,7 @@ hr {
   background-color: #e8e8e8;
 }
 .ratings {
-  background-color: #eee;
+  background-color: #f2f2f2;
   width: 14vh;
   height: 4vh;
   padding: 3vh;
@@ -381,7 +381,7 @@ hr {
   background-color: #e8e8e8;
 }
 .call {
-  background-color: #eee;
+  background-color: #f2f2f2;
   width: 14vh;
   height: 4vh;
   padding: 3vh;
@@ -396,7 +396,7 @@ hr {
   background-color: #e8e8e8;
 }
 .directions {
-  background-color: #eee;
+  background-color: #f2f2f2;
   width: 14vh;
   height: 4vh;
   padding: 3vh;
@@ -438,7 +438,7 @@ hr {
   font-size: 1.8vh;
   cursor: pointer;
   justify-content: space-between;
-  border: 1px solid #eee;
+  border: 1px solid #f2f2f2;
   outline: none;
 }
 .itemimage {

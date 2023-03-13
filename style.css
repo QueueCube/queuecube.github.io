@@ -14,6 +14,7 @@ html, body {
   align-items: center;
   padding-left: 8vh;
   padding-right: 7vh;
+  margin-top: 1vh;
 }
 .middlestuff {
   background-image: url("imgs/backgroundimage.png");
@@ -21,12 +22,18 @@ html, body {
   width: 175.5vh; 
   background-size: cover;
 }
+.middleinfo {
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 queuecube {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-right: 102vh;
+  margin-right: 100vh;
   cursor: pointer;
 }
 .topjoin {
@@ -70,39 +77,17 @@ queuecube {
   padding-left: 5.5vh;
   margin-right: 1vh;
   font-family: Outfit, sans-serif;
-  font-size: 2vh;
+  font-size: 2.2vh;
   border-radius: 1vh;
   outline: none;
   border: 0.1vh solid #ccc;
-}
-.pac-container {
-  margin-top: 2vh;
-}
-.locationset {
-  border-radius: 1vh;
-  padding: 2vh 1vh;
-  width: 16vh;
-  display: flex;
-  font-size: 1.8vh;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  background-color: #eee;
-}
-.locationset:hover {
-  background-color: #dadada;
-}
-.locationset i {
-  font-size: 2vh;
-  margin-right: 1vh;
 }
 .topjoin getapp {
   color: #000;
   border-radius: 1vh;
   border: none;
   padding: 1.5vh 2.2vh;
-  font-size: 1.8vh;
+  font-size: 2vh;
   cursor: pointer;
 }
 .topjoin login {
@@ -110,7 +95,7 @@ queuecube {
   border-radius: 1vh;
   border: none;
   padding: 1.5vh 2.2vh;
-  font-size: 1.8vh;
+  font-size: 2vh;
   cursor: pointer;
 }
 .topjoin signup {
@@ -120,7 +105,7 @@ queuecube {
   border: none;
   padding: 1.5vh 2.2vh;
   margin-left: 0.5vh;
-  font-size: 1.8vh;
+  font-size: 2vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -304,14 +289,80 @@ button {
   transform: translate(-50%, -50%) scale(1);
 }
 /*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*/
-/*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*/
-.middleinfo {
-  margin-top: 15%;
+.down-arrow {
+  border-radius: 10vh;
+  margin-left: 50%;
+  margin-top: 30vh;
+  background-color: #eee;
+  padding: 1.5vh;
+  width: 2.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+}
+.down-arrow i{
+  font-size: 2.5vh;
+}
+/*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*/
+.juicystuff {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.juicystuff h2 {
+  margin-bottom: 0vh;
+}
+.juicystuff p {
+  text-align: center; 
+  font-size: 2.5vh; 
+  font-weight: 100;
+  margin-bottom: 10vh;
+}
+.backtotop{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*//*MIDDLESTUFF*/
+.getstarted{
+  background-color: #eee;
+  padding: 2vh;
+  width: 15vh;
+  border-radius: 1vh;
+  margin-bottom: 15vh;
+  display: flex;
+  justify-content: center;
+  font-size: 2.2vh;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.getstarted:hover {
+  background-color: #dcdcdc;
+}
+.whatwedocategory {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+.forcommunityimg {
+  background-size: cover;
+  height: 40vh;
+  width: 40vh;
+}
+.forrestaurantsimg {
+  background-size: cover;
+  height: 40vh;
+  width: 40vh;
+}
+.getappimg {
+  background-size: cover;
+  height: 40vh;
+  width: 40vh;
+}
+/*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*/
 hr {
   border: none;
   height: 0.1vh;

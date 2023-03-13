@@ -10,11 +10,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0RfELl-8CZ73qQoCOoRRS3rGzGEPEelU&libraries=places"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
 <div class="middlestuff">
-<div class="topstuff">
+<div class="topstuff" id="topstuff">
   <div class="topjoin">
 <queuecube onclick="window.location.href = 'index.html';">
   <img class="logo" src="imgs/logo(clear).png"> 
@@ -73,9 +74,57 @@ dim(false); // off
       const autocomplete = new google.maps.places.Autocomplete(searchInput);
     </script>
   </div>
+          <div class="down-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <script>
+            $('.down-arrow').click(function() {
+              $('html, body').animate({
+                scrollTop: $('#juicystuff').offset().top
+              }, "slow");
+            });
+          </script>
 </div>
-
 <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
+<hr>
+<!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF-->
+<div class="juicystuff" id="juicystuff">
+
+  <div class="whatwedocategory">
+    <img src="imgs/forrestaurants.png" class="forcommunityimg">
+    <h2>For Community</h2>
+    <p>
+      Check queue times from home and gain <br> benefits while queueing.
+    </p>    
+  </div>
+
+  <div class="whatwedocategory">
+    <img src="imgs/forrestaurants.png" class="forrestaurantsimg">
+    <h2>For Restaurants</h2>
+    <p>
+      Expand your business while also using our a  <br> automated queue system.
+    </p>
+  </div>
+
+  <div class="whatwedocategory">
+  <img src="imgs/forrestaurants.png" class="getappimg">
+  <h2>Get the App</h2>
+  <p>
+    Get the app and expirience the queue at your <br>favoriterestuarants in real-time.
+  </p>
+  </div>
+</div>
+<div class="backtotop">
+  <div class="getstarted">
+    Get Started
+  </div>
+  <script>
+  $('.getstarted').click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    });
+  </script>
+</div>
+<!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF-->
 <!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO-->
 <hr>
   <div class="footerinfo">

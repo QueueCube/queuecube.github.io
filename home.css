@@ -49,7 +49,7 @@ queuecube {
   cursor: pointer;
 }
 .searchbar {
-  background-color: #eee;
+  background-color: #f2f2f2;
   width: 30%;
   height: 4.5vh;
   padding: 1vh;
@@ -165,7 +165,7 @@ queuecube {
   font-size: 1.8vh;
 }
 .fab {
-  color: #eee;
+  color: #f2f2f2;
   background-color: #333;
   border-radius: 1vh;
   font-size: 2.5vh;
@@ -177,7 +177,7 @@ queuecube {
   cursor: pointer;
 }
 .input-box {
-  background-color: #eee;
+  background-color: #f2f2f2;
   font-family: Outfit, sans-serif;
   font-size: 2vh;
   border-radius: 1vh;
@@ -249,7 +249,7 @@ button {
 }
 .locationsetinput {
   font-family: Outfit, sans-serif;
-  background-color: #eee;
+  background-color: #f2f2f2;
   border: none;
   outline: none;
   margin-top: 3vh;
@@ -266,7 +266,7 @@ button {
 hr {
   border: none;
   height: 0.1vh;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
   background-color: #ccccccc2;
 }
 /*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*/
@@ -300,7 +300,7 @@ hr {
   font-size: 3vh;
 }
 #categoryarrowcircle {
-  background-color: #eee;
+  background-color: #f2f2f2;
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
@@ -314,12 +314,12 @@ hr {
   cursor: pointer;
 }
 #categoryarrowcircle:hover {
-  background-color: #dadada;
+  background-color: #eee;
 }
 /*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*/
 /*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*/
 .restaurantcontainer {
-  background-color: #eee;
+  background-color: #f2f2f2;
   height: 190%;
 }
 .rowtitle {
@@ -327,7 +327,7 @@ hr {
   vertical-align: middle;
   margin-right: 1vh;
   margin-left: 13vh;
-  margin-top: 3vh;
+  margin-top: 2.5vh;
   font-size: 3.2vh;
   font-weight: 500;
 }
@@ -376,7 +376,7 @@ hr {
 .progressbar {
   width: 83%;
   height: 2vh;
-  background-color: #eee;
+  background-color: #f2f2f2;
   border-radius: 6vh;
 }
 .progressbar-fill {
@@ -392,7 +392,7 @@ hr {
   font-size: 3vh;
 }
 #arrowmorecircle {
-  background-color: #eee;
+  background-color: #f2f2f2;
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
@@ -406,7 +406,7 @@ hr {
   cursor: pointer;
 }
 #arrowmorecircle:hover {
-  background-color: #dadada;
+  background-color: #eee;
 }
 .featuredrow {
   background-color: #fff;
@@ -632,7 +632,7 @@ a {
   align-items: center; /* Center vertically */
 }
 .seemore {
-  background-color: #eee;
+  background-color: #f2f2f2;
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -643,7 +643,7 @@ a {
   cursor: pointer;
 }
 .seemore:hover {
-  background-color: #dadada;
+  background-color: #eee;
 }
 /*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*/
 /*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*/
@@ -652,6 +652,7 @@ a {
   justify-content: baseline;
   margin-right: 15vh;
   margin-left: 15vh;
+  margin-top: 2vh;
   margin-bottom: 7vh;
   align-items: flex-start;
   background-color: #fff;
