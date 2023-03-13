@@ -88,11 +88,12 @@ dim(false); // off
 <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
 <hr>
 <!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF-->
-<div class="juicystuff" id="juicystuff">
-
+<div style="height: 1vh;"></div>
+<div  id="juicystuff"></div>
+<div class="juicystuff">
   <div class="whatwedocategory">
     <img src="imgs/forrestaurants.png" class="forcommunityimg">
-    <h2>For Community</h2>
+    <h2 onclick="window.location.href='fluffstuff/how.html'">For Community <i class="fas fa-angle-right"></i></h2>
     <p>
       Check queue times from home and gain <br> benefits while queueing.
     </p>    
@@ -100,7 +101,7 @@ dim(false); // off
 
   <div class="whatwedocategory">
     <img src="imgs/forrestaurants.png" class="forrestaurantsimg">
-    <h2>For Restaurants</h2>
+    <h2 onclick="window.location.href='fluffstuff/partner.html'">For Restaurants <i class="fas fa-angle-right"></i></h2>
     <p>
       Expand your business while also using our a  <br> automated queue system.
     </p>
@@ -108,21 +109,11 @@ dim(false); // off
 
   <div class="whatwedocategory">
   <img src="imgs/forrestaurants.png" class="getappimg">
-  <h2>Get the App</h2>
+  <h2>Get the App <i class="fas fa-angle-right"></i></h2>
   <p>
     Get the app and expirience the queue at your <br>favoriterestuarants in real-time.
   </p>
   </div>
-</div>
-<div class="backtotop">
-  <div class="getstarted">
-    Get Started
-  </div>
-  <script>
-  $('.getstarted').click(function() {
-    $("html, body").animate({ scrollTop: 0 }, "slow");
-    });
-  </script>
 </div>
 <!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF-->
 <!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO-->
@@ -139,6 +130,8 @@ dim(false); // off
     <h3 class="column-title">Business</h3>
     <div class="column-links">
       <partner onclick="window.location.href='fluffstuff/partner.html'">Partner</partner>
+      <queue onclick="window.location.href='fluffstuff/partner.html#queue'">Queue</queue>
+      <marketing onclick="window.location.href='fluffstuff/partner.html#marketing'">Marketing</marketing>
     </div>
   </div>
   <div class="socials">

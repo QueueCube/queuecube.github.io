@@ -266,7 +266,8 @@ button {
 hr {
   border: none;
   height: 0.1vh;
-  margin-bottom: 1vh;
+  margin-top: 0vh;
+  margin-bottom: 2vh;
   background-color: #ccccccc2;
 }
 /*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*//*CATEGORIES*/
@@ -646,13 +647,12 @@ a {
   background-color: #eee;
 }
 /*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*//*RESTUARANTS*/
-/*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*/
+/*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*/
 .footerinfo {
   display: flex;
   justify-content: baseline;
   margin-right: 15vh;
   margin-left: 15vh;
-  margin-top: 2vh;
   margin-bottom: 7vh;
   align-items: flex-start;
   background-color: #fff;
@@ -660,7 +660,7 @@ a {
 .column-title {
   color: #000;
   font-size: 2.5vh;
-  padding-bottom: 1vh;
+  padding-bottom: 3.5vh;
 }
 .column-links {
   display: flex;
@@ -668,13 +668,13 @@ a {
   align-items: flex-start;
   cursor: pointer;
 }
-.column-links how, .column-links about, .column-links partner {
-  font-size: 2vh;
+.column-links how, .column-links about, .column-links partner, .column-links queue, .column-links marketing {
+  font-size: 1.9vh;
   color: #555;
   text-decoration: none;
-  margin-bottom: 1.5vh;
+  margin-bottom: 2vh;
 }
-.column-links how:hover, .column-links about:hover, .column-links partner:hover {
+.column-links how:hover, .column-links about:hover, .column-links partner:hover, .column-links queue:hover, .column-links marketing:hover {
   color: #000;
 }
 /*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*/
@@ -685,7 +685,6 @@ a {
 }
 .socialslinks {
   display: flex;
-
 }
 .socialslinks i {
   background-color: transparent;
@@ -695,11 +694,12 @@ a {
 }
 .copyright {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: right;
   margin-right: 15vh;
   margin-left: 15vh;
-  padding-bottom: 5vh;
+  padding-bottom: 10vh;
+  padding-top: 10vh;
   color: #555;
 }
  /*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*/

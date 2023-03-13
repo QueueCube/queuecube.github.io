@@ -36,17 +36,17 @@ queuecube {
   margin-right: 100vh;
   cursor: pointer;
 }
+.logo {
+  height: 5vh;
+  margin-right: 2vh;
+  cursor: pointer;
+}
 .topjoin {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-}
-.logo {
-  height: 5vh;
-  margin-right: 2vh;
-  cursor: pointer;
 }
 .search-container {
   position: relative;
@@ -81,6 +81,9 @@ queuecube {
   border-radius: 1vh;
   outline: none;
   border: 0.1vh solid #ccc;
+}
+.pac-container {
+  margin-top: 2vh;
 }
 .topjoin getapp {
   color: #000;
@@ -311,53 +314,39 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-left: 5vh;
+  margin-right: 5vh;
 }
 .juicystuff h2 {
-  margin-bottom: 0vh;
+  margin-bottom: 1vh;
 }
 .juicystuff p {
   text-align: center; 
   font-size: 2.5vh; 
   font-weight: 100;
-  margin-bottom: 10vh;
+  margin-bottom: 15vh;
 }
-.backtotop{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.getstarted{
-  background-color: #eee;
-  padding: 2vh;
-  width: 15vh;
-  border-radius: 1vh;
+.actionitem{
   margin-bottom: 15vh;
   display: flex;
   justify-content: center;
-  font-size: 2.2vh;
-  transition: background-color 0.3s ease;
+  font-size: 2vh;
   cursor: pointer;
 }
-.getstarted:hover {
-  background-color: #dcdcdc;
-}
-.whatwedocategory {
+.whatwedocategory h2 {
   display: flex;
-  flex-direction: column;
-  justify-self: center;
+  justify-content: center;
   align-items: center;
+  margin-left: 2vh;
+  cursor: pointer;
+  color: #ff2f3d;
 }
-.forcommunityimg {
-  background-size: cover;
-  height: 40vh;
-  width: 40vh;
+.whatwedocategory i {
+  margin-top: 0.3vh;
+  margin-left: 1vh;
+  color: #ff2f3d;
 }
-.forrestaurantsimg {
-  background-size: cover;
-  height: 40vh;
-  width: 40vh;
-}
-.getappimg {
+.forcommunityimg, .forrestaurantsimg, .getappimg{
   background-size: cover;
   height: 40vh;
   width: 40vh;
@@ -383,7 +372,7 @@ hr {
 .column-title {
   color: #000;
   font-size: 2.5vh;
-  padding-bottom: 1vh;
+  padding-bottom: 3.5vh;
 }
 .column-links {
   display: flex;
@@ -391,13 +380,13 @@ hr {
   align-items: flex-start;
   cursor: pointer;
 }
-.column-links how, .column-links about, .column-links partner {
-  font-size: 2vh;
+.column-links how, .column-links about, .column-links partner, .column-links queue, .column-links marketing {
+  font-size: 1.9vh;
   color: #555;
   text-decoration: none;
-  margin-bottom: 1.5vh;
+  margin-bottom: 2vh;
 }
-.column-links how:hover, .column-links about:hover, .column-links partner:hover {
+.column-links how:hover, .column-links about:hover, .column-links partner:hover, .column-links queue:hover, .column-links marketing:hover {
   color: #000;
 }
 /*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*//*FOOTERINFO*/
@@ -408,7 +397,6 @@ hr {
 }
 .socialslinks {
   display: flex;
-
 }
 .socialslinks i {
   background-color: transparent;
@@ -418,11 +406,12 @@ hr {
 }
 .copyright {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: right;
   margin-right: 15vh;
   margin-left: 15vh;
-  padding-bottom: 5vh;
+  padding-bottom: 10vh;
+  padding-top: 10vh;
   color: #555;
 }
  /*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*/

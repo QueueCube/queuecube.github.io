@@ -24,6 +24,20 @@ html, body {
   height: 55rem;
   align-content: center;
 }	
+/*queuecube {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 5vh;
+  cursor: pointer;
+}
+.logo {
+  height: 5vh;
+  margin-right: 2vh;
+  cursor: pointer;
+}*/
 .join-top {
   display: flex;
   justify-content: center;
