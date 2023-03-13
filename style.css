@@ -29,7 +29,7 @@ queuecube {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-right: 61vh;
+  margin-right: 103vh;
   cursor: pointer;
 }
 .logo {
@@ -76,6 +76,32 @@ queuecube {
 .locationset i {
   padding-right: 1vh;
   font-size: 2vh;
+}
+.topjoin getapp {
+  color: #000;
+  border-radius: 1vh;
+  border: none;
+  padding: 1.5vh 2.2vh;
+  margin-left: 0.5vh;
+  font-size: 1.8vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.topjoin getapp:hover {
+  background-color: #eee;
+}
+.topjoin login {
+  color: #000;
+  border-radius: 1vh;
+  border: none;
+  padding: 1.5vh 2.2vh;
+  margin-left: 0.5vh;
+  font-size: 1.8vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.topjoin login:hover {
+  background-color: #eee;
 }
 .topjoin signup {
   background-color: #2dc8b6;
