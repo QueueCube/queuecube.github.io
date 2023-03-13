@@ -351,6 +351,33 @@ button {
   height: 40vh;
   width: 40vh;
 }
+/*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*/
+.citymap {
+  position: relative;
+  height: 60vh; 
+  margin-left: 5vh;
+  margin-right: 5vh;
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+}
+.citmap-text {
+  margin-left: 5vh;
+  margin-right: 5vh;
+  margin-top: 3vh;
+  margin-bottom: 10vh;
+}
+.citylist {
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none; 
+  display: grid; 
+  grid-template-columns: repeat(5, 1fr); 
+  margin-top: 2vh;
+  grid-gap: 2.5vh;
+}
+/*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*/
 /*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*/
 hr {
   border: none;

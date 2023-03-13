@@ -1,0 +1,200 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Outfit, sans-serif;
+}
+.partner {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #4169E1;
+  margin: 6rem;
+  margin-bottom: 13rem;
+  text-align: center;
+  justify-content: center;
+}
+
+
+/*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*/
+#join{
+  background-color: #fff;
+}
+.join container {
+  max-width: 10000px;
+  height: 55rem;
+  align-content: center;
+}	
+/*queuecube {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 5vh;
+  cursor: pointer;
+}
+.logo {
+  height: 5vh;
+  margin-right: 2vh;
+  cursor: pointer;
+}*/
+.join-top {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.sign-up-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22rem;
+  width: 40rem;
+  margin-left: 7rem;
+  margin-top: -6.5rem;
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 1vh;
+  z-index: 1;
+}
+.joinrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.joincolumn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.name {
+  background-color: #eee;
+  font-size: 1rem;
+  font-family: 'Outfit', sans-serif;
+  border-radius: 1vh;
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 3.5rem;
+  width: 33rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  outline: none;
+}
+.ownername {
+  background-color: #eee;
+  font-size: 1rem;
+  font-family: 'Outfit', sans-serif;
+  border-radius: 1vh;
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 3.5rem;
+  width: 33rem;
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+  outline: none;
+}
+.inputrow {
+  flex-direction: row;
+}
+.email {
+  background-color: #eee;
+  font-size: 1rem;
+  font-family: 'Outfit', sans-serif;
+  border-radius: 1vh;
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 3.5rem;
+  width: 19rem;
+  margin-bottom: 1.5rem;
+  margin-right: 0.2rem;
+  outline: none;
+}
+.phonenumber {
+  background-color: #eee;
+  font-size: 1rem;
+  font-family: 'Outfit', sans-serif;
+  border-radius: 1vh;
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 3.5rem;
+  width: 9rem;
+  margin-left: 0.2rem;
+  outline: none;
+}
+.joinbutton {
+  background-color: #4169E1;
+  font-size: 1.2rem;
+  color: #eee;
+  border: none;
+  font-family: 'Outfit', sans-serif;
+  border-radius: 1vh;
+  height: 3rem;
+  width: 7rem;
+  margin-left: 29rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.queueandmarketing { 
+  display: flex; 
+  flex-direction: row; 
+  margin-left: 6rem; 
+  margin-top: 1.5rem;
+}
+.cta-1, .cta-2 {
+  border-radius: 1vh;
+  cursor: pointer;
+  margin: 1rem;
+  width: 17rem;
+  height: 6rem;
+  padding-left: 4vh;
+  padding-top: 1vh;
+  padding-bottom: 7vh;
+  font-size: 1.2rem;
+  background-color: #eee;
+  text-decoration: none; 
+  display: flex;
+}
+.queuetext { 
+  color: #000; 
+}
+.marketingtext {
+  color: #000; 
+}
+/*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*//*JOIN*/
+
+
+
+
+/*QUEUE*//*QUEUE*//*QUEUE*//*QUEUE*//*QUEUE*//*QUEUE*//*QUEUE*//*QUEUE*//*QUEUE*//*QUEUE*/
+#queue {
+  background-color: #fff;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100rem;
+}
+.section-title {  
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+}
+/*QUEUE*//*QUEUE*//*QUEUE*//*QUEUE*//*QUEUE*//*QUEUE*//*QUEUE*//*QUEUE*//*QUEUE*//*QUEUE*/
+
+
+
+/*MARKETING*//*MARKETING*//*MARKETING*//*MARKETING*//*MARKETING*//*MARKETING*//*MARKETING*/
+#marketing {
+  background-color: #fff;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100rem;
+}
+/*MARKETING*//*MARKETING*//*MARKETING*//*MARKETING*//*MARKETING*//*MARKETING*//*MARKETING*/
