@@ -60,6 +60,9 @@ queuecube {
   outline: none;
   border: none;
 }
+.pac-container {
+  margin-top: 2vh;
+}
 .locationset {
   border-radius: 1vh;
   margin-right: 1vh;
