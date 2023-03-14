@@ -29,12 +29,14 @@
     <i class="fas fa-map-marker-alt"></i> Sunnyvale,  CA
   </div>
 
-    <input id="searchbar" class="searchbar" type="text" placeholder="Search Restaurant" >
+    <div class="search-container">
+      <i class="fa fa-search search-icon"></i>
+      <input id="searchbar" class="searchbar" type="text" placeholder="Find Restaurants">
+    </div>    
     <script>
       const searchInput = document.getElementById('searchbar');
-      const autocomplete = new google.maps.places.Autocomplete(searchInput);
+      const autocomplete = new google.maps.places.Autocomplete(input);
     </script>
-  
   <script>
   function openlocationsetPopup() {
     // Add your code to open a popup here
@@ -186,7 +188,7 @@ dim(false); // off
   <div class="restaurantrow">
     <div class="titlestuff">
       <h2 class="rowtitle">Featured</h2> 
-      <i id="ranking1" class="fas fa-chess-king rowtitle-icon"></i>
+      <i id="ranking1"></i>
       <i id="arrow" class="fas fa-angle-left"></i>
       <i id="arrow" class="fas fa-angle-right"></i>
     </div>
@@ -197,7 +199,7 @@ dim(false); // off
           <div class="detailstext">
             <div class="titleandheart">
               <h3>Forest Gump's Frosted Flakes</h3>
-              <h4>4.5</h4>
+              <h4 style="color: #555;">4.5</h4>
             </div>
             <div class="waittime">
               <h4>5 min</h4>
@@ -240,7 +242,7 @@ dim(false); // off
 <div class="restaurantrow">
   <div class="titlestuff">
     <h2 class="rowtitle">Quick Queues</h2> 
-    <i id="ranking2" class="fas fa-chess-queen rowtitle-icon"></i>
+    <i id="ranking2"></i>
     <i id="arrow" class="fas fa-angle-left"></i>
     <i id="arrow" class="fas fa-angle-right"></i>
   </div>
@@ -293,7 +295,7 @@ dim(false); // off
 <div class="restaurantrow">
   <div class="titlestuff">
     <h2 class="rowtitle">Highly Rated</h2> 
-    <i id="ranking3" class="fas fa-chess-pawn rowtitle-icon"></i>
+    <i id="ranking3"></i>
     <i id="arrow" class="fas fa-angle-left"></i>
     <i id="arrow" class="fas fa-angle-right"></i>
   </div>

@@ -57,21 +57,10 @@ queuecube {
   transform: translateY(-50%);
   color: #767676;
 }
-.arrow-icon {
-  position: absolute;
-  top: 50%;
-  right: 1.5vh;
-  transform: translateY(-50%);
-  color: #fff;
-  background-color: #ff2f3d;
-  padding: 2vh 2.5vh;
-  border-radius: 1vh;
-  cursor: pointer;
-}
 .searchbar {
   background-color: #fff;
   height: 4.5vh;
-  width: 55vh;
+  width: 50vh;
   padding: 1.5vh;
   padding-left: 5.5vh;
   margin-right: 1vh;
@@ -198,13 +187,9 @@ queuecube {
 .fab {
   color: #eee;
   background-color: #333;
-  border-radius: 1vh;
-  font-size: 2.5vh;
-  width: 10vh;
-  height: 6vh;
-  padding-top: 3vh;
-  margin: 3vh;
-  margin-top: 4vh;
+  border-radius: 10vh;
+  margin: 5vh;
+  padding: 3vh 3.4vh;
   cursor: pointer;
 }
 .input-box {

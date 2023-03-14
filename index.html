@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0RfELl-8CZ73qQoCOoRRS3rGzGEPEelU&libraries=places"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0RfELl-8CZ73qQoCOoRRS3rGzGEPEelU"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0RfELl-8CZ73qQoCOoRRS3rGzGEPEelU&libraries=places"></script>
 </head>
 <body>
 <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
@@ -68,11 +68,10 @@ dim(false); // off
     <div class="search-container">
       <i class="fa fa-search search-icon"></i>
       <input id="searchbar" class="searchbar" type="text" placeholder="Enter Address">
-      <i class="fas fa-angle-right arrow-icon"></i>
     </div>    
     <script>
-      const searchInput = document.getElementById('searchbar');
-      const autocomplete = new google.maps.places.Autocomplete(searchInput);
+      const input = document.getElementById('searchbar');
+      const autocomplete = new google.maps.places.Autocomplete(input);
     </script>
   </div>
 </div>
@@ -103,7 +102,7 @@ dim(false); // off
   <img src="imgs/getapp.png" class="getappimg">
   <h2>Get the App<i class="fas fa-angle-right"></i></h2>
   <p>
-    Get the app and expirience the queue at your<br>favoriterestuarants in real-time.
+    Get the app and experience the queue at your<br>favorite restuarants in real-time.
   </p>
 </div>
 </div>
