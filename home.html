@@ -16,27 +16,43 @@
 <body>
 <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
 <div class="topstuff">
-<div class="topjoin">
-
-  <bars><i class="fas fa-bars" style="font-size: 3vh;"></i></bars>
-
-  <queuecube onclick="window.location.href = 'home.html';">
-    <img class="logo" src="imgs/logo(clear).png"> 
-    <h2 style="font-weight: 100;">QueueCube</h2>
-  </queuecube>
-
-  <div class="locationset" onclick="openlocationsetPopup();dim(true)">
-    <i class="fas fa-map-marker-alt"></i> Sunnyvale,  CA
-  </div>
-
-    <div class="search-container">
-      <i class="fa fa-search search-icon"></i>
-      <input id="searchbar" class="searchbar" type="text" placeholder="Find Restaurants">
-    </div>    
+  <div class="topjoin">
+    <bars><i class="fas fa-bars" style="font-size: 3vh;"></i></bars>
+    <queuecube onclick="window.location.href = 'home.html';">
+      <img class="logo" src="imgs/logo(clear).png"> 
+      <h2 style="font-weight: 100;">QueueCube</h2>
+    </queuecube>
+    <div class="locationset" onclick="openlocationsetPopup();dim(true)">
+      <i class="fas fa-map-marker-alt"></i> Sunnyvale,  CA
+    </div>
+      <input id="searchbar" class="searchbar" type="text" placeholder="Search Restaurant" >
+      <script>
+        const searchInput = document.getElementById('searchbar');
+        const autocomplete = new google.maps.places.Autocomplete(searchInput);
+      </script>
     <script>
-      const searchInput = document.getElementById('searchbar');
-      const autocomplete = new google.maps.places.Autocomplete(input);
+    function openlocationsetPopup() {
+      // Add your code to open a popup here
+      var locationsetPopup = window.open("", "locationsetPopup", "width=400,height=400");
+      var locationsetForm = document.getElementById("locationset-form").outerHTML;
+      locationsetPopup.document.write(locationsetForm);
+    }
     </script>
+    <div class="locationset-form" id="locationset-form"> 
+      <div class="locationsettopinfo">
+        <h3 class="enteraddress">
+          Enter Your Address
+        </h3>
+        <div class="uselocation">
+          <i class="fas fa-map-marker-alt"></i> Current Location
+        </div>
+      </div>     
+      <hr style="margin-left: 1vh; margin-right: 1vh;"> 
+      <script>
+        var input = document.getElementById('address-input');
+        var locationautocomplete = new google.maps.places.Autocomplete(input);
+      </script>
+    </div>   
   <script>
   function openlocationsetPopup() {
     // Add your code to open a popup here
@@ -54,7 +70,7 @@
         <i class="fas fa-map-marker-alt"></i> Current Location
       </div>
     </div>     
-    <hr style="margin-left: 1vh; margin-right: 1vh;"> 
+    <hr> 
     <input type="text" class="locationsetinput" id="address-input" placeholder="Address">
     <script>
       const locationsetInput = document.getElementById('searchbar');
@@ -74,9 +90,7 @@
       locationsetpopup.classList.remove("open-locationsetpopup");
     }
   </script>
-
   <button id="dimmer" onclick="dim(false);closePopup();closelocationsetPopup()"></button>  <!--the background used when dimmed - add to this as dimming buttons added-->
-
   <div class="sign-up-form" id="sign-up-form"> 
     <div class="liORsi">
       <button type="button" class="li-btn">Login</button>
@@ -94,9 +108,6 @@
       </div>
     </form>
   </div>
-
-
-
 <script>
   let popup = document.getElementById("sign-up-form");
 
@@ -113,15 +124,13 @@
     if (typeof bool=='false') bool=true;
     document.getElementById('dimmer').style.display=(bool?'block':'none');
 }    
-
-
 dim(true); // on
 dim(false); // off
 </script>
 </div>
 </div>
-</div>
 <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
+<hr>
 <!--CATEGORIES--><!--CATEGORIES--><!--CATEGORIES--><!--CATEGORIES--><!--CATEGORIES--><!--CATEGORIES-->
 <div class="categories">
   <div class="categorycontainer">
@@ -180,7 +189,6 @@ dim(false); // off
   </div>
 </div>
 <!--CATEGORIES--><!--CATEGORIES--><!--CATEGORIES--><!--CATEGORIES--><!--CATEGORIES--><!--CATEGORIES-->
-<hr style="margin-left: 7vh; margin-right: 7vh;"> 
 <!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS--><!--RESTAURANTS-->
 <!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED--><!--FEATURED-->
 <div class="restaurantcontainer">
@@ -194,7 +202,7 @@ dim(false); // off
     </div>
     <div class="restaurantlist">
       <a class="restaurant1" href="details.html">
-        <i class="far fa-heart"></i>
+        <i id="hearticon" class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
             <div class="titleandheart">
@@ -209,7 +217,7 @@ dim(false); // off
       </a>
       
       <a class="restaurant2" href="details.html">
-        <i class="far fa-heart"></i>
+        <i id="hearticon" class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
             <div class="titleandheart">
@@ -223,7 +231,7 @@ dim(false); // off
       </a>
   
       <a class="restaurant3" href="details.html">
-        <i class="far fa-heart"></i>
+        <i id="hearticon" class="far fa-heart"></i>
         <div class="detailscontainer">
           <div class="detailstext">
             <div class="titleandheart">
@@ -248,7 +256,7 @@ dim(false); // off
   </div>
   <div class="restaurantlist">
     <a class="restaurant1" href="details.html">
-      <i class="far fa-heart"></i>
+      <i id="hearticon" class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
           <div class="titleandheart">
@@ -262,7 +270,7 @@ dim(false); // off
     </a>
     
     <a class="restaurant2" href="details.html">
-      <i class="far fa-heart"></i>
+      <i id="hearticon" class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
           <div class="titleandheart">
@@ -276,7 +284,7 @@ dim(false); // off
     </a>
 
     <a class="restaurant3" href="details.html">
-      <i class="far fa-heart"></i>
+      <i id="hearticon" class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
           <div class="titleandheart">
@@ -301,7 +309,7 @@ dim(false); // off
   </div>
   <div class="restaurantlist">
     <a class="restaurant1" href="details.html">
-      <i class="far fa-heart"></i>
+      <i id="hearticon" class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
           <div class="titleandheart">
@@ -315,7 +323,7 @@ dim(false); // off
     </a>
     
     <a class="restaurant2" href="details.html">
-      <i class="far fa-heart"></i>
+      <i id="hearticon" class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
           <div class="titleandheart">
@@ -329,7 +337,7 @@ dim(false); // off
     </a>
 
     <a class="restaurant3" href="details.html">
-      <i class="far fa-heart"></i>
+      <i id="hearticon" class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
           <div class="titleandheart">
@@ -349,12 +357,13 @@ dim(false); // off
   <div class="titlestuff">
     <h2 class="rowtitle">All Restaurants</h2> 
     <i id="ranking4"></i>
+    <div class="seeall">See All</div>
     <i id="arrow" class="fas fa-angle-left"></i>
     <i id="arrow" class="fas fa-angle-right"></i>
   </div>
   <div class="restaurantlist">
     <a class="restaurant1" href="details.html">
-      <i class="far fa-heart"></i>
+      <i id="hearticon" class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
           <div class="titleandheart">
@@ -368,7 +377,7 @@ dim(false); // off
     </a>
     
     <a class="restaurant2" href="details.html">
-      <i class="far fa-heart"></i>
+      <i id="hearticon" class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
           <div class="titleandheart">
@@ -382,7 +391,7 @@ dim(false); // off
     </a>
 
     <a class="restaurant3" href="details.html">
-      <i class="far fa-heart"></i>
+      <i id="hearticon" class="far fa-heart"></i>
       <div class="detailscontainer">
         <div class="detailstext">
           <div class="titleandheart">

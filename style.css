@@ -18,7 +18,7 @@ html, body {
 }
 .middlestuff {
   background-image: url("imgs/backgroundimage.png");
-  height: 75vh; 
+  height: 70vh; 
   background-size: cover;
 }
 .middleinfo {
@@ -59,8 +59,8 @@ queuecube {
 }
 .searchbar {
   background-color: #fff;
-  height: 4.5vh;
-  width: 50vh;
+  height: 4vh;
+  width: 55vh;
   padding: 1.5vh;
   padding-left: 5.5vh;
   margin-right: 1vh;
@@ -278,7 +278,7 @@ button {
 /*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*/
 /*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*/
 .juicystuff {
-  margin-top: 10vh;
+  margin-top: 13vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

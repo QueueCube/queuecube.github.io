@@ -11,9 +11,8 @@ html, body {
   background-color: #fff;
   height: 8%;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  margin-top: 1.15vh;
+  padding-top: 1.15vh;
   padding-left: 8vh;
   padding-right: 7vh;
 }
@@ -24,7 +23,6 @@ html, body {
   justify-content: space-between;
   width: 100%;
 }
-
 queuecube {
   display: flex;
   justify-content: center;
@@ -48,31 +46,17 @@ queuecube {
   font-size: 1.8vh;
   cursor: pointer;
 }
-.search-container {
-  position: relative;
-}
-.search-icon {
-  position: absolute;
-  top: 50%;
-  left: 2vh;
-  transform: translateY(-50%);
-  color: #767676;
-}
 .searchbar {
-  background-color: #eee;
-  height: 3.5vh;
-  width: 44vh;
-  padding: 1.5vh;
-  padding-left: 5.5vh;
-  margin-right: 1vh;
+  background-color: #f2f2f2;
+  width: 30%;
+  height: 4.5vh;
+  padding: 1vh;
+  padding-left: 3vh;
   font-family: Outfit, sans-serif;
-  font-size: 2.2vh;
+  font-size: 2vh;
   border-radius: 1vh;
   outline: none;
   border: none;
-}
-.pac-container {
-  margin-top: 2vh;
 }
 .locationset {
   border-radius: 1vh;
@@ -86,15 +70,13 @@ queuecube {
   transition: background-color 0.3s ease;
 }
 .locationset:hover {
-  background-color: #eee;
+  background-color: #f2f2f2;
 }
 .locationset i {
   padding-right: 1vh;
   font-size: 2vh;
 }
 /*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*//*TOPSTUFF*/
-
-
 /*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*/
 .sign-up-form {
   font-family: Outfit, sans-serif;
@@ -211,9 +193,6 @@ button {
   cursor: pointer;
 }
 /*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*//*SIGNUP*/
-
-
-
 /*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*/
 .locationset-form {
   font-family: Outfit, sans-serif;
@@ -277,7 +256,6 @@ button {
 hr {
   border: none;
   height: 0.1vh;
-  margin-top: 0vh;
   margin-bottom: 2vh;
   background-color: #ccccccc2;
 }
@@ -289,8 +267,8 @@ hr {
   justify-content: space-between;
   margin-top: 3vh;
   margin-bottom: 1vh;
-  margin-left: 7vh;
-  margin-right: 7vh;
+  margin-left: 15vh;
+  margin-right: 15vh;
 }
 .categorycontainer {
   display: flex;
@@ -338,8 +316,8 @@ hr {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-right: 10vh;
-  margin-left: 10vh;
+  margin-right: 15vh;
+  margin-left: 15vh;
 }
 .rowtitle {
   margin-right: 1.5vh;
@@ -349,22 +327,26 @@ hr {
 #ranking1 {
   color: #ffc86a;
   font-size: 2.5vh;
-  margin-right: 130vh;
+  margin-right: 120vh;
 }
 #ranking2 {
   color: #ffc86a;
   font-size: 2.5vh;
-  margin-right: 122vh;
+  margin-right: 112vh;
 }
 #ranking3 {
   color: #ffc86a;
   font-size: 2.5vh;
-  margin-right: 122vh;
+  margin-right: 113vh;
 }
 #ranking4 {
   color: #ffc86a;
   font-size: 2.5vh;
-  margin-right: 120vh;
+  margin-right: 101vh;
+}
+.seeall {
+  color: #555;
+  margin-right: 3vh;
 }
 #arrow {
   font-size: 2.5vh;
@@ -382,13 +364,6 @@ hr {
   margin-top: 18vh;
   color: #000;
   z-index: 2;
-}
-.frrestaurants {
-  display: flex;
-  flex-direction: row;
-  z-index: 1;
-  margin-right: 10vh;
-  margin-left: 10vh;
 }
 .titleandheart {
   display: flex; 
@@ -434,10 +409,10 @@ hr {
   border-radius: 1vh;
   cursor: pointer;
 }
-.restaurant1 i {
+#hearticon {
   color: #fff;
   margin-top: 2vh;
-  margin-left: 46vh;
+  margin-left: 42vh;
   font-size: 2.5vh;
 }
 a {
@@ -453,12 +428,6 @@ a {
   border-radius: 1vh;
   cursor: pointer;
 }
-.restaurant2 i {
-  color: #fff;
-  margin-top: 2vh;
-  margin-left: 46vh;
-  font-size: 2.5vh;
-}
 .restaurant3 {
   background-image: url('imgs/restaurant3.jpg');
   background-size: cover;
@@ -468,18 +437,12 @@ a {
   border-radius: 1.5vh;
   cursor: pointer;
 }
-.restaurant3 i {
-  color: #fff;
-  margin-top: 2vh;
-  margin-left: 46vh;
-  font-size: 2.5vh;
-}
 .restaurantlist {
   display: flex;
   flex-direction: row;
   z-index: 1;
-  margin-right: 10vh;
-  margin-left: 10vh;
+  margin-right: 15vh;
+  margin-left: 15vh;
 }
 .allrestaurantsrow {
   background-color: #fff;
@@ -501,12 +464,6 @@ a {
   border-radius: 1vh;
   cursor: pointer;
 }
-.ar1 i {
-  color: #fff;
-  margin-top: 2vh;
-  margin-left: 46vh;
-  font-size: 2.5vh;
-}
 .ar2 {
   background-image: url('imgs/restaurant8.jpg');
   background-size: cover;
@@ -516,12 +473,6 @@ a {
   border-radius: 1vh;
   cursor: pointer;
 }
-.ar2 i {
-  color: #fff;
-  margin-top: 2vh;
-  margin-left: 46vh;
-  font-size: 2.5vh;
-}
 .ar3 {
   background-image: url('imgs/restaurant9.jpg');
   background-size: cover;
@@ -530,12 +481,6 @@ a {
   margin-left: 1.5vh;
   border-radius: 1vh;
   cursor: pointer;
-}
-.ar3 i {
-  color: #fff;
-  margin-top: 2vh;
-  margin-left: 46vh;
-  font-size: 2.5vh;
 }
 .seemorecontainer {
   display: flex;
@@ -561,6 +506,7 @@ a {
 .footerinfo {
   display: flex;
   justify-content: baseline;
+  padding-top: 3vh;
   margin-bottom: 7vh;
   align-items: flex-start;
   background-color: #fff;
