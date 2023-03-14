@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0RfELl-8CZ73qQoCOoRRS3rGzGEPEelU&libraries=places"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0RfELl-8CZ73qQoCOoRRS3rGzGEPEelU"></script>
 </head>
 <body>
 <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
@@ -74,16 +75,6 @@ dim(false); // off
       const autocomplete = new google.maps.places.Autocomplete(searchInput);
     </script>
   </div>
-          <div class="down-arrow">
-            <i class="fas fa-chevron-down"></i>
-          </div>
-          <script>
-            $('.down-arrow').click(function() {
-              $('html, body').animate({
-                scrollTop: $('#juicystuff').offset().top
-              }, "slow");
-            });
-          </script>
 </div>
 <!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF--><!--TOPSTUFF-->
 <hr>
@@ -91,30 +82,84 @@ dim(false); // off
 <div style="height: 1vh;"></div>
 <div  id="juicystuff"></div>
 <div class="juicystuff">
-  <div class="whatwedocategory">
-    <img src="imgs/forrestaurants.png" class="forcommunityimg">
-    <h2 onclick="window.location.href='fluffstuff/how.html'">For Community <i class="fas fa-angle-right"></i></h2>
-    <p>
-      Check queue times from home and gain <br> benefits while queueing.
-    </p>    
-  </div>
 
-  <div class="whatwedocategory">
-    <img src="imgs/forrestaurants.png" class="forrestaurantsimg">
-    <h2 onclick="window.location.href='fluffstuff/partner.html'">For Restaurants <i class="fas fa-angle-right"></i></h2>
-    <p>
-      Expand your business while also using our a  <br> automated queue system.
-    </p>
-  </div>
-
-  <div class="whatwedocategory">
-  <img src="imgs/forrestaurants.png" class="getappimg">
-  <h2>Get the App <i class="fas fa-angle-right"></i></h2>
+<div class="whatwedocategory">
+  <img src="imgs/forcommunity.jpg" class="forcommunityimg">
+  <h2 onclick="window.location.href='fluffstuff/how.html'">For Community<i class="fas fa-angle-right"></i></h2>
   <p>
-    Get the app and expirience the queue at your <br>favoriterestuarants in real-time.
-  </p>
-  </div>
+    Check queue times from home and gain<br>benefits while queueing.
+  </p>    
 </div>
+
+<div class="whatwedocategory">
+  <img src="imgs/forrestaurants.png" class="forrestaurantsimg">
+  <h2 onclick="window.location.href='fluffstuff/partner.html'">For Restaurants<i class="fas fa-angle-right"></i></h2>
+  <p>
+    Expand your business while also using our a<br>automated queue system.
+  </p>
+</div>
+
+<div class="whatwedocategory">
+  <img src="imgs/getapp.png" class="getappimg">
+  <h2>Get the App<i class="fas fa-angle-right"></i></h2>
+  <p>
+    Get the app and expirience the queue at your<br>favoriterestuarants in real-time.
+  </p>
+</div>
+</div>
+
+<div class="citymap"></div>
+  <div class="citymap-text">
+    <h2>Nearby cities</h2>
+    <ul class="citylist">
+      <li>New York</li><li>Houston</li><li>Los Angeles</li>
+
+      <li>Chicago</li><li>Phoenix</li><li>Dallas</li>
+      
+      <li>San Francisco</li><li>Seattle</li><li>Atlanta</li>
+      
+      <li>Boston</li><li>Baltimore</li><li>Denver</li>
+      
+      <li>Washington D.C.</li><li>Las Vegas</li><li>Minneapolis</li>
+      
+      <li>St. Louis</li><li>Omaha</li><li>Memphis</li>
+    </ul>
+  </div>
+  <script>
+    var cities = [
+      {lat: 40.7128, lng: -74.0060, title: 'New York'},
+      {lat: 34.0522, lng: -118.2437, title: 'Los Angeles'},
+      {lat: 41.8781, lng: -87.6298, title: 'Chicago'},
+      {lat: 29.7604, lng: -95.3698, title: 'Houston'},
+      {lat: 33.4484, lng: -112.0740, title: 'Phoenix'},
+      {lat: 32.7767, lng: -96.7970, title: 'Dallas'},
+      {lat: 37.7749, lng: -122.4194, title: 'San Francisco'},
+      {lat: 47.6062, lng: -122.3321, title: 'Seattle'},
+      {lat: 33.7490, lng: -84.3880, title: 'Atlanta'},
+      {lat: 42.3601, lng: -71.0589, title: 'Boston'},
+      {lat: 39.2904, lng: -76.6122, title: 'Baltimore'},
+      {lat: 39.7392, lng: -104.9903, title: 'Denver'},
+      {lat: 38.9072, lng: -77.0369, title: 'Washington D.C.'},
+      {lat: 36.1699, lng: -115.1398, title: 'Las Vegas'},
+      {lat: 44.9778, lng: -93.2650, title: 'Minneapolis'},
+      {lat: 38.6270, lng: -90.1994, title: 'St. Louis'},
+      {lat: 41.2524, lng: -95.9980, title: 'Omaha'},
+      {lat: 35.1495, lng: -90.0490, title: 'Memphis'},
+    ];
+    var map = new google.maps.Map(document.querySelector('.citymap'), {
+      center: {lat: 39.8283, lng: -98.5795},
+      zoom: 4.5,
+      disableDefaultUI: true 
+    });
+    for (var i = 0; i < cities.length; i++) {
+      var city = cities[i];
+      var marker = new google.maps.Marker({
+        position: {lat: city.lat, lng: city.lng},
+        map: map,
+        title: city.title
+      });
+    }
+</script> 
 <!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF--><!--JUICYSTUFF-->
 <!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO--><!--INFO-->
 <hr>

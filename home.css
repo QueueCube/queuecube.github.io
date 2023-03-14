@@ -350,6 +350,11 @@ hr {
   font-size: 2.5vh;
   margin-right: 122vh;
 }
+#ranking4 {
+  color: #ffc86a;
+  font-size: 2.5vh;
+  margin-right: 120vh;
+}
 #arrow {
   font-size: 2.5vh;
   background-color: #f2f2f2;
@@ -363,17 +368,10 @@ hr {
   background-color: #eee;
 }
 .detailscontainer {
-  background-color: #e9e9e90d;
   height: 30%;
-  border-bottom-left-radius: 1vh;
-  border-bottom-right-radius: 1vh;
-  margin-top: 16.5vh;
-  color: #fff;
+  margin-top: 18vh;
+  color: #000;
   z-index: 2;
-  backdrop-filter: blur(5vh);
-}
-.detailstext {
-  margin: 2vh;
 }
 .frrestaurants {
   display: flex;
@@ -400,7 +398,7 @@ hr {
 .progressbar {
   width: 83%;
   height: 2vh;
-  background-color: #f2f2f2;
+  background-color: #eee;
   border-radius: 6vh;
 }
 .progressbar-fill {
@@ -410,14 +408,18 @@ hr {
 }
 .restaurantrow {
   background-color: #fff;
-  height: 23%;
+  height: 22.5%;
   margin-bottom: 1vh;
+}
+.allrestaurantrow {
+  background-color: #fff;
+  height: 25%;
 }
 .restaurant1 {
   background-image: url('imgs/restaurant1.jpg');
   background-size: cover;
   width: 32.6%;
-  height: 30vh;
+  height: 22vh;
   border-radius: 1vh;
   cursor: pointer;
 }
@@ -435,7 +437,7 @@ a {
   background-image: url('imgs/restaurant2.jpg');
   background-size: cover;
   width: 32.6%;
-  height: 30vh;
+  height: 22vh;
   margin-left: 2vh;
   border-radius: 1vh;
   cursor: pointer;
@@ -450,7 +452,7 @@ a {
   background-image: url('imgs/restaurant3.jpg');
   background-size: cover;
   width: 32.6%;
-  height: 30vh;
+  height: 22vh;
   margin-left: 2vh;
   border-radius: 1.5vh;
   cursor: pointer;
@@ -548,8 +550,6 @@ a {
 .footerinfo {
   display: flex;
   justify-content: baseline;
-  margin-right: 15vh;
-  margin-left: 15vh;
   margin-bottom: 7vh;
   align-items: flex-start;
   background-color: #fff;
@@ -564,6 +564,9 @@ a {
   flex-direction: column;
   align-items: flex-start;
   cursor: pointer;
+}
+.user {
+  margin-left: 15vh;
 }
 .column-links how, .column-links about, .column-links partner, .column-links queue, .column-links marketing {
   font-size: 1.9vh;
@@ -595,8 +598,7 @@ a {
   align-items: right;
   margin-right: 15vh;
   margin-left: 15vh;
-  padding-bottom: 10vh;
-  padding-top: 10vh;
+  padding-bottom: 5vh;
   color: #555;
 }
  /*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*//*SOCIALS*/

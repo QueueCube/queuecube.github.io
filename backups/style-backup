@@ -19,7 +19,6 @@ html, body {
 .middlestuff {
   background-image: url("imgs/backgroundimage.png");
   height: 75vh; 
-  width: 175.5vh; 
   background-size: cover;
 }
 .middleinfo {
@@ -292,22 +291,6 @@ button {
   transform: translate(-50%, -50%) scale(1);
 }
 /*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*//*LOCATIONSETPOP*/
-.down-arrow {
-  border-radius: 10vh;
-  margin-left: 50%;
-  margin-top: 30vh;
-  background-color: #eee;
-  padding: 1.5vh;
-  width: 2.5vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  cursor: pointer;
-}
-.down-arrow i{
-  font-size: 2.5vh;
-}
 /*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*/
 .juicystuff {
   margin-top: 10vh;
@@ -337,6 +320,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
   margin-left: 2vh;
   cursor: pointer;
   color: #ff2f3d;
@@ -344,13 +329,61 @@ button {
 .whatwedocategory i {
   margin-top: 0.3vh;
   margin-left: 1vh;
+  font-size: 2.5vh;
   color: #ff2f3d;
 }
-.forcommunityimg, .forrestaurantsimg, .getappimg{
+.forcommunityimg {
   background-size: cover;
-  height: 40vh;
+  height: 35vh;
+  width: 50vh;
+}
+.forrestaurantsimg{
+  background-size: cover;
+  margin-left: 5vh;
+  height: 35vh;
+  width: 35vh;
+}
+.getappimg {
+  background-size: cover;
+  margin-left: 3vh;
+  height: 35vh;
   width: 40vh;
 }
+/*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*/
+.citymap {
+  position: relative;
+  height: 60vh; 
+  margin-left: 5vh;
+  margin-right: 5vh;
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  border-radius: 1vh;
+}
+.citymap-text {
+  margin-left: 6vh;
+  margin-right: 5vh;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}
+.citylist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none; 
+  display: grid; 
+  grid-template-columns: repeat(5, 1fr); 
+  margin-top: 4vh;
+  margin-left: 9vh;
+}
+.citylist li {
+  color: #555;
+  margin-bottom: 2.5vh;
+  cursor: pointer;
+}
+.citylist li:hover {
+    color: #000;
+}
+/*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*//*MAP*/
 /*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*//*JUICYSTUFF*/
 hr {
   border: none;
