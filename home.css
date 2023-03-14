@@ -420,7 +420,7 @@ hr {
 .restaurant1 i {
   color: #fff;
   margin-top: 2vh;
-  margin-left: 43vh;
+  margin-left: 46vh;
   font-size: 2.5vh;
 }
 a {
@@ -439,7 +439,7 @@ a {
 .restaurant2 i {
   color: #fff;
   margin-top: 2vh;
-  margin-left: 43vh;
+  margin-left: 46vh;
   font-size: 2.5vh;
 }
 .restaurant3 {
@@ -454,7 +454,7 @@ a {
 .restaurant3 i {
   color: #fff;
   margin-top: 2vh;
-  margin-left: 43vh;
+  margin-left: 46vh;
   font-size: 2.5vh;
 }
 .restaurantlist {
@@ -479,7 +479,7 @@ a {
 .ar1 {
   background-image: url('imgs/restaurant7.jpg');
   background-size: cover;
-  width: 32%;
+  width: 32.6%;
   height: 30vh;
   border-radius: 1vh;
   cursor: pointer;
@@ -487,13 +487,13 @@ a {
 .ar1 i {
   color: #fff;
   margin-top: 2vh;
-  margin-left: 43vh;
+  margin-left: 46vh;
   font-size: 2.5vh;
 }
 .ar2 {
   background-image: url('imgs/restaurant8.jpg');
   background-size: cover;
-  width: 32%;
+  width: 32.6%;
   height: 30vh;
   margin-left: 1.5vh;
   border-radius: 1vh;
@@ -502,13 +502,13 @@ a {
 .ar2 i {
   color: #fff;
   margin-top: 2vh;
-  margin-left: 43vh;
+  margin-left: 46vh;
   font-size: 2.5vh;
 }
 .ar3 {
   background-image: url('imgs/restaurant9.jpg');
   background-size: cover;
-  width: 32%;
+  width: 32.6%;
   height: 30vh;
   margin-left: 1.5vh;
   border-radius: 1vh;
@@ -517,7 +517,7 @@ a {
 .ar3 i {
   color: #fff;
   margin-top: 2vh;
-  margin-left: 43vh;
+  margin-left: 46vh;
   font-size: 2.5vh;
 }
 .seemorecontainer {
